@@ -52,13 +52,15 @@ body {
 }
 
 .nav-container nav .addressAndLogin .tel1 {
-  padding: 0;
-  padding-right: 20px;
+  position: absolute;
+  left: 5px;
 }
 
 .nav-container nav .addressAndLogin .tel2 {
   padding: 0;
-  padding-left: 20px;
+  padding-left: 28px;
+  position: relative;
+  bottom: 17.7px;
 }
 
 .nav-container nav .addressAndLogin .account {
@@ -158,19 +160,19 @@ body {
   margin-left: 40px;
   background-color: #eee5e5;
   padding: 10px;
-  color: #f78a0e;
+  color: #f58504;
 }
 
 .carousel-container-sec .carousel-text .see-details-button {
   background-color: #e7e4e1;
   display: inline;
   position: relative;
-  color: #f78a0e;
+  color: #f58504;
   top: 9%;
 }
 
 .carousel-container-sec .carousel-text .see-details-button span {
-  background-color: #f78a0e;
+  background-color: #f58504;
   padding: 20px;
   color: mintcream;
 }
@@ -216,6 +218,80 @@ body {
 .carousel-container-sec .select-form .filter-button .fa-long-arrow-alt-right {
   padding-left: 7px;
   font-size: 10px;
+}
+
+.carousel-container-sec .mobile-menu-container {
+  position: relative;
+  right: 70%;
+  height: 50vh;
+  width: 55%;
+  background-color: white;
+  opacity: 0.9;
+  -webkit-transition: opacity 5s ease-in;
+  transition: opacity 5s ease-in;
+  -webkit-animation-name: mobile-opacity;
+          animation-name: mobile-opacity;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes mobile-opacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes mobile-opacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.carousel-container-sec .mobile-menu-container i {
+  position: relative;
+  top: 5%;
+  left: 85%;
+  font-size: 40px;
+  color: #838080;
+}
+
+.carousel-container-sec .mobile-menu-container .mobile-menu {
+  position: relative;
+  left: 30%;
+  list-style: none;
+}
+
+.carousel-container-sec .mobile-menu-container .mobile-menu li {
+  padding-top: 5%;
+}
+
+.carousel-container-sec .mobile-menu-container .mobile-menu li a {
+  text-decoration: none;
+  color: #f58504;
 }
 
 @media (max-width: 946px) {

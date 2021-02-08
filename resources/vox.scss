@@ -1,3 +1,4 @@
+$primary-color:rgb(245, 133, 4);
 @mixin my-body{
     margin:0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -33,12 +34,14 @@ body{
            padding-left:100px;
 
            .tel1{
-               padding:0;
-               padding-right:20px;
+               position:absolute;
+               left:5px;
            }
            .tel2{
                padding:0;
-               padding-left:20px;
+               padding-left:28px;
+               position:relative;
+               bottom:17.7px;
            }
 
            .address{
@@ -109,7 +112,7 @@ body{
     background-image: url('media/bmw3.jpg');
     background-size:100% 100%;
     @include responsive-columns;
-           
+      
     .carousel-text{
         color:mintcream;
         font-weight:bold;
@@ -133,7 +136,7 @@ body{
                 margin-left:40px;
                 background-color:rgb(238, 229, 229);
                 padding:10px;
-                color:rgb(247, 138, 14);
+                color:$primary-color;
             }
         }
  
@@ -141,11 +144,11 @@ body{
             background-color:rgb(231, 228, 225);
             display:inline;
             position:relative;
-            color:rgb(247, 138, 14);
+            color:$primary-color;
             top:9%;
  
             span{
-                background-color:rgb(247, 138, 14);
+                background-color:$primary-color;
                 padding:20px;
                 color:mintcream;              
             }
@@ -180,7 +183,7 @@ body{
         }
          
         .filter-button{
-            background-color:rgb(245, 133, 4);
+            background-color:$primary-color;
             position:relative;
             padding:10px;
             color:white;
@@ -197,7 +200,45 @@ body{
         }
  }
  //end of the select form class
+ .mobile-menu-container{
+    position:relative;
+    right:70%;
+    height:50vh;
+    width:55%;
+    background-color:white;
+    opacity:0.9;
+    transition: opacity 5s ease-in;
+    animation-name:mobile-opacity;
+    animation-duration: 0.5s;
+    @keyframes mobile-opacity{
+        0%{opacity:0};
+        20%{opacity:0.2};
+        50%{opacity:0.4};
+        80%{opacity:0.6};
+        100%{opacity:0.9}
+    }
 
+    i{
+        position:relative;
+        top:5%;
+        left:85%;
+        font-size:40px;
+        color:rgb(131, 128, 128)
+    }
+    .mobile-menu{
+        position:relative;
+        left:30%;
+        list-style:none;
+        li{
+            padding-top:5%;
+            a{
+                text-decoration:none;
+                color:$primary-color
+            }
+        }
+    }
+} 
+//end of mobile-menu container   
 }
     
     
@@ -216,6 +257,9 @@ body{
         }
     }
     .carousel-container-sec{
+        .carousel-text{
+        
+        }
         .select-form{
             display:none;
         }
