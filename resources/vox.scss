@@ -1,0 +1,223 @@
+@mixin my-body{
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x:hidden;
+
+}
+$primary-font:'Source Sans Pro', sans-serif;
+
+@mixin responsive-columns{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+body{
+    @include my-body;
+}
+
+.nav-container{
+    @include responsive-columns;
+    nav{
+        border-bottom:1px solid rgb(226, 223, 223);
+        box-shadow:5px 5px 19px lightgray;
+
+       .addressAndLogin{
+           @include responsive-columns;
+           background-color:rgb(9, 9, 32);
+           color:mintcream;
+           height:60px;
+           font-size:14px;
+           display:flex;
+           flex-wrap:wrap;
+           padding:12px;
+           padding-left:100px;
+
+           .tel1{
+               padding:0;
+               padding-right:20px;
+           }
+           .tel2{
+               padding:0;
+               padding-left:20px;
+           }
+
+           .address{
+               //margin-left:90px;
+           }
+           .account{
+               position:relative;
+               left:45%;
+            }
+           a{
+            text-decoration:none;
+            color:mintcream;
+            &:hover{
+                font-size:15px;
+            }
+           }
+           /*.signin{
+               padding-right:20px;
+               padding-left:600px;
+               padding-top:15px;
+           }*/
+           span{
+               padding-top:15px;
+            }
+           /*.register{
+               padding-left:14px;
+               padding-top:15px;   
+            }*/
+        }
+       .logo{
+           width:15vw;
+           margin-left:10%;
+           margin-bottom:-7%;
+        }
+       .menu{
+           display:flex;
+           list-style:none;
+           float:right;
+           margin-right:30px;
+           font-size:17px;
+           li{
+
+           }
+           a{
+            text-decoration:none;
+            padding-left:25px;
+            color:rgb(72, 76, 80);
+           }
+        }
+        .burger{
+            position:relative;
+            bottom:20%;
+            div{
+              background-color:rgb(102, 104, 104);
+              margin:1%;
+              height:0.5vh;
+              width:5%;
+              display:none;
+            }
+            
+        }
+    }
+}
+.carousel-container-sec{
+    position:relative;
+    top:3vh;
+    max-height:60vh;
+    background-image: url('media/bmw3.jpg');
+    background-size:100% 100%;
+    @include responsive-columns;
+           
+    .carousel-text{
+        color:mintcream;
+        font-weight:bold;
+        height:20%;
+        margin-bottom:10%;
+        div{
+            padding:20px;
+        }
+        
+        .dream-car{
+         font-size:20px;
+        }
+ 
+        .bmw-m5{
+            font-size:30px;
+        }
+ 
+        .model{
+            font-size:20px;
+            span{
+                margin-left:40px;
+                background-color:rgb(238, 229, 229);
+                padding:10px;
+                color:rgb(247, 138, 14);
+            }
+        }
+ 
+        .see-details-button{
+            background-color:rgb(231, 228, 225);
+            display:inline;
+            position:relative;
+            color:rgb(247, 138, 14);
+            top:9%;
+ 
+            span{
+                background-color:rgb(247, 138, 14);
+                padding:20px;
+                color:mintcream;              
+            }
+        }
+    }
+    //end of the carousel text class
+    .select-form{
+        position:relative;
+        left:17%;
+        background-color:white;
+        opacity:0.7;
+        width:30%;
+        padding-bottom:5%; 
+
+        select{
+           padding:2%;
+           padding-right:65%;
+           margin:5%;
+           margin-left:9%;
+           position:relative;
+           right:15px;
+           top:3vh;
+           background-color:white;
+           border:1px solid gray;
+ 
+         option{
+           background-color:rgb(216, 203, 203);
+           font-family:$primary-font;
+           font-size:1rem;
+         }
+ 
+        }
+         
+        .filter-button{
+            background-color:rgb(245, 133, 4);
+            position:relative;
+            padding:10px;
+            color:white;
+            border:none;
+            width:70%;
+            margin-left:40px;
+            margin-top:3vh;
+     
+            .fa-long-arrow-alt-right{
+                 padding-left:7px;
+                 font-size:10px;
+            }
+         
+        }
+ }
+ //end of the select form class
+
+}
+    
+    
+
+@media (max-width:946px){
+    .nav-container{
+        nav{
+            .burger{
+                div{
+                  display:block;     
+                }   
+            }
+            ul.menu{
+                display:none;
+            } 
+        }
+    }
+    .carousel-container-sec{
+        .select-form{
+            display:none;
+        }
+    }    
+}
