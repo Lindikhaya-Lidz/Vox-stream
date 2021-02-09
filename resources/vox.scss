@@ -1,4 +1,5 @@
 $primary-color:rgb(245, 133, 4);
+$secondary-color:mintcream;
 @mixin my-body{
     margin:0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -25,7 +26,7 @@ body{
        .addressAndLogin{
            @include responsive-columns;
            background-color:rgb(9, 9, 32);
-           color:mintcream;
+           color:$secondary-color;
            height:60px;
            font-size:14px;
            display:flex;
@@ -53,7 +54,7 @@ body{
             }
            a{
             text-decoration:none;
-            color:mintcream;
+            color:$secondary-color;
             &:hover{
                 font-size:15px;
             }
@@ -114,43 +115,60 @@ body{
     @include responsive-columns;
       
     .carousel-text{
-        color:mintcream;
+        color:$secondary-color;
         font-weight:bold;
         height:20%;
         margin-bottom:10%;
         div{
-            padding:20px;
+            padding:3%;
         }
         
         .dream-car{
-         font-size:20px;
+         font-size:1.5em;
         }
  
         .bmw-m5{
-            font-size:30px;
+            font-size:2em;
         }
  
         .model{
-            font-size:20px;
+            font-size:1.5em;
+
             span{
-                margin-left:40px;
-                background-color:rgb(238, 229, 229);
+                margin-left:7%;
+                background-color:$secondary-color;
                 padding:10px;
                 color:$primary-color;
             }
         }
  
         .see-details-button{
-            background-color:rgb(231, 228, 225);
+            background-color:$secondary-color;
             display:inline;
             position:relative;
             color:$primary-color;
             top:9%;
- 
-            span{
+            
+            /*&:hover{
+                animation-name:make-button-orange;
+                animation-duration:1s;
+                animation-iteration-count:infinite;
+            }
+            @keyframes make-button-orange{
+                0%{background-color:$secondary-color};
+                0%{color:$primary-color};
+                100%{background-color:$primary-color};
+                100%{color:$secondary-color}
+            }*/
+            .right-arrow{
                 background-color:$primary-color;
-                padding:20px;
-                color:mintcream;              
+                padding:18px;
+                padding-top:20.4px;
+                padding-bottom:21px;
+                color:$secondary-color;
+                position:relative;
+                left:19px; 
+
             }
         }
     }
@@ -158,7 +176,7 @@ body{
     .select-form{
         position:relative;
         left:17%;
-        background-color:white;
+        background-color:$secondary-color;
         opacity:0.7;
         width:30%;
         padding-bottom:5%; 
@@ -171,14 +189,14 @@ body{
            position:relative;
            right:15px;
            top:3vh;
-           background-color:white;
+           background-color:$secondary-color;
            border:1px solid gray;
  
-         option{
-           background-color:rgb(216, 203, 203);
-           font-family:$primary-font;
-           font-size:1rem;
-         }
+            option{
+                background-color:rgb(216, 203, 203);
+                font-family:$primary-font;
+                font-size:1rem;
+            }
  
         }
          
@@ -186,7 +204,7 @@ body{
             background-color:$primary-color;
             position:relative;
             padding:10px;
-            color:white;
+            color:$secondary-color;
             border:none;
             width:70%;
             margin-left:40px;
@@ -203,9 +221,10 @@ body{
  .mobile-menu-container{
     position:relative;
     right:70%;
-    height:50vh;
+    height:50%;
     width:55%;
-    background-color:white;
+    display:none;
+    background-color:$secondary-color;
     opacity:0.9;
     transition: opacity 5s ease-in;
     animation-name:mobile-opacity;
@@ -226,11 +245,17 @@ body{
         color:rgb(131, 128, 128)
     }
     .mobile-menu{
+        margin-top:5%;
         position:relative;
-        left:30%;
+        left:50%;
         list-style:none;
         li{
             padding-top:5%;
+            .mobile-arrow{
+                color:$primary-color;
+                
+                
+            }
             a{
                 text-decoration:none;
                 color:$primary-color
@@ -264,4 +289,16 @@ body{
             display:none;
         }
     }    
+}
+
+@media (max-width:649px){
+    .mobile-menu-container{
+        background-color:black;
+        .mobile-menu{
+            li{
+                position:relative;
+                right:40%;
+            }
+        }
+    }
 }
