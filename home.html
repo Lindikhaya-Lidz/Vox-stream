@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nane='discription' content='Auto Repair Traders And Auto Trader'>
     <link rel='stylesheet' href='resources/vox.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-   <title>Document</title>
-   <style>
-     .carousel{
-        background-image: url('resources/media/bmw1.jpg');
-     } 
-   </style>
-
+   <title>Document</title> 
 </head>
 <body>
     <section>
@@ -43,7 +38,6 @@
                     <div></div>
                 </div>
             </nav>
-            
         </div>
     </section>
     <section class='carousel-container-sec'>
@@ -55,32 +49,36 @@
         </div>
         <div class='select-form'>
             <select>
-                <option value='make any'>Make any</option>
-                <option class='audi'>Audi</option>
-                <option class='Bentley'>Bentley</option>
-                <option class='Bmw'>Bmw</option>
+                <datalist>
+                    <option value='make any'>Make any</option>
+                    <option value='audi'>Audi</option>
+                    <option value='Bentley'>Bentley</option>
+                    <option value='Bmw'>Bmw</option>
+                    <option value='Mercedes-benz'>Mercedes Benz</option>
+                </datalist>
             <select>
             <br>    
             <select>
-                <option value='make any'>Any Model</option>
-                <option class='audi'>Audi</option>
-                <option class='Bentley'>Bentley</option>
-                <option class='Bmw'>Bmw</option>
+                <datalist>
+                    <option value='make any'>Any Model</option>
+                    <option value='audi'>Model 1</option>
+                    <option value='Bentley'>Model 2</option>
+                    <option value='Bmw'>Model 3</option>
+                    <option value='Bmw'>Model 4</option>
+                </datalist>
             <select>
             <br>    
             <select>
-                <option value='make any'>Any Type</option>
-                <option class='audi'>Audi</option>
-                <option class='Bentley'>Bentley</option>
-                <option class='Bmw'>Bmw</option>
+                <datalist>
+                    <option value='make any'>Any Type</option>
+                    <option value='type1'>Type 1</option>
+                    <option value='type2'>Type 2</option>
+                    <option value='type3'>Type 3</option>
+                    <option value='type4'>Type 4</option>
+               </datalist>
             <select> 
             <br>    
-            <select>
-                <option value='make any'>Make any</option>
-                <option class='audi'>Audi</option>
-                <option class='Bentley'>Bentley</option>
-                <option class='Bmw'>Bmw</option>
-            <select>                          
+            <input type='range' list='tickmarks' min='0' max='1000' step='0.1' class='input-range'>                         
                 <button class='filter-button'>Submit Filter<i class="fas fa-long-arrow-alt-right"></i></button> 
         </div>
         <div class='mobile-menu-container'>
@@ -92,6 +90,7 @@
                 <li><a href='#' class='mobile-menu-link'>Testimonials</a></li>
                 <li><a href='#' class='mobile-menu-link'>Contacts</a></li>
                 <li><a href='#' class='mobile-menu-link filtered-search'>Filtered Search</a></li>
+            </ul>    
         </div>
     </section>
     <section>

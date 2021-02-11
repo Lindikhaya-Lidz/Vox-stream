@@ -60,7 +60,7 @@ body {
   padding: 0;
   padding-left: 28px;
   position: relative;
-  bottom: 17.7px;
+  bottom: 16px;
 }
 
 .nav-container nav .addressAndLogin .account {
@@ -189,7 +189,7 @@ body {
   padding-bottom: 21px;
   color: mintcream;
   position: relative;
-  left: 19px;
+  left: 20px;
 }
 
 .carousel-container-sec .select-form {
@@ -198,7 +198,7 @@ body {
   background-color: mintcream;
   opacity: 0.7;
   width: 30%;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .carousel-container-sec .select-form select {
@@ -217,6 +217,13 @@ body {
   background-color: #d8cbcb;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
+}
+
+.carousel-container-sec .select-form input {
+  position: relative;
+  left: 5%;
+  width: 85%;
+  background-color: #f58504;
 }
 
 .carousel-container-sec .select-form .filter-button {
