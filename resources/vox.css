@@ -1,346 +1,213 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   overflow-x: hidden;
 }
 
-.nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.nav-container nav {
-  border-bottom: 1px solid #e2dfdf;
-  -webkit-box-shadow: 5px 5px 19px lightgray;
-          box-shadow: 5px 5px 19px lightgray;
-}
-
-.nav-container nav .addressAndLogin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #090920;
-  color: mintcream;
-  height: 60px;
-  font-size: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 12px;
-  padding-left: 100px;
-  /*.signin{
-               padding-right:20px;
-               padding-left:600px;
-               padding-top:15px;
-           }*/
-  /*.register{
-               padding-left:14px;
-               padding-top:15px;   
-            }*/
-}
-
-.nav-container nav .addressAndLogin .tel1 {
-  position: absolute;
-  left: 5px;
-}
-
-.nav-container nav .addressAndLogin .tel2 {
-  padding: 0;
-  padding-left: 28px;
-  position: relative;
-  bottom: 16px;
-}
-
-.nav-container nav .addressAndLogin .account {
-  position: relative;
-  left: 45%;
-}
-
-.nav-container nav .addressAndLogin a {
+a {
   text-decoration: none;
-  color: mintcream;
+  color: inherit;
 }
 
-.nav-container nav .addressAndLogin a:hover {
-  font-size: 15px;
-}
-
-.nav-container nav .addressAndLogin span {
-  padding-top: 15px;
-}
-
-.nav-container nav .logo {
-  width: 15vw;
-  margin-left: 10%;
-  margin-bottom: -7%;
-}
-
-.nav-container nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+ul {
   list-style: none;
-  float: right;
-  margin-right: 30px;
-  font-size: 17px;
 }
 
-.nav-container nav .menu a {
-  text-decoration: none;
-  padding-left: 25px;
-  color: #484c50;
+nav {
+  margin: 12px;
 }
 
-.nav-container nav .burger {
+nav div.burger {
+  width: 25px;
+}
+
+nav div.burger div {
+  background-color: #4b4747;
+  width: 24px;
+  height: 5px;
+  margin: 5px;
+  border-radius: 9px;
+}
+
+nav .logo {
+  width: 109px;
   position: relative;
-  bottom: 20%;
+  left: 60px;
+  bottom: 40px;
 }
 
-.nav-container nav .burger div {
-  background-color: #666868;
-  margin: 1%;
-  height: 0.5vh;
-  width: 5%;
-  display: none;
-}
-
-.carousel-container-sec {
+nav .dot-bar {
   position: relative;
-  top: 3vh;
-  max-height: 60vh;
+  left: 65%;
+  bottom: 3rem;
+  font-size: 1.7rem;
+  color: #4d4949;
+}
+
+nav .contacts-signin {
+  display: absolute;
+}
+
+nav .contacts-signin ul {
+  position: relative;
+  bottom: 50px;
+}
+
+.carousel-section {
+  position: relative;
+  bottom: 60px;
+  color: #faf4f4;
+  font-weight: bold;
+  position: relative;
+}
+
+.carousel-section .carousel {
   background-image: url("media/bmw3.jpg");
   background-size: 100% 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.carousel-container-sec .carousel-text {
-  color: mintcream;
-  font-weight: bold;
-  height: 20%;
-  margin-bottom: 10%;
-}
-
-.carousel-container-sec .carousel-text div {
-  padding: 3%;
-}
-
-.carousel-container-sec .carousel-text .dream-car {
-  font-size: 1.5em;
-}
-
-.carousel-container-sec .carousel-text .bmw-m5 {
-  font-size: 2em;
-}
-
-.carousel-container-sec .carousel-text .model {
-  font-size: 1.5em;
-}
-
-.carousel-container-sec .carousel-text .model span {
-  margin-left: 7%;
-  background-color: mintcream;
-  padding: 10px;
-  color: #f58504;
-}
-
-.carousel-container-sec .carousel-text .see-details-button {
-  background-color: mintcream;
-  display: inline;
+  background-repeat: no-repeat;
+  padding: 20%;
   position: relative;
-  color: #f58504;
-  top: 9%;
-  /*&:hover{
-                animation-name:make-button-orange;
-                animation-duration:1s;
-                animation-iteration-count:infinite;
-            }
-            @keyframes make-button-orange{
-                0%{background-color:$secondary-color};
-                0%{color:$primary-color};
-                100%{background-color:$primary-color};
-                100%{color:$secondary-color}
-            }*/
+  top: 20px;
 }
 
-.carousel-container-sec .carousel-text .see-details-button .right-arrow {
-  background-color: #f58504;
-  padding: 18px;
-  padding-top: 20.4px;
-  padding-bottom: 21px;
-  color: mintcream;
-  position: relative;
-  left: 20px;
-}
-
-.carousel-container-sec .select-form {
-  position: relative;
-  left: 17%;
-  background-color: mintcream;
-  opacity: 0.7;
-  width: 30%;
-  padding-bottom: 3%;
-}
-
-.carousel-container-sec .select-form select {
-  padding: 2%;
-  padding-right: 65%;
-  margin: 5%;
-  margin-left: 9%;
-  position: relative;
-  right: 15px;
-  top: 3vh;
-  background-color: mintcream;
-  border: 1px solid gray;
-}
-
-.carousel-container-sec .select-form select option {
-  background-color: #d8cbcb;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
-}
-
-.carousel-container-sec .select-form input {
-  position: relative;
-  left: 5%;
-  width: 85%;
-  background-color: #f58504;
-}
-
-.carousel-container-sec .select-form .filter-button {
-  background-color: #f58504;
-  position: relative;
-  padding: 10px;
-  color: mintcream;
-  border: none;
-  width: 70%;
-  margin-left: 40px;
-  margin-top: 3vh;
-}
-
-.carousel-container-sec .select-form .filter-button .fa-long-arrow-alt-right {
-  padding-left: 7px;
-  font-size: 10px;
-}
-
-.carousel-container-sec .mobile-menu-container {
-  position: relative;
-  right: 70%;
-  height: 50%;
-  width: 55%;
-  display: none;
-  background-color: mintcream;
-  opacity: 0.9;
-  -webkit-transition: opacity 5s ease-in;
-  transition: opacity 5s ease-in;
-  -webkit-animation-name: mobile-opacity;
-          animation-name: mobile-opacity;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-}
-
-@-webkit-keyframes mobile-opacity {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  80% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes mobile-opacity {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  80% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-.carousel-container-sec .mobile-menu-container i {
-  position: relative;
-  top: 5%;
-  left: 85%;
-  font-size: 40px;
-  color: #838080;
-}
-
-.carousel-container-sec .mobile-menu-container .mobile-menu {
-  margin-top: 5%;
-  position: relative;
-  left: 50%;
+.carousel-section .carousel .mobile-menu {
   list-style: none;
+  top: 0%;
+  background-color: #f1ecec;
+  color: #f1ecec;
+  z-index: 12;
+  position: fixed;
+  width: 70%;
+  height: 130%;
+  bottom: 195em;
+  right: 30vw;
+  padding: 7%;
+  display: 0;
 }
 
-.carousel-container-sec .mobile-menu-container .mobile-menu li {
-  padding-top: 5%;
+.carousel-section .carousel .mobile-menu .menu {
+  font-size: 0.8em;
 }
 
-.carousel-container-sec .mobile-menu-container .mobile-menu li .mobile-arrow {
-  color: #f58504;
+.carousel-section .carousel .mobile-menu .menu .active {
+  background-color: #ff8800;
+  padding: 0.1px;
 }
 
-.carousel-container-sec .mobile-menu-container .mobile-menu li a {
-  text-decoration: none;
-  color: #f58504;
+.carousel-section .carousel .mobile-menu .menu .active a {
+  color: #faf4f4;
+  margin: 20px;
+  width: 100%;
 }
 
-@media (max-width: 946px) {
-  .nav-container nav .burger div {
-    display: block;
-  }
-  .nav-container nav ul.menu {
-    display: none;
-  }
-  .carousel-container-sec .select-form {
-    display: none;
-  }
+.carousel-section .carousel .mobile-menu .menu li {
+  padding-bottom: 60px;
+  position: relative;
+  right: 50px;
 }
 
-@media (max-width: 649px) {
-  .mobile-menu-container {
-    background-color: black;
-  }
-  .mobile-menu-container .mobile-menu li {
-    position: relative;
-    right: 40%;
-  }
+.carousel-section .carousel .mobile-menu .menu li:hover {
+  background-color: #ff8800;
+  color: #faf4f4;
+  position: relative;
+  right: 30px;
+}
+
+.carousel-section .carousel .mobile-menu .menu li a {
+  color: #797777;
+  display: block;
+}
+
+.carousel-section .carousel .mobile-menu .close {
+  position: relative;
+  bottom: 420px;
+  color: #7a7474;
+  left: 100%;
+  font-size: 25px;
+}
+
+.carousel-section .carousel .contacts-signin {
+  background-color: #f1ecec;
+  position: absolute;
+  bottom: 66%;
+  z-index: 1;
+  left: 5pc;
+  font-size: 10px;
+  width: 80%;
+  padding-bottom: -80px;
+  display: none;
+}
+
+.carousel-section .carousel .contacts-signin ul li {
+  padding-top: 10px;
+  padding: 7px;
+  margin-right: 15%;
+}
+
+.carousel-section .carousel .contacts-signin ul li a {
+  color: #888585;
+}
+
+.carousel-section .carousel-text {
+  position: relative;
+  right: 25%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.carousel-section .carousel-text .dream-car {
+  font-size: 1.4rem;
+}
+
+.carousel-section .carousel-text .bmw {
+  font-size: 2.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.carousel-section .carousel-text .model {
+  font-size: 1.4rem;
+  padding-right: 5%;
+}
+
+.carousel-section .carousel-text .price {
+  padding-left: 25px;
+  color: #ff8800;
+  background-color: #faf4f4;
+  padding: 6px;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-left: 1%;
+}
+
+.carousel-section .carousel-text .see-details {
+  background-color: #faf4f4;
+  width: 150px;
+  margin-top: 35px;
+  padding-left: 10px;
+}
+
+.carousel-section .carousel-text .see-details a {
+  color: #ff8800;
+  font-size: 0.9em;
+}
+
+.carousel-section .carousel-text .see-details .fa-angle-right {
+  background-color: #ff8800;
+  padding: 10%;
+  padding-right: 15.8px;
+  margin-left: 28px;
+  -webkit-transition: rotate(180deg);
+  transition: rotate(180deg);
 }
 /*# sourceMappingURL=vox.css.map */

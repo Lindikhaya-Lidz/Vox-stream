@@ -3,98 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta nane='discription' content='Auto Repair Traders And Auto Trader'>
+    <meta name='discription' content='Auto Repair Traders And Auto Trader'>
     <link rel='stylesheet' href='resources/vox.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
    <title>Document</title> 
 </head>
 <body>
-    <section>
-        <div class='nav-container'>
-            <nav>
-                <div class='addressAndLogin'>
-                    <span class='tel1'>0117483353</span><span>|</span><span class='tel2'>0788942564</span>
-                    <span class='address'>129 Xulu Street Cape Town City Centre SA</span>
-                    <div class='account'>
-                        <a href='#' class='signin'>SIGNIN</a>
-                        <span>|</span>
-                        <a href='#'class='register'>REGISTER<a>
-                    </div>    
-                </div>
-                <img src='resources/media/logo4.png' class='logo' alt='Auto Gaze logo'>
+    <section class='nav-section'>
+        <nav>
+            <div class='burger'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <img src='resources/media/logo4.png' alt='logo' class='logo'>
+            <i class="fas fa-ellipsis-v dot-bar"></i>
+        </nav>
+    </section>
+    <section class='carousel-section'>
+        <div class='carousel'>
+            <div class='mobile-menu'>
                 <ul class='menu'>
-                    <li><a href='#' class='menu-link'>Home</a></li>
-                    <li><a href='#' class='menu-link'>Repair Services</a></li>
-                    <li><a href='#' class='menu-link'>Best Offers</a></li>
-                    <li><a href='#' class='menu-link'>Testimonials</a></li>
-                    <li><a href='#' class='menu-link'>Contacts</a></li>   
+                    <li class='active'><a href='#' class=''>Home</a></li>
+                    <li><a href='#' class=''>Pages</a></li>
+                    <li><a href='#' class=''>Best offers</a></li>
+                    <li><a href='#' class=''>Testimonials</a></li>
+                    <li><a href='#' class=''>Contacts</a></li>
                 </ul>
-                <div class='burger'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </nav>
+                <i class="fas fa-times close"></i> 
+            </div>
+            <div class='contacts-signin'>
+                <ul>
+                    <li class=''><a href=''><i class="fas fa-phone-alt"></i>1-800-1234-5671</a></li>
+                    <li class=''><a href=''><i class="fas fa-street-view"></i>2130 Fulton street San Diego, CA 94117-1080 USA</a></li>
+                    <li class=''><a href=''><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class=''><a href=''>Sign</a></li>
+                    <li class=''><a href=''>Register</a></li>
+                </ul>
+             </div> 
+            <div class='carousel-text'>
+                <span class='dream-car'>FIND YOUR DREAM CAR</span>
+                <div class='bmw'>BMW M5 GRAND TURISMO</div>
+                <span class='model'>MODEL</span>2017 <span class='price'>$64, 000</span><br>
+                <div class='see-details'><a href='#' class=''>SEE DETAILS</a><i class="fas fa-angle-right"></i></div>
+            </div>
         </div>
-    </section>
-    <section class='carousel-container-sec'>
-        <div class='carousel-text'>
-            <div class='dream-car'>Find Your Dream Car</div>
-            <div class='bmw-m5'>BMW M5 GRAND TURISMO</div>
-            <div class='model'>Model 2017 <span>$ 64, 000</span></div>
-            <div class='see-details-button'>See Details<i class="fas right-arrow fa-chevron-right"></i></div>
-        </div>
-        <div class='select-form'>
-            <select>
-                <datalist>
-                    <option value='make any'>Make any</option>
-                    <option value='audi'>Audi</option>
-                    <option value='Bentley'>Bentley</option>
-                    <option value='Bmw'>Bmw</option>
-                    <option value='Mercedes-benz'>Mercedes Benz</option>
-                </datalist>
-            <select>
-            <br>    
-            <select>
-                <datalist>
-                    <option value='make any'>Any Model</option>
-                    <option value='audi'>Model 1</option>
-                    <option value='Bentley'>Model 2</option>
-                    <option value='Bmw'>Model 3</option>
-                    <option value='Bmw'>Model 4</option>
-                </datalist>
-            <select>
-            <br>    
-            <select>
-                <datalist>
-                    <option value='make any'>Any Type</option>
-                    <option value='type1'>Type 1</option>
-                    <option value='type2'>Type 2</option>
-                    <option value='type3'>Type 3</option>
-                    <option value='type4'>Type 4</option>
-               </datalist>
-            <select> 
-            <br>    
-            <input type='range' list='tickmarks' min='0' max='1000' step='0.1' class='input-range'>                         
-                <button class='filter-button'>Submit Filter<i class="fas fa-long-arrow-alt-right"></i></button> 
-        </div>
-        <div class='mobile-menu-container'>
-            <i class="fas fa-times close"></i>
-            <ul class='mobile-menu'>
-                <li><a href='#' class='mobile-menu-link'>Home</a></li>
-                <li><a href='#' class='mobile-menu-link'>Repair Services</a></li>
-                <li><a href='#' class='mobile-menu-link'>Best Offers</a></li>
-                <li><a href='#' class='mobile-menu-link'>Testimonials</a></li>
-                <li><a href='#' class='mobile-menu-link'>Contacts</a></li>
-                <li><a href='#' class='mobile-menu-link filtered-search'>Filtered Search</a></li>
-            </ul>    
-        </div>
-    </section>
-    <section>
-       
     </section>
     <script src='resources/js/home.js'></script>
 </body>

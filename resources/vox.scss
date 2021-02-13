@@ -1,311 +1,197 @@
-$primary-color:rgb(245, 133, 4);
-$secondary-color:mintcream;
-@mixin my-body{
-    margin:0;
-    font-family: 'Source Sans Pro', sans-serif;
-    overflow-x:hidden;
-
+$primary-icon-color:rgb(75, 71, 71);
+$primary-color:rgb(255, 136, 0);
+$secondary-color:rgb(250, 244, 244);
+//### resets###
+html{
+    box-sizing:border-box;
 }
-$primary-font:'Source Sans Pro', sans-serif;
-
-@mixin responsive-columns{
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-}
-body{
-    @include my-body;
-}
-
-.nav-container{
-    @include responsive-columns;
-    nav{
-        border-bottom:1px solid rgb(226, 223, 223);
-        box-shadow:5px 5px 19px lightgray;
-
-       .addressAndLogin{
-           @include responsive-columns;
-           background-color:rgb(9, 9, 32);
-           color:$secondary-color;
-           height:60px;
-           font-size:14px;
-           display:flex;
-           flex-wrap:wrap;
-           padding:12px;
-           padding-left:100px;
-
-           .tel1{
-               position:absolute;
-               left:5px;
-           }
-           .tel2{
-               padding:0;
-               padding-left:28px;
-               position:relative;
-               bottom:16px;
-           }
-
-           .address{
-               //margin-left:90px;
-           }
-           .account{
-               position:relative;
-               left:45%;
-            }
-           a{
-            text-decoration:none;
-            color:$secondary-color;
-            &:hover{
-                font-size:15px;
-            }
-           }
-           /*.signin{
-               padding-right:20px;
-               padding-left:600px;
-               padding-top:15px;
-           }*/
-           span{
-               padding-top:15px;
-            }
-           /*.register{
-               padding-left:14px;
-               padding-top:15px;   
-            }*/
-        }
-       .logo{
-           width:15vw;
-           margin-left:10%;
-           margin-bottom:-7%;
-        }
-       .menu{
-           display:flex;
-           list-style:none;
-           float:right;
-           margin-right:30px;
-           font-size:17px;
-           li{
-
-           }
-           a{
-            text-decoration:none;
-            padding-left:25px;
-            color:rgb(72, 76, 80);
-           }
-        }
-        .burger{
-            position:relative;
-            bottom:20%;
-
-            div{
-              background-color:rgb(102, 104, 104);
-              margin:1%;
-              height:0.5vh;
-              width:5%;
-              display:none;
-            }
-        }
-    }
-}
-.carousel-container-sec{
-    position:relative;
-    top:3vh;
-    max-height:60vh;
-    background-image: url('media/bmw3.jpg');
-    background-size:100% 100%;
-    @include responsive-columns;
-      
-    .carousel-text{
-        color:$secondary-color;
-        font-weight:bold;
-        height:20%;
-        margin-bottom:10%;
-
-        div{
-            padding:3%;
-        }
-        
-        .dream-car{
-         font-size:1.5em;
-        }
- 
-        .bmw-m5{
-            font-size:2em;
-        }
- 
-        .model{
-            font-size:1.5em;
-
-            span{
-                margin-left:7%;
-                background-color:$secondary-color;
-                padding:10px;
-                color:$primary-color;
-            }
-        }
- 
-        .see-details-button{
-            background-color:$secondary-color;
-            display:inline;
-            position:relative;
-            color:$primary-color;
-            top:9%;
-            
-            /*&:hover{
-                animation-name:make-button-orange;
-                animation-duration:1s;
-                animation-iteration-count:infinite;
-            }
-            @keyframes make-button-orange{
-                0%{background-color:$secondary-color};
-                0%{color:$primary-color};
-                100%{background-color:$primary-color};
-                100%{color:$secondary-color}
-            }*/
-            .right-arrow{
-                background-color:$primary-color;
-                padding:18px;
-                padding-top:20.4px;
-                padding-bottom:21px;
-                color:$secondary-color;
-                position:relative;
-                left:20px; 
-
-            }
-        }
-    }
-    //end of the carousel text class
-    .select-form{
-        position:relative;
-        left:17%;
-        background-color:$secondary-color;
-        opacity:0.7;
-        width:30%;
-        padding-bottom:3%; 
-
-        select{
-           padding:2%;
-           padding-right:65%;
-           margin:5%;
-           margin-left:9%;
-           position:relative;
-           right:15px;
-           top:3vh;
-           background-color:$secondary-color;
-           border:1px solid gray;
- 
-            option{
-                background-color:rgb(216, 203, 203);
-                font-family:$primary-font;
-                font-size:1rem;
-            } 
-        }
-
-        input{
-            position:relative;
-            left:5%;
-            width:85%;
-            background-color:$primary-color;
-        }
-         
-        .filter-button{
-            background-color:$primary-color;
-            position:relative;
-            padding:10px;
-            color:$secondary-color;
-            border:none;
-            width:70%;
-            margin-left:40px;
-            margin-top:3vh;
-     
-            .fa-long-arrow-alt-right{
-                padding-left:7px;
-                font-size:10px;
-            }
-         
-        }
- }
- //end of the select form class
- .mobile-menu-container{
-    position:relative;
-    right:70%;
-    height:50%;
-    width:55%;
-    display:none;
-    background-color:$secondary-color;
-    opacity:0.9;
-    transition: opacity 5s ease-in;
-    animation-name:mobile-opacity;
-    animation-duration: 0.5s;
-    @keyframes mobile-opacity{
-        0%{opacity:0};
-        20%{opacity:0.2};
-        50%{opacity:0.4};
-        80%{opacity:0.6};
-        100%{opacity:0.9}
-    }
-
-    i{
-        position:relative;
-        top:5%;
-        left:85%;
-        font-size:40px;
-        color:rgb(131, 128, 128)
-    }
-    .mobile-menu{
-        margin-top:5%;
-        position:relative;
-        left:50%;
-        list-style:none;
-        li{
-            padding-top:5%;
-            .mobile-arrow{
-                color:$primary-color;
-                
-                
-            }
-            a{
-                text-decoration:none;
-                color:$primary-color
-            }
-        }
-    }
+*, *:before, *:after{
+    box-sizing:inherit;
 } 
-//end of mobile-menu container   
-}
-    
-    
 
-@media (max-width:946px){
-    .nav-container{
-        nav{
-            .burger{
-                div{
-                  display:block;     
-                }   
-            }
-            ul.menu{
-                display:none;
-            } 
+body{
+    margin:0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x:hidden;   
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+ul{
+    list-style:none;
+}
+
+
+//**start of the menu bar 
+nav{
+    margin:12px;
+    div.burger{
+        width:25px;
+        div{
+            background-color:$primary-icon-color;
+            width:24px;
+            height:5px;
+            margin:5px;
+            border-radius:9px;
         }
     }
-    .carousel-container-sec{
-        .carousel-text{
-        
-        }
-        .select-form{
-            display:none;
-        }
-    }    
+    
+    .logo{
+        width:109px;
+        position:relative;
+        left:60px;
+        bottom:40px;
+    }
+    .dot-bar{
+        position:relative;
+        left:65%;
+        bottom:3rem;
+        font-size:1.7rem;
+        color:rgb(77, 73, 73); 
+    }
+    .contacts-signin{
+       display:absolute;
+       ul{
+           position:relative;
+           bottom:50px;
+       }
+    }
 }
+//### end of the menu bar###
 
-@media (max-width:649px){
-    .mobile-menu-container{
-        background-color:black;
+//***start of the carousel section###
+.carousel-section{
+    position:relative;
+    bottom:60px;
+    color:$secondary-color;
+    font-weight:bold;
+    position:relative;
+    .carousel{
+        background-image: url('media/bmw3.jpg');
+        background-size:100% 100% ;
+        background-repeat:no-repeat;
+        padding:20%;
+        position:relative;
+        top:20px;
+
         .mobile-menu{
-            li{
+            list-style:none;
+            top:0%;
+            background-color:rgb(241, 236, 236);
+            color:rgb(241, 236, 236);
+            z-index:12;
+            position:fixed;
+            width:70%;
+            height:130%;
+            bottom:195em;
+            right:30vw;
+            padding:7%;
+            display:0;
+            .menu{
+               // list-style:none;
+               font-size:0.8em;
+               .active{
+                   background-color:$primary-color;
+                   padding:0.1px;
+                   a{
+                       color:$secondary-color;
+                       margin:20px;
+                       width:100%;
+                   }
+               }
+                li{    
+                    padding-bottom:60px;
+                    position:relative;
+                    right:50px;
+                    &:hover{
+                        background-color:$primary-color;
+                        color:$secondary-color;
+                        position:relative;
+                        right:30px;   
+                      }  
+                    a{
+                    color:rgb(121, 119, 119);
+                    display:block;                    
+                    }
+                }
+            }
+            .close{
                 position:relative;
-                right:40%;
+                bottom:420px;
+                color:rgb(122, 116, 116);
+                left:100%;
+                font-size:25px;
             }
         }
+        .contacts-signin{
+            background-color:rgb(241, 236, 236);
+            position:absolute;
+            bottom:66%;
+            z-index:1;
+            left:5pc;
+            font-size:10px;
+            width:80%;
+            padding-bottom:-80px;
+            display:none;
+            ul{
+                li{
+                    padding-top:10px;
+                    padding:7px;
+                    margin-right:15%;
+
+                    a{
+                        color:rgb(136, 133, 133);
+                    }
+                }
+            }
+        }
+    }
+    .carousel-text{
+        position:relative;
+        right:25%;
+        box-sizing:content-box;
+        .dream-car{
+            font-size:1.4rem;     
+        }
+        .bmw{
+            font-size:2.5rem;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .model{
+            font-size:1.4rem;
+            padding-right:5%;
+        }
+        .price{
+            padding-left:25px;
+            color:$primary-color;
+            background-color:$secondary-color;
+            padding:6px;
+            padding-right:5%;
+            padding-left:5%;
+            margin-left:1%;
+        }
+        .see-details{
+            background-color:$secondary-color;
+            width:150px;
+            margin-top:35px;
+            padding-left:10px;
+
+           // padding-left:2%; 
+            a{
+                color:$primary-color;
+                font-size:0.9em;
+            }
+
+            .fa-angle-right{
+                background-color:$primary-color;
+                padding:10%;
+                padding-right:15.8px;
+                margin-left:28px;
+                transition:rotate(180deg);
+            }
+        }
+
     }
 }
