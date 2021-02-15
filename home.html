@@ -36,6 +36,7 @@
                     <li><a href='#' class=''>Pages</a></li>
                     <li><a href='#' class=''>Best offers</a></li>
                     <li><a href='#' class=''>Testimonials</a></li>
+                    <li class='menu-search'><a href='#' class=''>Filtered Search  <i class="fas fa-long-arrow-alt-right"></i></a></li>
                     <li><a href='#' class=''>Contacts</a></li>
                 </ul>
                 <i class="fas fa-times close"></i> 
@@ -51,9 +52,45 @@
              </div> 
             <div class='carousel-text'>
                 <span class='dream-car'>FIND YOUR DREAM CAR</span>
-                <div class='bmw'>BMW M5 GRAND TURISMO</div>
-                <span class='model'>MODEL</span>2017 <span class='price'>$64, 000</span><br>
+                <div class='Car-brand'>BMW M5 GRAND</div>
+                <span class='model'>MODEL</span><span class='model-year'>2017</span><span class='price'>$64, 000</span><br>
                 <div class='see-details'><a href='#' class=''>SEE DETAILS</a><i class="fas fa-angle-right"></i></div>
+            </div>
+            <form class='filtered-search-form'>
+                <select>
+                    <datalist>
+                        <option value='any make'>Any Make</option>
+                        <option value='alfa romeo'>Alfa Romeo</option>
+                        <option value='aston-martin'>Aston Martin</option>
+                        <option value='audi'>Audi</option>
+                        <option value='bentley'>Bentley</option>
+                    </datalist>
+                </select><br>
+                <select>
+                    <datalist>
+                        <option value='any model'>Any Model</option>
+                        <option value='model1'>Model 1</option>
+                        <option value='model2'>Model 2</option>
+                        <option value='audi'>Model 3</option>
+                        <option value='bentley'>Model 4</option>
+                    </datalist>
+                </select><br>
+                <select>
+                    <datalist>
+                        <option value='any type'>Any Type</option>
+                        <option value='alfa romeo'>Alfa Romeo</option>
+                        <option value='aston-martin'>Aston Martin</option>
+                        <option value='audi'>Audi</option>
+                        <option value='bentley'>Bentley</option>
+                    </datalist>
+                </select>
+                <input type='range' class='filter-range'>
+                <button class='filter-button'>Submit Filter</button>
+            </form>
+            <div class='carousel-nav'>
+                <i class="far fa-circle carousel-active circle1"></i>
+                <i class="far fa-circle circle2"></i>
+                <i class="far fa-circle circle3"></i>
             </div>
         </div>
     </section>

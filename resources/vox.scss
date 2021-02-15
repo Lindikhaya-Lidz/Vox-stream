@@ -22,10 +22,14 @@ ul{
     list-style:none;
 }
 
-
-//**start of the menu bar 
+//***Animations ***
+@keyframes pop-effect{
+    0%{}
+}
+//**start of the nav secton***
 nav{
     margin:12px;
+
     div.burger{
         width:25px;
         div{
@@ -49,7 +53,7 @@ nav{
         position:relative;
         bottom:80px;
         width:10px;
-        left:95%;
+        left:93%;
         div{
             background-color:$primary-icon-color;
             width:7px;
@@ -66,7 +70,8 @@ nav{
        }
     }
 }
-//### end of the menu bar###
+//### end of the nav section ##
+
 
 //***start of the carousel section###
 .carousel-section{
@@ -82,13 +87,15 @@ nav{
         padding:20%;
         position:relative;
         top:20px;
-
+        max-height:700px;
+        
+        //**start of the mobile menu container***
         .mobile-menu{
             list-style:none;
             top:0%;
             background-color:rgb(252, 248, 248);
             color:rgb(241, 236, 236);
-            z-index:12;
+            z-index:2;
             position:fixed;
             width:70%;
             height:130%;
@@ -98,14 +105,18 @@ nav{
             padding:14%;
             padding-left:20%;
             display:none;
+            animation-name:pop-effect;
+
             .menu{
                // list-style:none;
                font-size:0.7em;
                position:relative;
+               
+               //***start of active ***
                .active{
                    background-color:$primary-color;
                    padding:0.1px;
-                   width:223%;
+                   width:230%;
                    position:relative;
                    right:60px;
                    margin-bottom:12px;
@@ -114,19 +125,28 @@ nav{
                             color:$secondary-color;
                             margin:10px;
                             width:10px;
+                        }
                 }
+                //### end of active
+                .menu-search{
+                    a{
+                        i{
+                            font-size:13px;
+                            padding-left:13px;
+                        }
+                    }
                 }
                 li{    
                     padding-bottom:40px;
                     position:relative;
                     right:50px;
 
-                    &:hover{
+                    /*&:hover{
                         background-color:$primary-color;
                         color:$secondary-color;
                         position:relative;
                         right:60px;   
-                      }  
+                      }*/ 
                     a{
                     color:rgb(121, 119, 119);
                     display:block;                    
@@ -135,12 +155,15 @@ nav{
             }
             .close{
                 position:relative;
-                bottom:330px;
+                bottom:380px;
                 color:rgb(122, 116, 116);
                 left:120%;
                 font-size:18px;
             }
         }
+        //### end of the mobile menu container###
+
+        //***start of the contacts and signin container***
         .contacts-signin{
             background-color:rgb(241, 236, 236);
             position:absolute;
@@ -165,6 +188,9 @@ nav{
             }
         }
     }
+    //###end of the contacts and signin container###
+
+    //***start of the carousel text***
     .carousel-text{
         position:relative;
         right:25%;
@@ -173,7 +199,7 @@ nav{
         .dream-car{
             font-size:1.4rem;     
         }
-        .bmw{
+        .Car-brand{
             font-size:2.5rem;
             padding-top:10px;
             padding-bottom:10px;
@@ -213,4 +239,52 @@ nav{
         }
 
     }
+    .filtered-search-form{
+        background-color:rgb(199, 199, 199);
+        opacity:0.8;
+        padding:12px;
+        position:relative;
+        left:33%;
+        bottom:30vh;
+        z-index:3;
+        display:none;
+        select{
+            width:100%;
+            background-color:lightgray;
+            option{
+                width:10%;
+            }
+        }
+        .filter-range{
+            width:100%;
+        }
+        .filter-button{
+            margin-left:30%;
+            background-color:$primary-color;
+            color:$secondary-color;
+            border:none;
+            padding:7px;
+        }
+    }
+    //###end of the carousel-text###
+    .carousel-nav{
+        position:relative;
+        bottom:33px;
+        left:55px;
+        padding:10px;
+        font-size:1.3em;
+        .carousel-active{
+            background-color:$primary-color;
+            border-radius:100%;
+            height:5spx;
+        }
+    }
+}
+//### end of the carousel section ###
+
+//*** media queries***
+
+//large mobile devices
+@media (min-width:360px){
+    
 }
