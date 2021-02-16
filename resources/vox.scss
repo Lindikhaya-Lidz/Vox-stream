@@ -131,8 +131,8 @@ nav{
                 .menu-search{
                     a{
                         i{
-                            font-size:13px;
-                            padding-left:13px;
+                            //font-size:13px;
+                            padding-left:-5px;
                         }
                     }
                 }
@@ -319,19 +319,35 @@ nav{
         padding-top:50px;
     }
 }
+//### end of the review section###
+
 .poster{
     background-image: url('media/longroad.jpg');
     background-size:100% 100%;
-    padding-bottom:100px;
+    background-repeat:no-repeat;
+    color:$secondary-color;
+    text-align:center;
+    padding:10px;
     img{
-        width:70%;
-        padding-left:30%;
+        width:30%;
     }
-}
+    .poster-text{
+        margin-right:17%;
+        margin-left:17%;
+        .welcome{
+            font-size:10px;
+        }
+        .needs{
+            font-size:2em;
+            font-weight:bold;
+        }
+        p{
+            font-size:0.9em;
+        }
 
+    }
+   
+}
 //*** media queries***
 
 //large mobile devices
-@media (min-width:360px){
-    
-}
