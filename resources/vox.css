@@ -104,8 +104,9 @@ nav .contacts-signin ul {
   list-style: none;
   top: 0%;
   background-color: #fcf8f8;
-  color: #f1ecec;
-  z-index: 2;
+  color: #ebdfdf;
+  opacity: 0.9;
+  z-index: 5;
   position: fixed;
   width: 70%;
   height: 130%;
@@ -122,21 +123,20 @@ nav .contacts-signin ul {
 .carousel-section .carousel .mobile-menu .menu {
   font-size: 0.7em;
   position: relative;
-}
-
-.carousel-section .carousel .mobile-menu .menu .active {
-  background-color: #ff7300;
-  padding: 0.1px;
-  width: 230%;
-  position: relative;
-  right: 60px;
-  margin-bottom: 12px;
-}
-
-.carousel-section .carousel .mobile-menu .menu .active a {
-  color: #faf4f4;
-  margin: 10px;
-  width: 10px;
+  /*.active{
+                   background-color:$primary-color;
+                   padding:0.1px;
+                   //width:10rem;
+                   right:60px;
+                   margin-bottom:12px;
+                   padding-right:240%;
+                   
+                        a{
+                            color:$secondary-color;
+                            margin:10px;
+                            width:10px;
+                        }
+                }*/
 }
 
 .carousel-section .carousel .mobile-menu .menu .menu-search a i {
@@ -147,12 +147,6 @@ nav .contacts-signin ul {
   padding-bottom: 40px;
   position: relative;
   right: 50px;
-  /*&:hover{
-                        background-color:$primary-color;
-                        color:$secondary-color;
-                        position:relative;
-                        right:60px;   
-                      }*/
 }
 
 .carousel-section .carousel .mobile-menu .menu li a {
@@ -190,6 +184,38 @@ nav .contacts-signin ul {
 .carousel-section .carousel .contacts-signin ul li a {
   color: #888585;
   text-decoration: underline;
+}
+
+.carousel-section .carousel-buttons {
+  display: none;
+  overflow-x: hidden;
+}
+
+.carousel-section .carousel-buttons .button-left {
+  float: left;
+  background-color: black;
+  padding: 3%;
+  opacity: 0.8;
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  right: 95%;
+  padding-left: 20em;
+}
+
+.carousel-section .carousel-buttons .button-right {
+  float: right;
+  background-color: black;
+  padding: 3%;
+  opacity: 0.8;
+  font-size: 1.5em;
+  position: absolute;
+  left: 94%;
+  top: 29%;
+  padding: 3%;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 .carousel-section .carousel-text {
@@ -361,5 +387,72 @@ nav .contacts-signin ul {
 
 .poster .poster-text p {
   font-size: 0.9em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1em;
+  color: #636060;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.offers-category {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.offers-category hr {
+  width: 70%;
+}
+
+.list-offers {
+  border-left: 5px solid #c5c4c4;
+  margin: 9%;
+  border-bottom: 1px solid lightgray;
+  color: #6d6969;
+  font-weight: bold;
+}
+
+.list-offers li {
+  padding: 6%;
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+  right: 40px;
+}
+
+@media (min-width: 500px) {
+  .carousel-section .carousel .mobile-menu .menu .active {
+    width: 193%;
+  }
+  .carousel-section .carousel-nav {
+    display: none;
+  }
+  .carousel-section .carousel-buttons {
+    display: inline;
+  }
+  .reviews {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 15px;
+  }
+  .reviews .of-review2, .reviews .of-review3 {
+    padding-top: 0;
+  }
+  .reviews .of-review3 .read-more {
+    margin-bottom: 10px;
+  }
+  .offers-category {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .offers-category hr {
+    display: none;
+  }
 }
 /*# sourceMappingURL=vox.css.map */

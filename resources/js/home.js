@@ -53,18 +53,20 @@ function carouselNav(){
        carBrand.textContent = 'BMW M5 GRAND';
        modelYear.textContent = '2017';
        price.textContent = '$64,000'; 
-   })
+   });
+
    circle2.addEventListener('click', ()=> {
       carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.jpg)';
       modelYear.textContent = '1968';
       carBrand.textContent = 'Dodge chardger';
       price.textContent = '$35,000'; 
    });
+   
    circle3.addEventListener('click',()=>{
        carousel.style.backgroundImage = 'url(resources/media/bmw325_4.jpg)';
-       carBrand.textContent = 'BMW ZAR 325is'
+       carBrand.textContent = 'BMW ZAR 7 325is'
        modelYear.textContent = '1986';
-       price.textContent = '$55,000';       
+       price.textContent = '$55,000';      
    });
 }
 carouselNav();

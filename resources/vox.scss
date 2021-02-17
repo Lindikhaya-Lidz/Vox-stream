@@ -1,6 +1,13 @@
 $primary-icon-color:rgb(75, 71, 71);
 $primary-color:rgb(255, 115, 0);
 $secondary-color:rgb(250, 244, 244);
+$content-separate:40px;
+@mixin carousel-buttons-utils{
+    background-color:black;
+    padding:3%;
+    opacity:0.8;
+    font-size:1.5em;
+}
 //### resets###
 html{
     box-sizing:border-box;
@@ -94,8 +101,9 @@ nav{
             list-style:none;
             top:0%;
             background-color:rgb(252, 248, 248);
-            color:rgb(241, 236, 236);
-            z-index:2;
+            color:rgb(235, 223, 223);
+            opacity:0.9;
+            z-index:5;
             position:fixed;
             width:70%;
             height:130%;
@@ -113,20 +121,20 @@ nav{
                position:relative;
                
                //***start of active ***
-               .active{
+               /*.active{
                    background-color:$primary-color;
                    padding:0.1px;
-                   width:230%;
-                   position:relative;
+                   //width:10rem;
                    right:60px;
                    margin-bottom:12px;
+                   padding-right:240%;
                    
                         a{
                             color:$secondary-color;
                             margin:10px;
                             width:10px;
                         }
-                }
+                }*/
                 //### end of active
                 .menu-search{
                     a{
@@ -141,12 +149,6 @@ nav{
                     position:relative;
                     right:50px;
 
-                    /*&:hover{
-                        background-color:$primary-color;
-                        color:$secondary-color;
-                        position:relative;
-                        right:60px;   
-                      }*/ 
                     a{
                     color:rgb(121, 119, 119);
                     display:block;                    
@@ -189,6 +191,30 @@ nav{
         }
     }
     //###end of the contacts and signin container###
+    //**start of the carousel-buttons container***
+      .carousel-buttons{
+          display:none;
+          overflow-x:hidden;
+          .button-left{
+              float:left;
+              @include carousel-buttons-utils;
+              position:absolute;
+              z-index:3;
+              top:30%;
+              right:95%;
+              padding-left:20em;
+            }
+            .button-right{
+              float:right;
+              @include carousel-buttons-utils;
+              position:absolute;
+              left:94%;
+              top:29%;
+              padding:3%;
+              transition:width 1s;
+            }
+    }
+    //### End of the carousel buttons container
 
     //***start of the carousel text***
     .carousel-text{
@@ -348,6 +374,84 @@ nav{
     }
    
 }
+//***start of the best offer section***
+
+h2{
+    text-align:center;
+    font-size:1em;
+    color:rgb(99, 96, 96);
+    font-weight:bold;
+    padding-top:$content-separate;
+}
+.offers-category{
+    padding-top:$content-separate;
+    text-align:center;
+    hr{
+        width:70%;
+    }
+    
+}
+.list-offers{
+   border-left:5px solid rgb(197, 196, 196);
+   margin:9%;
+   border-bottom:1px solid lightgray;
+   color:rgb(109, 105, 105);
+   font-weight:bold;
+   li{
+       padding:6%;
+       border-top:1px solid rgb(196, 196, 196);
+       position:relative;
+       right:40px;
+   }     
+}
 //*** media queries***
 
-//large mobile devices
+//landscape mobile devices an small tablets
+@media(min-width:500px){
+    //***start of the carousel section***
+    .carousel-section{
+        .carousel{
+            .mobile-menu{
+                .menu{
+                    .active{
+                        width:193%;
+                    }
+                }
+            }  
+        }
+        .carousel-nav{
+            display:none;
+        }
+        .carousel-buttons{
+            display:inline;
+        }
+    }
+    //###end of the carousel section ###
+
+    //***start of the reviews ***
+    .reviews{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-auto-rows:minmax(100px,auto);
+        gap:15px;
+        
+        .of-review2, .of-review3{
+            padding-top:0;
+        }
+        .of-review3{
+            .read-more{
+                margin-bottom:10px;
+            }
+
+        }
+    }
+    //### end of the reviews section###
+    .offers-category{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        hr{
+            display:none;
+        }
+    }
+    
+}
