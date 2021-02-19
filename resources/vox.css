@@ -37,6 +37,17 @@ nav {
   margin: 12px;
 }
 
+nav .contacts-signin-desktop {
+  margin-right: -50px;
+  margin-left: -20px;
+  display: none;
+  background-color: #ff7300;
+  color: #faf4f4;
+  position: relative;
+  bottom: 65px;
+  padding: 2%;
+}
+
 nav div.burger {
   width: 25px;
 }
@@ -56,6 +67,10 @@ nav .logo {
   position: relative;
   left: 65px;
   bottom: 40px;
+}
+
+nav .desktop-menu {
+  display: none;
 }
 
 nav .dot-bar {
@@ -577,7 +592,7 @@ h2 {
 .car-offers .car-offer1 .fa-road, .car-offers .car-offer1 .km {
   position: relative;
   left: 200%;
-  bottom: 10vh;
+  bottom: 7vh;
 }
 
 .car-offers .car-offer1 ul {
@@ -630,6 +645,37 @@ h2 {
   }
   .offers-category hr {
     display: none;
+  }
+}
+
+@media (min-width: 1042px) {
+  div.burger {
+    display: none;
+  }
+  .carousel-section .carousel .mobile-menu {
+    display: none;
+  }
+  nav {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  nav .desktop-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    bottom: 7vh;
+    left: 55vw;
+    color: gray;
+  }
+  nav .desktop-menu li {
+    padding-right: 5%;
+  }
+  nav .dot-bar {
+    display: none;
+  }
+  nav .contacts-signin-desktop {
+    display: block;
   }
 }
 

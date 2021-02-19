@@ -36,7 +36,16 @@ ul{
 //**start of the nav secton***
 nav{
     margin:12px;
-
+    .contacts-signin-desktop{
+        margin-right:-50px;
+        margin-left:-20px;
+        display:none;
+        background-color:$primary-color;
+        color:$secondary-color;
+        position:relative;
+        bottom:65px;
+        padding:2%;
+    }
     div.burger{
         width:25px;
         div{
@@ -55,6 +64,11 @@ nav{
         position:relative;
         left:65px;
         bottom:40px;
+    }
+
+    //Desktop Menu that displays on laptops and desktop
+    .desktop-menu{
+       display:none; 
     }
     .dot-bar{
         position:relative;
@@ -470,7 +484,7 @@ h2{
         .fa-road, .km{
             position:relative;
             left:200%;
-            bottom:10vh;
+            bottom:7vh;
         }
         ul{
             display:flex;
@@ -537,7 +551,47 @@ h2{
     }
 }
 
+//###landscape mobile devices an small tablets###
+
+@media(min-width:1042px){
+    div.burger{
+        display:none;
+    }
+    .carousel-section{
+        .carousel{
+            .mobile-menu{
+                display:none;
+            }
+        }
+    }
+    nav{
+      padding-top:50px;
+      padding-bottom:20px;
+
+      .desktop-menu{
+        display:flex;
+        position:relative;
+        bottom:7vh;
+        left:55vw;
+        color:gray;
+        li{
+            padding-right:5%;
+        } 
+      } 
+      .dot-bar{
+        display:none;
+       }
+       .contacts-signin-desktop{
+        display:block;       
+    } 
+    }
+    
+    
+}
+
+
 @media(min-width:1208px){
+    //**start of the sub-section class ***
     .sub-section{
         display:grid;
         grid-template-columns:repeat(2, 1fr);
@@ -554,5 +608,6 @@ h2{
             }
         }
     }
-    
+    //###end of the sub-section class ###
+
 }
