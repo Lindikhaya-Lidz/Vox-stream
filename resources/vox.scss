@@ -386,6 +386,12 @@ h2{
 .offers-category{
     padding-top:$content-separate;
     text-align:center;
+   div{
+       cursor:pointer;
+       &:hover{
+           color:rgb(141, 134, 134);
+       }
+   }
     hr{
         width:70%;
     }
@@ -402,7 +408,52 @@ h2{
        border-top:1px solid rgb(196, 196, 196);
        position:relative;
        right:40px;
+    
    }     
+}
+.car-offers{
+    margin:12px;
+   .car-offer-img{
+    width:100%;
+    height:35vh;
+    }
+    .car-offer1{
+        h6{
+            position:relative;
+            bottom:3.5vh;
+            font-weight:lighter;
+            color:gray;
+            font-style:italic;
+        }
+        h5{
+            position:relative;
+            bottom:4vh;
+        }
+        .car-offer-price{
+            color:$primary-color;
+            padding-left:5px;
+            font-weight:bold;
+        }
+        .fa-dollar-sign, .car-offer-price{
+           position:relative;
+           bottom:30px;
+        }
+        .fa-road, .km{
+            position:relative;
+            left:47%;
+            font-size:0.9em;
+            bottom:5vh;
+        }
+        ul{
+            display:flex;
+            color:gray;
+            justify-content:space-between;
+            position:relative;
+            right:30px;
+            font-size:0.7em;
+            bottom:25px;
+        }
+    }
 }
 //*** media queries***
 
@@ -451,6 +502,19 @@ h2{
         grid-template-columns:repeat(2,1fr);
         hr{
             display:none;
+        }
+    }
+    .sub-section{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:8%;
+        .car-offers{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:8%;
+        }
+        .car-offer1{
+            font-size:1em;
         }
     }
     

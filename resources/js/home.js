@@ -13,7 +13,6 @@ dotMenuBar.addEventListener('click',()=> {
     }else{
         contactsAndSignin.style.display = 'none';
     }
-    console.log('I have been click');
 })
 
 burger.addEventListener('click',()=> {
