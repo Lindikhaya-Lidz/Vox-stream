@@ -95,6 +95,12 @@ nav{
         position:relative;
         top:20px;
         max-height:700px;
+        animation-name:appear;
+        animation-duration:2s;
+        @keyframes appear{
+            from{opacity:0.2};
+            to{opacity:10}
+        }
         
         //**start of the mobile menu container***
         .mobile-menu{
@@ -113,7 +119,12 @@ nav{
             padding:14%;
             padding-left:20%;
             display:none;
-            animation-name:pop-effect;
+            animation-name:slide-the-menu;
+            animation-duration:0.9s;
+            @keyframes slide-the-menu{
+                from{right:90vw};
+                to{right:30vw}
+            }
 
             .menu{
                // list-style:none;
@@ -160,7 +171,13 @@ nav{
                 bottom:380px;
                 color:rgb(122, 116, 116);
                 left:120%;
-                font-size:18px;
+                font-size:20px;
+                animation-name:rotate-close;
+                animation-duration:1s;
+                @keyframes rotate-close{
+                    from{transform:rotate(0deg)}
+                    to{transform:rotate(360deg)}
+                }
             }
         }
         //### end of the mobile menu container###
@@ -177,6 +194,17 @@ nav{
             height:30%;
             padding-bottom:30px;
             display:none;
+            animation-name:slide-in;
+            animation-duration:0.8s;
+            //animation for the slide in
+            @keyframes slide-in{
+                from{left:100%};
+                to{left:30%}
+            }
+            @keyframes slide-out{
+                from{left:30%};
+                to{left:100%}
+            }
             ul{
                 li{
                     padding-top:px;
@@ -412,22 +440,23 @@ h2{
    }     
 }
 .car-offers{
-    margin:12px;
+    margin:5%;
    .car-offer-img{
-    width:100%;
+    width:90vw;   
     height:35vh;
     }
     .car-offer1{
+        max-width:30vw;
         h6{
             position:relative;
-            bottom:3.5vh;
+            bottom:20px;
             font-weight:lighter;
             color:gray;
             font-style:italic;
         }
         h5{
             position:relative;
-            bottom:4vh;
+            bottom:2vh;
         }
         .car-offer-price{
             color:$primary-color;
@@ -440,18 +469,20 @@ h2{
         }
         .fa-road, .km{
             position:relative;
-            left:47%;
-            font-size:0.9em;
-            bottom:5vh;
+            left:200%;
+            bottom:10vh;
         }
         ul{
             display:flex;
             color:gray;
             justify-content:space-between;
             position:relative;
-            right:30px;
+            right:40px;
             font-size:0.7em;
-            bottom:25px;
+            bottom:35px;
+            li{
+                padding-right:25px;
+            }
         }
     }
 }
@@ -504,17 +535,23 @@ h2{
             display:none;
         }
     }
+}
+
+@media(min-width:1208px){
     .sub-section{
         display:grid;
         grid-template-columns:repeat(2, 1fr);
-        gap:8%;
+        gap:4%;
         .car-offers{
             display:grid;
             grid-template-columns:repeat(2,1fr);
-            gap:8%;
+            gap:20%;
         }
         .car-offer1{
             font-size:1em;
+            .fa-road, .km{
+                left:35%;
+            }
         }
     }
     

@@ -98,6 +98,28 @@ nav .contacts-signin ul {
   position: relative;
   top: 20px;
   max-height: 700px;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 10;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 10;
+  }
 }
 
 .carousel-section .carousel .mobile-menu {
@@ -116,8 +138,28 @@ nav .contacts-signin ul {
   padding: 14%;
   padding-left: 20%;
   display: none;
-  -webkit-animation-name: pop-effect;
-          animation-name: pop-effect;
+  -webkit-animation-name: slide-the-menu;
+          animation-name: slide-the-menu;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+}
+
+@-webkit-keyframes slide-the-menu {
+  from {
+    right: 90vw;
+  }
+  to {
+    right: 30vw;
+  }
+}
+
+@keyframes slide-the-menu {
+  from {
+    right: 90vw;
+  }
+  to {
+    right: 30vw;
+  }
 }
 
 .carousel-section .carousel .mobile-menu .menu {
@@ -159,7 +201,33 @@ nav .contacts-signin ul {
   bottom: 380px;
   color: #7a7474;
   left: 120%;
-  font-size: 18px;
+  font-size: 20px;
+  -webkit-animation-name: rotate-close;
+          animation-name: rotate-close;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes rotate-close {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-close {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .carousel-section .carousel .contacts-signin {
@@ -173,6 +241,46 @@ nav .contacts-signin ul {
   height: 30%;
   padding-bottom: 30px;
   display: none;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 100%;
+  }
 }
 
 .carousel-section .carousel .contacts-signin ul li {
@@ -430,17 +538,21 @@ h2 {
 }
 
 .car-offers {
-  margin: 12px;
+  margin: 5%;
 }
 
 .car-offers .car-offer-img {
-  width: 100%;
+  width: 90vw;
   height: 35vh;
+}
+
+.car-offers .car-offer1 {
+  max-width: 30vw;
 }
 
 .car-offers .car-offer1 h6 {
   position: relative;
-  bottom: 3.5vh;
+  bottom: 20px;
   font-weight: lighter;
   color: gray;
   font-style: italic;
@@ -448,7 +560,7 @@ h2 {
 
 .car-offers .car-offer1 h5 {
   position: relative;
-  bottom: 4vh;
+  bottom: 2vh;
 }
 
 .car-offers .car-offer1 .car-offer-price {
@@ -464,9 +576,8 @@ h2 {
 
 .car-offers .car-offer1 .fa-road, .car-offers .car-offer1 .km {
   position: relative;
-  left: 47%;
-  font-size: 0.9em;
-  bottom: 5vh;
+  left: 200%;
+  bottom: 10vh;
 }
 
 .car-offers .car-offer1 ul {
@@ -478,9 +589,13 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  right: 30px;
+  right: 40px;
   font-size: 0.7em;
-  bottom: 25px;
+  bottom: 35px;
+}
+
+.car-offers .car-offer1 ul li {
+  padding-right: 25px;
 }
 
 @media (min-width: 500px) {
@@ -516,22 +631,28 @@ h2 {
   .offers-category hr {
     display: none;
   }
+}
+
+@media (min-width: 1208px) {
   .sub-section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 8%;
+    gap: 4%;
   }
   .sub-section .car-offers {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 8%;
+    gap: 20%;
   }
   .sub-section .car-offer1 {
     font-size: 1em;
+  }
+  .sub-section .car-offer1 .fa-road, .sub-section .car-offer1 .km {
+    left: 35%;
   }
 }
 /*# sourceMappingURL=vox.css.map */

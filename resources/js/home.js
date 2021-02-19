@@ -10,8 +10,11 @@ dotMenuBar.addEventListener('click',()=> {
     let contactsAndSignin = document.querySelector('.contacts-signin');
     if(contactsAndSignin.style.display ==='none'){
         contactsAndSignin.style.display = 'inline-block';
+        
     }else{
         contactsAndSignin.style.display = 'none';
+        //contactsAndSignin.style.animationName = 'slide-out';
+       
     }
 })
 
@@ -48,6 +51,7 @@ function carouselNav(){
    const modelYear = document.querySelector('.model-year');
    const price = document.querySelector('.price');
    circle1.addEventListener('click',()=>{
+       carousel.style.animationName = 'appear';
        carousel.style.backgroundImage = 'url(resources/media/bmw3.jpg)';
        carBrand.textContent = 'BMW M5 GRAND';
        modelYear.textContent = '2017';
@@ -55,6 +59,7 @@ function carouselNav(){
    });
 
    circle2.addEventListener('click', ()=> {
+      carousel.style.animationName = 'appear';
       carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.jpg)';
       modelYear.textContent = '1968';
       carBrand.textContent = 'Dodge chardger';
@@ -62,6 +67,7 @@ function carouselNav(){
    });
    
    circle3.addEventListener('click',()=>{
+       carousel.style.animationName = 'appear'
        carousel.style.backgroundImage = 'url(resources/media/bmw325_4.jpg)';
        carBrand.textContent = 'BMW ZAR 7 325is'
        modelYear.textContent = '1986';
