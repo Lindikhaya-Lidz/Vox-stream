@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 0.9em;
   overflow-x: hidden;
 }
 
@@ -378,7 +379,7 @@ nav .contacts-signin ul {
   background-color: #faf4f4;
   width: 150px;
   margin-top: 35px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .carousel-section .carousel-text .see-details a {
@@ -390,7 +391,7 @@ nav .contacts-signin ul {
   background-color: #ff7300;
   padding: 10%;
   padding-right: 15.8px;
-  margin-left: 28px;
+  margin-left: 33px;
   -webkit-transition: rotate(180deg);
   transition: rotate(180deg);
 }
@@ -475,6 +476,7 @@ nav .contacts-signin ul {
   padding-left: 10px;
   position: relative;
   left: 12px;
+  top: 1px;
 }
 
 .reviews .of-review2, .reviews .of-review3 {
@@ -531,6 +533,7 @@ h2 {
 
 .offers-category div:hover {
   color: #8d8686;
+  text-decoration: underline;
 }
 
 .offers-category hr {
@@ -561,10 +564,6 @@ h2 {
   height: 35vh;
 }
 
-.car-offers .car-offer1 {
-  max-width: 30vw;
-}
-
 .car-offers .car-offer1 h6 {
   position: relative;
   bottom: 20px;
@@ -591,7 +590,7 @@ h2 {
 
 .car-offers .car-offer1 .fa-road, .car-offers .car-offer1 .km {
   position: relative;
-  left: 200%;
+  left: 60%;
   bottom: 7vh;
 }
 
@@ -677,6 +676,17 @@ h2 {
   nav .contacts-signin-desktop {
     display: block;
   }
+  nav .contacts-signin-desktop a {
+    margin-right: 2%;
+  }
+  nav .contacts-signin-desktop .fa-facebook-f, nav .contacts-signin-desktop .fa-twitter, nav .contacts-signin-desktop .fa-google-plus-g {
+    display: none;
+  }
+  nav .contacts-signin-desktop .SignRegister {
+    position: relative;
+    left: 85%;
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: 1208px) {
@@ -685,20 +695,25 @@ h2 {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 4%;
+    grid-gap: auto;
   }
   .sub-section .car-offers {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 20%;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 50px;
+  }
+  .sub-section .car-offers .car-offer1 .car-offer-img {
+    width: 100%;
   }
   .sub-section .car-offer1 {
     font-size: 1em;
   }
   .sub-section .car-offer1 .fa-road, .sub-section .car-offer1 .km {
     left: 35%;
+    font-size: 0.7em;
   }
 }
 /*# sourceMappingURL=vox.css.map */

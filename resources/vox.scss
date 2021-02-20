@@ -18,7 +18,8 @@ html{
 
 body{
     margin:0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    font-size:0.9em;
     overflow-x:hidden;   
 }
 a{
@@ -289,7 +290,7 @@ nav{
             background-color:$secondary-color;
             width:150px;
             margin-top:35px;
-            padding-left:10px;
+            padding-left:15px;
 
            // padding-left:2%; 
             a{
@@ -301,7 +302,7 @@ nav{
                 background-color:$primary-color;
                 padding:10%;
                 padding-right:15.8px;
-                margin-left:28px;
+                margin-left:33px;
                 transition:rotate(180deg);
             }
         }
@@ -380,6 +381,7 @@ nav{
                 padding-left:10px;
                 position:relative;
                 left:12px;
+                top:1px;
             }
         }
     }
@@ -432,6 +434,7 @@ h2{
        cursor:pointer;
        &:hover{
            color:rgb(141, 134, 134);
+           text-decoration:underline;
        }
    }
     hr{
@@ -460,7 +463,7 @@ h2{
     height:35vh;
     }
     .car-offer1{
-        max-width:30vw;
+        //max-width:30vw;
         h6{
             position:relative;
             bottom:20px;
@@ -483,7 +486,7 @@ h2{
         }
         .fa-road, .km{
             position:relative;
-            left:200%;
+            left:60%;
             bottom:7vh;
         }
         ul{
@@ -581,9 +584,24 @@ h2{
       .dot-bar{
         display:none;
        }
+       //**start of the contacts-signin-desktop** 
        .contacts-signin-desktop{
-        display:block;       
-    } 
+            display:block;
+
+            a{
+                margin-right:2%;
+            }
+            .fa-facebook-f, .fa-twitter, .fa-google-plus-g{
+                display:none;
+            }
+
+            .SignRegister{
+                position:relative;
+                left:85%;
+                text-decoration:underline;
+            }               
+        }
+        //###end of the contacts-signin-desktop### 
     }
     
     
@@ -595,16 +613,23 @@ h2{
     .sub-section{
         display:grid;
         grid-template-columns:repeat(2, 1fr);
-        gap:4%;
+        grid-gap:auto;
         .car-offers{
             display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:20%;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-auto-rows:minmax(100px, auto);
+            grid-gap:50px;
+            .car-offer1{
+                .car-offer-img{
+                    width:100%;
+                }
+            }
         }
         .car-offer1{
             font-size:1em;
             .fa-road, .km{
                 left:35%;
+                font-size:0.7em;
             }
         }
     }
