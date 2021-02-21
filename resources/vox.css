@@ -565,16 +565,16 @@ h2 {
   right: 40px;
 }
 
-.car-offers {
+.latest-on-sale {
   margin: 5%;
 }
 
-.car-offers .car-offer-img {
+.latest-on-sale .car-offer-img {
   width: 90vw;
   height: 55vh;
 }
 
-.car-offers .car-offer-img:hover {
+.latest-on-sale .car-offer-img:hover {
   -webkit-filter: grayscale(70%);
           filter: grayscale(70%);
   -webkit-box-shadow: 7px 7px 7px gray;
@@ -585,7 +585,7 @@ h2 {
   width: 102%;
 }
 
-.car-offers .car-offer1 h6 {
+.latest-on-sale .car-offer1 h6 {
   position: relative;
   bottom: 20px;
   font-weight: lighter;
@@ -593,29 +593,29 @@ h2 {
   font-style: italic;
 }
 
-.car-offers .car-offer1 h5 {
+.latest-on-sale .car-offer1 h5 {
   position: relative;
   bottom: 2vh;
 }
 
-.car-offers .car-offer1 .car-offer-price {
+.latest-on-sale .car-offer1 .car-offer-price {
   color: #ff7300;
   padding-left: 5px;
   font-weight: bold;
 }
 
-.car-offers .car-offer1 .fa-dollar-sign, .car-offers .car-offer1 .car-offer-price {
+.latest-on-sale .car-offer1 .fa-dollar-sign, .latest-on-sale .car-offer1 .car-offer-price {
   position: relative;
   bottom: 30px;
 }
 
-.car-offers .car-offer1 .fa-road, .car-offers .car-offer1 .km {
+.latest-on-sale .car-offer1 .fa-road, .latest-on-sale .car-offer1 .km {
   position: relative;
   left: 60%;
   bottom: 7vh;
 }
 
-.car-offers .car-offer1 ul {
+.latest-on-sale .car-offer1 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,7 +629,7 @@ h2 {
   bottom: 35px;
 }
 
-.car-offers .car-offer1 ul li {
+.latest-on-sale .car-offer1 ul li {
   padding-right: 25px;
 }
 
@@ -718,7 +718,7 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     grid-gap: auto;
   }
-  .sub-section .car-offers {
+  .sub-section .latest-on-sale {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
@@ -726,7 +726,7 @@ h2 {
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 50px;
   }
-  .sub-section .car-offers .car-offer1 .car-offer-img {
+  .sub-section .latest-on-sale .car-offer1 .car-offer-img {
     width: 100%;
     height: 45vh;
   }
