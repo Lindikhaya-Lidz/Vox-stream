@@ -8,6 +8,13 @@ $content-separate:40px;
     opacity:0.8;
     font-size:1.5em;
 }
+@mixin on-img-hover{
+    filter:grayscale(70%);
+    box-shadow: 7px 7px 7px gray;
+    border-radius:5px;
+    transition:width 0.3s;
+    width:102%;
+}
 //### resets###
 html{
     box-sizing:border-box;
@@ -36,7 +43,8 @@ ul{
 }
 //**start of the nav secton***
 nav{
-    margin:12px;
+    margin:15px;
+    padding-top:2%;
     .contacts-signin-desktop{
         margin-right:-50px;
         margin-left:-20px;
@@ -51,12 +59,11 @@ nav{
         width:25px;
         div{
             background-color:$primary-icon-color;
-            width:24px;
+            width:35px;
             height:5px;
             margin:5px;
             border-radius:9px;
             position:relative;
-            left:7px;
         }
     }
     
@@ -75,7 +82,7 @@ nav{
         position:relative;
         bottom:80px;
         width:10px;
-        left:93%;
+        left:96%;
         div{
             background-color:$primary-icon-color;
             width:7px;
@@ -235,7 +242,7 @@ nav{
     }
     //###end of the contacts and signin container###
     //**start of the carousel-buttons container***
-      .carousel-buttons{
+        .carousel-buttons{
           display:none;
           overflow-x:hidden;
           .button-left{
@@ -254,7 +261,6 @@ nav{
               left:94%;
               top:29%;
               padding:3%;
-              transition:width 1s;
             }
     }
     //### End of the carousel buttons container
@@ -291,8 +297,9 @@ nav{
             width:150px;
             margin-top:35px;
             padding-left:15px;
+            max-height:44px;
 
-           // padding-left:2%; 
+            // padding-left:2%;
             a{
                 color:$primary-color;
                 font-size:0.9em;
@@ -301,7 +308,7 @@ nav{
             .fa-angle-right{
                 background-color:$primary-color;
                 padding:10%;
-                padding-right:15.8px;
+                padding-right:16px;
                 margin-left:33px;
                 transition:rotate(180deg);
             }
@@ -360,6 +367,9 @@ nav{
     .review1{
         .review-img{
             width:100%;
+            &:hover{
+              @include on-img-hover;  
+            }
         }
         .reviewer{
             font-size:12px;
@@ -427,6 +437,8 @@ h2{
     font-weight:bold;
     padding-top:$content-separate;
 }
+
+//***start of the offers category ***
 .offers-category{
     padding-top:$content-separate;
     text-align:center;
@@ -442,6 +454,7 @@ h2{
     }
     
 }
+///### end of the offers category###
 .list-offers{
    border-left:5px solid rgb(197, 196, 196);
    margin:9%;
@@ -460,7 +473,11 @@ h2{
     margin:5%;
    .car-offer-img{
     width:90vw;   
-    height:35vh;
+    height:55vh;
+    &:hover{
+        @include on-img-hover;
+        
+    }
     }
     .car-offer1{
         //max-width:30vw;
@@ -622,6 +639,7 @@ h2{
             .car-offer1{
                 .car-offer-img{
                     width:100%;
+                    height:45vh;
                 }
             }
         }

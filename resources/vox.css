@@ -35,7 +35,8 @@ ul {
 }
 
 nav {
-  margin: 12px;
+  margin: 15px;
+  padding-top: 2%;
 }
 
 nav .contacts-signin-desktop {
@@ -55,12 +56,11 @@ nav div.burger {
 
 nav div.burger div {
   background-color: #4b4747;
-  width: 24px;
+  width: 35px;
   height: 5px;
   margin: 5px;
   border-radius: 9px;
   position: relative;
-  left: 7px;
 }
 
 nav .logo {
@@ -78,7 +78,7 @@ nav .dot-bar {
   position: relative;
   bottom: 80px;
   width: 10px;
-  left: 93%;
+  left: 96%;
 }
 
 nav .dot-bar div {
@@ -338,8 +338,6 @@ nav .contacts-signin ul {
   left: 94%;
   top: 29%;
   padding: 3%;
-  -webkit-transition: width 1s;
-  transition: width 1s;
 }
 
 .carousel-section .carousel-text {
@@ -380,6 +378,7 @@ nav .contacts-signin ul {
   width: 150px;
   margin-top: 35px;
   padding-left: 15px;
+  max-height: 44px;
 }
 
 .carousel-section .carousel-text .see-details a {
@@ -390,7 +389,7 @@ nav .contacts-signin ul {
 .carousel-section .carousel-text .see-details .fa-angle-right {
   background-color: #ff7300;
   padding: 10%;
-  padding-right: 15.8px;
+  padding-right: 16px;
   margin-left: 33px;
   -webkit-transition: rotate(180deg);
   transition: rotate(180deg);
@@ -450,6 +449,17 @@ nav .contacts-signin ul {
 
 .reviews .review1 .review-img {
   width: 100%;
+}
+
+.reviews .review1 .review-img:hover {
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+  -webkit-box-shadow: 7px 7px 7px gray;
+          box-shadow: 7px 7px 7px gray;
+  border-radius: 5px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 102%;
 }
 
 .reviews .review1 .reviewer {
@@ -561,7 +571,18 @@ h2 {
 
 .car-offers .car-offer-img {
   width: 90vw;
-  height: 35vh;
+  height: 55vh;
+}
+
+.car-offers .car-offer-img:hover {
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+  -webkit-box-shadow: 7px 7px 7px gray;
+          box-shadow: 7px 7px 7px gray;
+  border-radius: 5px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 102%;
 }
 
 .car-offers .car-offer1 h6 {
@@ -707,6 +728,7 @@ h2 {
   }
   .sub-section .car-offers .car-offer1 .car-offer-img {
     width: 100%;
+    height: 45vh;
   }
   .sub-section .car-offer1 {
     font-size: 1em;
