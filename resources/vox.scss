@@ -117,8 +117,9 @@ nav{
         position:relative;
         top:20px;
         max-height:700px;
-        animation-name:appear;
+        animation-name:none;
         animation-duration:2s;
+
         @keyframes appear{
             from{opacity:0.2};
             to{opacity:10}
@@ -520,6 +521,8 @@ h2{
         }
     }
 }
+
+
 //*** media queries***
 
 //landscape mobile devices an small tablets
@@ -562,13 +565,8 @@ h2{
         }
     }
     //### end of the reviews section###
-    .offers-category{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        hr{
-            display:none;
-        }
-    }
+
+    
 }
 
 //###landscape mobile devices an small tablets###
@@ -627,6 +625,16 @@ h2{
 
 @media(min-width:1208px){
     //**start of the sub-section class ***
+    //**start of the offers category***
+    .offers-category{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        hr{
+            display:none;
+        }
+    }
+    //### end of the offers category
+
     .sub-section{
         display:grid;
         grid-template-columns:repeat(2, 1fr);

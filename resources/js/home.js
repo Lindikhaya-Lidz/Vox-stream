@@ -1,3 +1,5 @@
+
+
 const burger = document.querySelector('.burger');
 const CloseMenu = document.querySelector('.close');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -5,6 +7,8 @@ const carouselText = document.querySelector('.carousel-text');
 const dotMenuBar = document.querySelector('.dot-bar');
 const menuSearch = document.querySelector('.menu-search');
 const filteredSearch = document.querySelector('.filtered-search-form');
+const carousel =  document.querySelector('.carousel');
+
 
 dotMenuBar.addEventListener('click',()=> {
     let contactsAndSignin = document.querySelector('.contacts-signin');
@@ -42,7 +46,6 @@ menuSearch.addEventListener('click', ()=>{
 })
 
 function carouselNav(){
-   const carousel =  document.querySelector('.carousel');
    const carouselNav = document.querySelector('.carousel-nav');
    const circle1 = document.querySelector('.circle1');
    const circle2 = document.querySelector('.circle2');
@@ -51,7 +54,6 @@ function carouselNav(){
    const modelYear = document.querySelector('.model-year');
    const price = document.querySelector('.price');
    circle1.addEventListener('click',()=>{
-       carousel.style.animationName = 'appear';
        carousel.style.backgroundImage = 'url(resources/media/bmw3.jpg)';
        carBrand.textContent = 'BMW M5 GRAND';
        modelYear.textContent = '2017';
@@ -59,7 +61,7 @@ function carouselNav(){
    });
 
    circle2.addEventListener('click', ()=> {
-      carousel.style.animationName = 'appear';
+      carousel.style.animationName = 'appear'; 
       carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.jpg)';
       modelYear.textContent = '1968';
       carBrand.textContent = 'Dodge chardger';
@@ -67,7 +69,6 @@ function carouselNav(){
    });
    
    circle3.addEventListener('click',()=>{
-       carousel.style.animationName = 'appear'
        carousel.style.backgroundImage = 'url(resources/media/bmw325_4.jpg)';
        carBrand.textContent = 'BMW ZAR 7 325is'
        modelYear.textContent = '1986';
@@ -75,3 +76,28 @@ function carouselNav(){
    });
 }
 carouselNav();
+
+function navButtons(){
+    let index = 0;
+    const leftButton = document.querySelector('.button-left');
+    const rightButton = document.querySelector('.button-right');
+    let urlList = ['url(resources/media/bmw3.jpg)', 'url(resources/media/dodge-charger3.jpg)', 'url(resources/media/bmw325_4.jpg)'];
+    leftButton.onclick = ()=>{
+        if(index <= -0){
+
+        }else{
+          carousel.style.backgroundImage = urlList[index--]  
+        }
+        console.log('left button clicked')
+    } 
+    rightButton.onclick = ()=>{
+        if(index >= urlList.length){
+
+        }else{
+            carousel.style.backgroundImage = urlList[index++];
+        }
+        console.log('right button clicked')
+    }
+}
+
+navButtons();

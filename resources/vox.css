@@ -114,8 +114,8 @@ nav .contacts-signin ul {
   position: relative;
   top: 20px;
   max-height: 700px;
-  -webkit-animation-name: appear;
-          animation-name: appear;
+  -webkit-animation-name: none;
+          animation-name: none;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
@@ -657,15 +657,6 @@ h2 {
   .reviews .of-review3 .read-more {
     margin-bottom: 10px;
   }
-  .offers-category {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .offers-category hr {
-    display: none;
-  }
 }
 
 @media (min-width: 1042px) {
@@ -711,6 +702,15 @@ h2 {
 }
 
 @media (min-width: 1208px) {
+  .offers-category {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .offers-category hr {
+    display: none;
+  }
   .sub-section {
     display: -ms-grid;
     display: grid;
