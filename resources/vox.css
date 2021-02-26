@@ -107,8 +107,8 @@ nav .contacts-signin ul {
   position: relative;
   top: 20px;
   max-height: 700px;
-  -webkit-animation-name: none;
-          animation-name: none;
+  -webkit-animation-name: appear;
+          animation-name: appear;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
@@ -685,19 +685,19 @@ h2 {
     text-decoration: underline;
     font-weight: lighter;
     position: relative;
-    right: 42%;
     color: black;
     font-size: 0.5em;
   }
   .carousel-section .desktop-filter-search .filter-button {
     position: relative;
-    left: 10%;
+    right: 10%;
     top: 3vh;
-    padding-: 30%;
+    width: 65%;
   }
   nav {
     padding-top: 40px;
     padding-bottom: 20px;
+    font-size: 1.5em;
   }
   nav .desktop-menu {
     display: -webkit-box;

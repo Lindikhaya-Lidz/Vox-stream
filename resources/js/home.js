@@ -80,12 +80,15 @@ function navButtons(){
     const leftButton = document.querySelector('.button-left');
     const rightButton = document.querySelector('.button-right');
     let urlList = ['url(resources/media/bmw3.jpg)', 'url(resources/media/dodge-charger3.jpg)', 'url(resources/media/bmw325_4.jpg)'];
+
     leftButton.onclick = ()=>{
         if(index <= -0){
 
         }else{
             index--;
-          carousel.style.backgroundImage = urlList[index]  
+            carousel.style.animationName = 'appear';
+          carousel.style.backgroundImage = urlList[index]
+            
         }
     
     } 
@@ -94,6 +97,7 @@ function navButtons(){
 
         }else{
             index++
+            carousel.style.animationName = 'appear';
             carousel.style.backgroundImage = urlList[index];
         }
     }
