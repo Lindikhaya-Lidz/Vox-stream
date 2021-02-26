@@ -24,19 +24,9 @@ ul {
   list-style: none;
 }
 
-@-webkit-keyframes pop-effect {
-  0% {
-  }
-}
-
-@keyframes pop-effect {
-  0% {
-  }
-}
-
 nav {
   margin: 15px;
-  padding-top: 2%;
+  padding-top: 0%;
 }
 
 nav .contacts-signin-desktop {
@@ -104,6 +94,9 @@ nav .contacts-signin ul {
   color: #faf4f4;
   font-weight: bold;
   position: relative;
+  /*.desktop-filter-search{
+        display:inline-block;
+    }*/
 }
 
 .carousel-section .carousel {
@@ -251,7 +244,7 @@ nav .contacts-signin ul {
   position: absolute;
   bottom: 70%;
   z-index: 1;
-  left: 30%;
+  left: 43%;
   font-size: 10px;
   width: 70%;
   height: 30%;
@@ -268,7 +261,7 @@ nav .contacts-signin ul {
     left: 100%;
   }
   to {
-    left: 30%;
+    left: 40%;
   }
 }
 
@@ -277,7 +270,7 @@ nav .contacts-signin ul {
     left: 100%;
   }
   to {
-    left: 30%;
+    left: 40%;
   }
 }
 
@@ -402,7 +395,7 @@ nav .contacts-signin ul {
   position: relative;
   left: 33%;
   bottom: 30vh;
-  z-index: 3;
+  z-index: 5;
   display: none;
 }
 
@@ -666,8 +659,44 @@ h2 {
   .carousel-section .carousel .mobile-menu {
     display: none;
   }
+  .carousel-section .desktop-filter-search {
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    padding: 1%;
+    padding-top: 30px;
+    padding-bottom: 38%;
+    bottom: 19.5pc;
+    left: 36pc;
+    width: 40%;
+  }
+  .carousel-section .desktop-filter-search select {
+    padding: 2%;
+    margin: 7%;
+    width: 90%;
+  }
+  .carousel-section .desktop-filter-search .filter-range {
+    width: 80%;
+    position: relative;
+    left: 14%;
+    display: block;
+  }
+  .carousel-section .desktop-filter-search .reset-filter {
+    text-decoration: underline;
+    font-weight: lighter;
+    position: relative;
+    right: 52%;
+    color: black;
+    font-size: 0.5em;
+  }
+  .carousel-section .desktop-filter-search .filter-button {
+    position: relative;
+    left: 10%;
+    top: 3vh;
+    padding-: 30%;
+  }
   nav {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 20px;
   }
   nav .desktop-menu {
@@ -675,12 +704,18 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    bottom: 7vh;
+    bottom: 8vh;
     left: 55vw;
     color: gray;
   }
   nav .desktop-menu li {
     padding-right: 5%;
+    margin-bottom: -70px;
+    position: relative;
+    bottom: 15px;
+  }
+  nav .desktop-menu li a {
+    padding-left: 5px;
   }
   nav .dot-bar {
     display: none;
@@ -702,6 +737,9 @@ h2 {
 }
 
 @media (min-width: 1208px) {
+  .carousel-section .desktop-filter-search .reset-filter {
+    right: 45%;
+  }
   .offers-category {
     display: -ms-grid;
     display: grid;
@@ -736,6 +774,26 @@ h2 {
   .sub-section .car-offer1 .fa-road, .sub-section .car-offer1 .km {
     left: 35%;
     font-size: 0.7em;
+  }
+}
+
+@media (min-width: 1378px) {
+  .carousel-section .desktop-filter-search {
+    position: absolute;
+    bottom: 55pc;
+    width: 40%;
+    left: 47pc;
+    padding-bottom: 32%;
+    margin-top: -12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1666px) {
+  .carousel-section .carousel .desktop-filter-search {
+    padding-bottom: 30%;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=vox.css.map */

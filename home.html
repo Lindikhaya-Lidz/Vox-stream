@@ -30,10 +30,11 @@
             
             <img src='resources/media/logo4.png' alt='logo' class='logo'>
             <ul class='desktop-menu'>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Pages</a></li>
-                <li><a href='#'>Best offers</a></li>
-                <li><a href='#reviews'>Testimonials</a></li>
+                <li><i class="fas fa-home"></i><a href='#'></i>Home</a></li>
+                <li><i class="far fa-file"></i><a href='#'>Pages</a></li>
+                <li><i class="fas fa-hands"></i><a href='#offers'>Best offers</a></li>
+                <li><i class="far fa-comment-dots"></i><a href='#reviews'>Testimonials</a></li>
+
             </ul>
             <div class='dot-bar'>
                 <div></div>
@@ -74,7 +75,7 @@
                 <span class='model'>MODEL</span><span class='model-year'>2017</span><span class='price'>$64, 000</span><br>
                 <div class='see-details'><a href='#' class=''>SEE DETAILS</a><i class="fas fa-angle-right"></i></div>
             </div>
-            <form class='filtered-search-form'>
+            <form class='filtered-search-form desktop-filter-search'>
                 <select>
                     <datalist>
                         <option value='any make'>Any Make</option>
@@ -96,14 +97,15 @@
                 <select>
                     <datalist>
                         <option value='any type'>Any Type</option>
-                        <option value='alfa romeo'>Alfa Romeo</option>
-                        <option value='aston-martin'>Aston Martin</option>
-                        <option value='audi'>Audi</option>
-                        <option value='bentley'>Bentley</option>
+                        <option value='alfa romeo'>Type 1</option>
+                        <option value='aston-martin'>Type 2</option>
+                        <option value='audi'>Type 3</option>
+                        <option value='bentley'>Type 4</option>
                     </datalist>
                 </select>
                 <input type='range' class='filter-range'>
                 <button class='filter-button'>Submit Filter</button>
+                <a href='#' class='reset-filter'>Reset All Filters</a>
             </form>
             <div class='carousel-nav'>
                 <i class="far fa-circle carousel-active circle1"></i>
@@ -115,7 +117,7 @@
     <section id='reviews'>
         <div class='reviews'>
             <div class='review1'>
-              <img src='resources/media/2010-mustang.jpg' class='review-img'>
+              <img src='resources/media/2010-mustang.jpg' alt ='2020-mustag' class='review-img'>
               <span class='reviewer'>First Driver Review</span>
               
               <h4>2010 Ford Mustang / Yellow</h4>
@@ -126,7 +128,7 @@
               <a href='#' class='read-more'>Read More <i class="fas fa-angle-right read-more-icon"></i></a>
             </div>
             <div class='review1 of-review2'>
-                <img src='resources/media/1950-bugatti.jpg' class='review-img'>
+                <img src='resources/media/1950-bugatti.jpg' alt='1950-bugatti' class='review-img'>
                 <span class='reviewer'>Instrument Test</span>
                 
                 <h4>1950 Bugatti / BLACK AND RED</h4>
@@ -137,7 +139,7 @@
                 <a href='#' class='read-more'>Read More <i class="fas fa-angle-right read-more-icon"></i></a>
             </div>
             <div class='review1 of-review3'>
-                <img src='resources/media/2013_mercedes_benz_c.jpg' class='review-img'>
+                <img src='resources/media/2013_mercedes_benz_c.jpg' alt='2013-mercedes' class='review-img'>
                 <span class='reviewer'>Buyers Info</span>
                 
                 <h4>2013 Mercedes Benz c/ RED</h4>
@@ -151,7 +153,7 @@
     </section>
     <section>
         <div class='poster'>
-            <img src='resources/media/logo4.png' class=''>
+            <img src='resources/media/logo4.png' alt='site-logo' class=''>
             <div class='poster-text'>
                 <span class='welcome'>WELCOME TO OUR WEBSITE</span>
                 <br>
@@ -165,7 +167,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id='offers'>
       <h2 class='best-offers'>BEST OFFERS FROM AUTOCLUB</h2> 
       <div class='offers-category'>
           <div class='research'>MOST RESEARCH MANUFACTURERS</div>
@@ -188,7 +190,7 @@
         </ul>
         <div class='latest-on-sale'>
             <div class='car-offer1'>
-               <img src='resources/media/BMW-M6-Gran-Coupe-side.jpg' class='car-offer-img'>
+               <img src='resources/media/BMW-M6-Gran-Coupe-side.jpg' alt='BMW-M6-Grand' class='car-offer-img'>
                <h6>Registered 2015</h6>
                <h5>BMW M6 Sport Hybrid</h5>
                <i class="fas fa-dollar-sign"></i><span class='car-offer-price'>24, 380</span>
@@ -205,7 +207,7 @@
             </div>
             <!--offer1 ends here-->
             <div class='car-offer1'>
-                <img src='resources/media/2016-lexus-gs-hybrid-side.jpg' class='car-offer-img'>
+                <img src='resources/media/2016-lexus-gs-hybrid-side.jpg' alt='2016-lexus' class='car-offer-img'>
                 <h6>Registered 2017</h6>
                 <h5>2016 Lexus c</h5>
                 <i class="fas fa-dollar-sign"></i><span class='car-offer-price'>94, 380</span>
@@ -222,7 +224,7 @@
              </div>
              <!--offer2-->
              <div class='car-offer1'>
-                <img src='resources/media/2016-bugatti-chiron.jpg' class='car-offer-img'>
+                <img src='resources/media/2016-bugatti-chiron.jpg' alt='2016-bugatti' class='car-offer-img'>
                 <h6>Registered 2016</h6>
                 <h5>Bugatti Chiron </h5>
                 <i class="fas fa-dollar-sign"></i><span class='car-offer-price'>189, 380</span>
@@ -239,7 +241,7 @@
              </div>
              <!--offer3 ends here-->
              <div class='car-offer1'>
-                <img src='resources/media/mercedes-amg.jpg' class='car-offer-img'>
+                <img src='resources/media/mercedes-amg.jpg' alt='mercedes' class='car-offer-img'>
                 <h6>Registered 2018</h6>
                 <h5>Mercedes Benz amg</h5>
                 <i class="fas fa-dollar-sign"></i><span class='car-offer-price'>100, 000</span>

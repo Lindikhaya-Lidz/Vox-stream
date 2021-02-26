@@ -1,5 +1,3 @@
-
-
 const burger = document.querySelector('.burger');
 const CloseMenu = document.querySelector('.close');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -8,7 +6,7 @@ const dotMenuBar = document.querySelector('.dot-bar');
 const menuSearch = document.querySelector('.menu-search');
 const filteredSearch = document.querySelector('.filtered-search-form');
 const carousel =  document.querySelector('.carousel');
-
+const filterSearchForm = document.querySelector('.filtered-search-form');
 
 dotMenuBar.addEventListener('click',()=> {
     let contactsAndSignin = document.querySelector('.contacts-signin');
@@ -86,18 +84,33 @@ function navButtons(){
         if(index <= -0){
 
         }else{
-          carousel.style.backgroundImage = urlList[index--]  
+            index--;
+          carousel.style.backgroundImage = urlList[index]  
         }
-        console.log('left button clicked')
+    
     } 
     rightButton.onclick = ()=>{
-        if(index >= urlList.length){
+        if(index >= urlList.length-1){
 
         }else{
-            carousel.style.backgroundImage = urlList[index++];
+            index++
+            carousel.style.backgroundImage = urlList[index];
         }
-        console.log('right button clicked')
     }
 }
 
+function resizeAndCach(){
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    console.log(width)
+    if(width >= 1204){
+        console.log('display the filter search field');
+        filterSearchForm.classList.remove('filtered-search-form');
+        console.log(filterSearchForm)
+    }else if(width < 1204){
+        filterSearchForm.classList.add('filtered-search-form');
+        console.log(filterSearchForm)
+    }
+}
+//window.addEventListener('resize', resizeAndCach)
 navButtons();
