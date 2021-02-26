@@ -685,7 +685,7 @@ h2 {
     text-decoration: underline;
     font-weight: lighter;
     position: relative;
-    right: 52%;
+    right: 42%;
     color: black;
     font-size: 0.5em;
   }
@@ -705,7 +705,8 @@ h2 {
     display: flex;
     position: relative;
     bottom: 8vh;
-    left: 55vw;
+    font-size: 1.2rem;
+    left: 39vw;
     color: gray;
   }
   nav .desktop-menu li {
@@ -787,6 +788,10 @@ h2 {
     margin-top: -12px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .carousel-section .desktop-filter-search .reset-filter {
+    position: relative;
+    right: 40%;
   }
 }
 
