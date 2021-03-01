@@ -673,11 +673,14 @@ h2 {
 }
 
 .owner-comments {
-  width: 100vw;
   background-image: url("media/whitebackground.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 250px;
+}
+
+.owner-comments .owner-img {
+  border-radius: 40pc;
 }
 
 @media (min-width: 500px) {
