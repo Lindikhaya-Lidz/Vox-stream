@@ -635,11 +635,9 @@ h2 {
 }
 
 .poster2 .ring-border {
-  margin: 0px;
-  border: 2px solid black;
   padding: 12px;
   position: relative;
-  top: 20%;
+  top: 10%;
 }
 
 .poster2 .ring-border .card {
@@ -672,6 +670,14 @@ h2 {
 .inventory i {
   font-size: 3.5em;
   color: #363131;
+}
+
+.owner-comments {
+  width: 100vw;
+  background-image: url("media/whitebackground.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 250px;
 }
 
 @media (min-width: 500px) {
@@ -784,8 +790,10 @@ h2 {
     text-decoration: underline;
   }
   .poster2 .ring-border {
-    margin-left: 10%;
-    margin-right: 10%;
+    top: 25%;
+    border: 2px solid black;
+    margin-right: 15%;
+    margin-left: 15%;
   }
   .poster2 .ring-border .card .poster2-text {
     display: -ms-grid;
@@ -793,9 +801,20 @@ h2 {
     -ms-grid-columns: 500px 400px;
         grid-template-columns: 500px 400px;
   }
+  .inventory {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-shadow: 5px gray;
+            box-shadow: 5px gray;
+  }
+  .inventory hr {
+    display: none;
+  }
 }
 
-@media (min-width: 1208px) {
+@media (min-width: 1042px) and (min-width: 1208px) {
   .carousel-section .desktop-filter-search .reset-filter {
     right: 45%;
   }
@@ -834,9 +853,13 @@ h2 {
     left: 35%;
     font-size: 0.7em;
   }
+  .inventory {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-@media (min-width: 1378px) {
+@media (min-width: 1042px) and (min-width: 1378px) {
   .carousel-section .desktop-filter-search {
     position: absolute;
     bottom: 55pc;
@@ -853,7 +876,7 @@ h2 {
   }
 }
 
-@media (min-width: 1666px) {
+@media (min-width: 1042px) and (min-width: 1666px) {
   .carousel-section .carousel .desktop-filter-search {
     padding-bottom: 30%;
     width: 30%;

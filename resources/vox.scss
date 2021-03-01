@@ -531,11 +531,9 @@ h2{
     height:600px;
     color:white;
     .ring-border{
-        margin:0px;
-        border:2px solid rgb(0, 0, 0);
         padding:12px;
         position:relative;
-        top:20%;
+        top:10%;
         .card{
             background-color:black;
             opacity:0.8;
@@ -567,6 +565,13 @@ h2{
         font-size:3.5em;
         color:rgb(54, 49, 49);
     }
+}
+.owner-comments{
+    width:100vw;
+    background-image: url('media/whitebackground.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    padding:250px;
 }
 
 //*** media queries***
@@ -711,8 +716,10 @@ h2{
     }
     .poster2{
         .ring-border{
-            margin-left:10%;
-            margin-right:10%;
+            top:25%;
+            border:2px solid rgb(0, 0, 0);
+            margin-right:15%;
+            margin-left:15%;
             .card{
                 .poster2-text{
                     display:grid;
@@ -720,6 +727,14 @@ h2{
                 }
             }
         }
+    }
+    .inventory{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        box-shadow:5px gray;
+
+        hr{
+            display:none;
     }
     
     
@@ -774,6 +789,9 @@ h2{
         }
     }
     //###end of the sub-section class ###
+    .inventory{
+        grid-template-columns:repeat(4, 1fr);
+    }
 
 }
 
@@ -804,4 +822,5 @@ h2{
             }
         }
     }
+}
 }
