@@ -657,6 +657,23 @@ h2 {
   text-decoration: underline;
 }
 
+.inventory {
+  text-align: center;
+}
+
+.inventory div {
+  padding-top: 4%;
+}
+
+.inventory hr {
+  width: 40%;
+}
+
+.inventory i {
+  font-size: 3.5em;
+  color: #363131;
+}
+
 @media (min-width: 500px) {
   .carousel-section .carousel .mobile-menu .menu .active {
     width: 193%;
