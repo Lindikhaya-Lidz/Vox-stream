@@ -524,6 +524,37 @@ h2{
     }
 }
 
+.poster2{
+    background-image: url('media/carShowRoom.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    height:600px;
+    color:white;
+    .ring-border{
+        margin:0px;
+        border:2px solid rgb(0, 0, 0);
+        padding:12px;
+        position:relative;
+        top:20%;
+        .card{
+            background-color:black;
+            opacity:0.8;
+            text-align:center;
+            padding:20px;
+            hr{
+                width:5%;
+            }
+            ul{
+                li{
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+    
+}
 
 //*** media queries***
 
@@ -568,8 +599,10 @@ h2{
     }
     //### end of the reviews section###
 
+
     
 }
+
 
 //###landscape mobile devices an small tablets###
 
@@ -623,7 +656,7 @@ h2{
     nav{
       padding-top:40px;
       padding-bottom:20px;
-      font-size:1.5em;
+      font-size:1em;
       .desktop-menu{
         display:flex;
         position:relative;
@@ -663,6 +696,18 @@ h2{
         }
         //###end of the contacts-signin-desktop### 
     }
+    .poster2{
+        .ring-border{
+            margin-left:10%;
+            margin-right:10%;
+            .card{
+                .poster2-text{
+                    display:grid;
+                    grid-template-columns:500px 400px;
+                }
+            }
+        }
+    }
     
     
 }
@@ -693,7 +738,7 @@ h2{
 
     .sub-section{
         display:grid;
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns:400px 870px;
         grid-gap:auto;
         .latest-on-sale{
             display:grid;

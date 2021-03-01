@@ -626,6 +626,37 @@ h2 {
   padding-right: 25px;
 }
 
+.poster2 {
+  background-image: url("media/carShowRoom.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+}
+
+.poster2 .ring-border {
+  margin: 0px;
+  border: 2px solid black;
+  padding: 12px;
+  position: relative;
+  top: 20%;
+}
+
+.poster2 .ring-border .card {
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+  padding: 20px;
+}
+
+.poster2 .ring-border .card hr {
+  width: 5%;
+}
+
+.poster2 .ring-border .card ul li:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 500px) {
   .carousel-section .carousel .mobile-menu .menu .active {
     width: 193%;
@@ -697,7 +728,7 @@ h2 {
   nav {
     padding-top: 40px;
     padding-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1em;
   }
   nav .desktop-menu {
     display: -webkit-box;
@@ -735,6 +766,16 @@ h2 {
     left: 85%;
     text-decoration: underline;
   }
+  .poster2 .ring-border {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .poster2 .ring-border .card .poster2-text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px 400px;
+        grid-template-columns: 500px 400px;
+  }
 }
 
 @media (min-width: 1208px) {
@@ -753,8 +794,8 @@ h2 {
   .sub-section {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 400px 870px;
+        grid-template-columns: 400px 870px;
     grid-gap: auto;
   }
   .sub-section .latest-on-sale {
