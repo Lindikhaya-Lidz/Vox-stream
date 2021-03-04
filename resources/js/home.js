@@ -103,7 +103,7 @@ function navButtons(){
     }
 }
 
-function resizeAndCach(){
+/*function resizeAndCach(){
     let width = window.innerWidth;
     let height = window.innerHeight;
     console.log(width)
@@ -116,5 +116,5 @@ function resizeAndCach(){
         console.log(filterSearchForm)
     }
 }
-//window.addEventListener('resize', resizeAndCach)
+//window.addEventListener('resize', resizeAndCach)*/
 navButtons();

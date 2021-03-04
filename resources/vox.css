@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 0.9em;
   overflow-x: hidden;
 }
@@ -37,7 +37,10 @@ nav .contacts-signin-desktop {
   color: #faf4f4;
   position: relative;
   bottom: 65px;
-  padding: 2%;
+  padding: 1%;
+  padding-left: 10%;
+  padding-top: 2%;
+  font-size: 1.5em;
 }
 
 nav div.burger {
@@ -47,8 +50,8 @@ nav div.burger {
 nav div.burger div {
   background-color: #4b4747;
   width: 35px;
-  height: 5px;
-  margin: 5px;
+  height: 7px;
+  margin: 6px;
   border-radius: 9px;
   position: relative;
 }
@@ -60,21 +63,27 @@ nav .logo {
   bottom: 40px;
 }
 
+nav .menu-icons {
+  position: relative;
+  top: 5px;
+  padding-right: 3px;
+}
+
 nav .desktop-menu {
   display: none;
 }
 
 nav .dot-bar {
   position: relative;
-  bottom: 80px;
+  bottom: 90px;
   width: 10px;
   left: 96%;
 }
 
 nav .dot-bar div {
   background-color: #4b4747;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 8px;
   margin-bottom: 4px;
   border-radius: 100%;
 }
@@ -604,7 +613,7 @@ h2 {
 
 .latest-on-sale .car-offer1 .fa-road, .latest-on-sale .car-offer1 .km {
   position: relative;
-  left: 60%;
+  left: 51%;
   bottom: 7vh;
 }
 
@@ -672,15 +681,55 @@ h2 {
   color: #363131;
 }
 
-.owner-comments {
-  background-image: url("media/whitebackground.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding: 250px;
+.owner-comments-section {
+  width: 100%;
 }
 
-.owner-comments .owner-img {
-  border-radius: 40pc;
+.owner-comments-section .owner-comments {
+  background: url("media/whitebackground.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  padding-bottom: 20%;
+}
+
+.owner-comments-section .owner-comments .owner-profile {
+  position: relative;
+  top: 5vh;
+  border: 2px solid #999590;
+  border-left: none;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.owner-comments-section .owner-comments .owner-profile .owner-img {
+  margin-left: 30%;
+  height: 15vh;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.owner-comments-section .owner-comments .owner-profile .owner-info {
+  position: relative;
+  left: 25%;
+  width: 10pc;
+  font-size: 0.7em;
+}
+
+.owner-comments-section .owner-comments .owner-profile .owner-info span {
+  font-weight: bold;
+  font-size: 1em;
+  padding-right: 2%;
+  color: black;
+}
+
+.owner-comments-section .owner-comments .owner-profile .testimonial {
+  position: relative;
+  font-weight: lighter;
 }
 
 @media (min-width: 500px) {
@@ -706,6 +755,13 @@ h2 {
   }
   .reviews .of-review3 .read-more {
     margin-bottom: 10px;
+  }
+  .owner-comments-section .owner-comments .owner-profile .owner-img {
+    margin-left: 36%;
+  }
+  .owner-comments-section .owner-comments .owner-profile .owner-info {
+    position: relative;
+    left: 34%;
   }
 }
 
