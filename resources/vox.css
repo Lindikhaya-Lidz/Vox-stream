@@ -109,7 +109,7 @@ nav .contacts-signin ul {
 }
 
 .carousel-section .carousel {
-  background-image: url("media/bmw3.jpg");
+  background-image: url("media/bmw3.gif");
   background-size: 100% 80%;
   background-repeat: no-repeat;
   padding: 20%;
@@ -216,7 +216,7 @@ nav .contacts-signin ul {
 
 .carousel-section .carousel .mobile-menu .close {
   position: relative;
-  bottom: 380px;
+  bottom: 350px;
   color: #7a7474;
   left: 120%;
   font-size: 20px;
