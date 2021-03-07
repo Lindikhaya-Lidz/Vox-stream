@@ -191,13 +191,19 @@ nav{
 
                     a{
                     color:rgb(121, 119, 119);
-                    display:block;                    
+                    display:block;
+                        .mobile-menu-icons{
+                           position:relative;
+                           top:13px; 
+                           padding-right:10px;
+                        }                    
                     }
+                    
                 }
             }
             .close{
                 position:relative;
-                bottom:350px;
+                bottom:450px;
                 color:rgb(122, 116, 116);
                 left:120%;
                 font-size:20px;
@@ -303,7 +309,7 @@ nav{
             background-color:$secondary-color;
             width:150px;
             margin-top:35px;
-            padding-left:15px;
+            padding-left:16px;
             max-height:44px;
 
             // padding-left:2%;
@@ -316,7 +322,7 @@ nav{
                 background-color:$primary-color;
                 padding:10%;
                 padding-right:16px;
-                margin-left:33px;
+                margin-left:48px;
                 transition:rotate(180deg);
             }
         }
@@ -398,7 +404,7 @@ nav{
             font-size:10px;
             .read-more-icon{
                 background-color:$primary-color;
-                padding:12px;
+                padding:10px;
                 padding-right:10px;
                 padding-left:10px;
                 position:relative;
@@ -635,9 +641,16 @@ h2{
         .carousel{
             .mobile-menu{
                 .menu{
+                    li{
+                        padding-bottom:15px;
+                        padding-top:-20px;
+                    }    
                     .active{
                         width:193%;
                     }
+                }
+                .close{
+                    bottom:17pc;
                 }
             }  
         }
@@ -694,6 +707,13 @@ h2{
     div.burger{
         display:none;
     }
+    //****nav section that controls the desktop menu***
+    nav{
+        .desktop-menu{
+            left:32pc;
+        }
+    
+    //###end of the nav section###
     .carousel-section{
         .carousel{
             .mobile-menu{
@@ -746,7 +766,7 @@ h2{
         position:relative;
         bottom:8vh;
         font-size:1.2rem;
-        left:39vw;
+        left:27vw;
         color:gray;
         li{
             padding-right:5%;
@@ -808,7 +828,6 @@ h2{
 
 
 @media(min-width:1208px){
-    
     .carousel-section{
     
         .desktop-filter-search{
