@@ -7,7 +7,7 @@ $content-separate:40px;
     padding:3%;
     opacity:0.8;
     font-size:1.5em;
-    border-radius:20px;
+    border-radius:10px;
 }
 @mixin on-img-hover{
     filter:grayscale(70%);
@@ -126,11 +126,6 @@ nav{
         max-height:700px;
         animation-name:appear;
         animation-duration:2s;
-
-        @keyframes appear{
-            from{opacity:0.2};
-            to{opacity:10}
-        }
         
         //**start of the mobile menu container***
         .mobile-menu{
@@ -148,9 +143,9 @@ nav{
             margin-right:15%;
             padding:14%;
             padding-left:20%;
-            display:none;
+            display:0;
             animation-name:slide-the-menu;
-            animation-duration:0.9s;
+            animation-duration:0.6s;
             @keyframes slide-the-menu{
                 from{right:90vw};
                 to{right:30vw}
@@ -188,7 +183,14 @@ nav{
                 li{    
                     padding-bottom:40px;
                     position:relative;
-                    right:50px;
+                    right:30px;
+                    animation-name:smooth-in;
+                    animation-duration:1.6s;
+                    @keyframes smooth-in{
+                        from{left:25px};
+                        to{left:-30px}
+                    }
+
 
                     a{
                     color:rgb(121, 119, 119);
@@ -231,21 +233,24 @@ nav{
             padding-bottom:30px;
             display:none;
             animation-name:slide-in;
-            animation-duration:0.8s;
+            animation-duration:1s;
             //animation for the slide in
             @keyframes slide-in{
-                from{left:100%};
-                to{left:40%}
-            }
-            @keyframes slide-out{
-                from{left:30%};
-                to{left:100%}
+                from{left:50pc};
+                to{right:50pc}
             }
             ul{
                 li{
                     padding-top:px;
                     padding:5px;
+                    position:relative;
                     margin-right:15%;
+                    animation-name:slick-slide;
+                    animation-duration:1.6s;
+                    @keyframes slick-slide{
+                       from{right:90px;} 
+                       to{right:0;}
+                    }
                     a{
                         color:rgb(136, 133, 133);
                         text-decoration:underline;
@@ -274,7 +279,7 @@ nav{
               position:absolute;
               left:94%;
               top:29%;
-              padding:3%;
+              padding:3%;             
             }
     }
     //### End of the carousel buttons container

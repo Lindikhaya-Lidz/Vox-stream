@@ -122,24 +122,6 @@ nav .contacts-signin ul {
           animation-duration: 2s;
 }
 
-@-webkit-keyframes appear {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 10;
-  }
-}
-
-@keyframes appear {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 10;
-  }
-}
-
 .carousel-section .carousel .mobile-menu {
   list-style: none;
   top: 0%;
@@ -155,11 +137,11 @@ nav .contacts-signin ul {
   margin-right: 15%;
   padding: 14%;
   padding-left: 20%;
-  display: none;
+  display: 0;
   -webkit-animation-name: slide-the-menu;
           animation-name: slide-the-menu;
-  -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 @-webkit-keyframes slide-the-menu {
@@ -206,7 +188,29 @@ nav .contacts-signin ul {
 .carousel-section .carousel .mobile-menu .menu li {
   padding-bottom: 40px;
   position: relative;
-  right: 50px;
+  right: 30px;
+  -webkit-animation-name: smooth-in;
+          animation-name: smooth-in;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+
+@-webkit-keyframes smooth-in {
+  from {
+    left: 25px;
+  }
+  to {
+    left: -30px;
+  }
+}
+
+@keyframes smooth-in {
+  from {
+    left: 25px;
+  }
+  to {
+    left: -30px;
+  }
 }
 
 .carousel-section .carousel .mobile-menu .menu li a {
@@ -267,50 +271,55 @@ nav .contacts-signin ul {
   display: none;
   -webkit-animation-name: slide-in;
           animation-name: slide-in;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @-webkit-keyframes slide-in {
   from {
-    left: 100%;
+    left: 50pc;
   }
   to {
-    left: 40%;
+    right: 50pc;
   }
 }
 
 @keyframes slide-in {
   from {
-    left: 100%;
+    left: 50pc;
   }
   to {
-    left: 40%;
-  }
-}
-
-@-webkit-keyframes slide-out {
-  from {
-    left: 30%;
-  }
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 30%;
-  }
-  to {
-    left: 100%;
+    right: 50pc;
   }
 }
 
 .carousel-section .carousel .contacts-signin ul li {
   padding-top: px;
   padding: 5px;
+  position: relative;
   margin-right: 15%;
+  -webkit-animation-name: slick-slide;
+          animation-name: slick-slide;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+
+@-webkit-keyframes slick-slide {
+  from {
+    right: 90px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slick-slide {
+  from {
+    right: 90px;
+  }
+  to {
+    right: 0;
+  }
 }
 
 .carousel-section .carousel .contacts-signin ul li a {
@@ -329,7 +338,7 @@ nav .contacts-signin ul {
   padding: 3%;
   opacity: 0.8;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
   z-index: 3;
   top: 30%;
@@ -343,7 +352,7 @@ nav .contacts-signin ul {
   padding: 3%;
   opacity: 0.8;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
   left: 94%;
   top: 29%;
