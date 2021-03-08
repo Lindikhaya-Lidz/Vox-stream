@@ -7,6 +7,7 @@ $content-separate:40px;
     padding:3%;
     opacity:0.8;
     font-size:1.5em;
+    border-radius:20px;
 }
 @mixin on-img-hover{
     filter:grayscale(70%);
@@ -712,7 +713,7 @@ h2{
         .desktop-menu{
             left:32pc;
         }
-    
+    }
     //###end of the nav section###
     .carousel-section{
         .carousel{
@@ -760,7 +761,7 @@ h2{
     nav{
       padding-top:40px;
       padding-bottom:20px;
-      font-size:1em;
+      font-size:0.8em;
       .desktop-menu{
         display:flex;
         position:relative;
@@ -818,7 +819,9 @@ h2{
         display:grid;
         grid-template-columns:repeat(2,1fr);
         box-shadow:5px gray;
-
+        i{
+            padding-right:10px;
+        }
         hr{
             display:none;
     }

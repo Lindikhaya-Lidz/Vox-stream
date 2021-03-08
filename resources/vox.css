@@ -329,6 +329,7 @@ nav .contacts-signin ul {
   padding: 3%;
   opacity: 0.8;
   font-size: 1.5em;
+  border-radius: 20px;
   position: absolute;
   z-index: 3;
   top: 30%;
@@ -342,6 +343,7 @@ nav .contacts-signin ul {
   padding: 3%;
   opacity: 0.8;
   font-size: 1.5em;
+  border-radius: 20px;
   position: absolute;
   left: 94%;
   top: 29%;
@@ -826,7 +828,7 @@ h2 {
   nav {
     padding-top: 40px;
     padding-bottom: 20px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   nav .desktop-menu {
     display: -webkit-box;
@@ -883,6 +885,9 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     -webkit-box-shadow: 5px gray;
             box-shadow: 5px gray;
+  }
+  .inventory i {
+    padding-right: 10px;
   }
   .inventory hr {
     display: none;
