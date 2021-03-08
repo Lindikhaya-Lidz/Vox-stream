@@ -143,7 +143,7 @@ nav{
             margin-right:15%;
             padding:14%;
             padding-left:20%;
-            display:0;
+            display:none;
             animation-name:slide-the-menu;
             animation-duration:0.6s;
             @keyframes slide-the-menu{
@@ -185,9 +185,9 @@ nav{
                     position:relative;
                     right:30px;
                     animation-name:smooth-in;
-                    animation-duration:1.6s;
+                    animation-duration:1.4s;
                     @keyframes smooth-in{
-                        from{left:25px};
+                        from{left:20px};
                         to{left:-30px}
                     }
 
