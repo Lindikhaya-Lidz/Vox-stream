@@ -78,6 +78,7 @@ nav{
         position:relative;
         top:5px;
         padding-right:3px;
+        
     }
 
     //Desktop Menu that displays on laptops and desktop
@@ -137,7 +138,7 @@ nav{
             z-index:5;
             position:fixed;
             width:70%;
-            height:130%;
+            height:160%;
             bottom:195em;
             right:30vw;
             margin-right:15%;
@@ -181,7 +182,7 @@ nav{
                     }
                 }
                 li{    
-                    padding-bottom:40px;
+                    padding-bottom:15px;
                     position:relative;
                     right:30px;
                     animation-name:smooth-in;
@@ -205,10 +206,10 @@ nav{
                 }
             }
             .close{
-                position:relative;
-                bottom:450px;
+                position:absolute;
+                left:90%;
+                top:40px;
                 color:rgb(122, 116, 116);
-                left:120%;
                 font-size:20px;
                 animation-name:rotate-close;
                 animation-duration:1s;
@@ -601,7 +602,7 @@ h2{
         .owner-profile{
             position:relative;
             top:5vh;
-            border:2px solid rgb(153, 149, 144);
+            border:0.1px solid $primary-color;
             border-left:none;
             border-radius:20px;
             padding-left:5%;
@@ -648,8 +649,7 @@ h2{
             .mobile-menu{
                 .menu{
                     li{
-                        padding-bottom:15px;
-                        padding-top:-20px;
+                        padding-bottom:5px;
                     }    
                     .active{
                         width:193%;

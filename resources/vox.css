@@ -131,7 +131,7 @@ nav .contacts-signin ul {
   z-index: 5;
   position: fixed;
   width: 70%;
-  height: 130%;
+  height: 160%;
   bottom: 195em;
   right: 30vw;
   margin-right: 15%;
@@ -186,7 +186,7 @@ nav .contacts-signin ul {
 }
 
 .carousel-section .carousel .mobile-menu .menu li {
-  padding-bottom: 40px;
+  padding-bottom: 15px;
   position: relative;
   right: 30px;
   -webkit-animation-name: smooth-in;
@@ -225,10 +225,10 @@ nav .contacts-signin ul {
 }
 
 .carousel-section .carousel .mobile-menu .close {
-  position: relative;
-  bottom: 450px;
+  position: absolute;
+  left: 90%;
+  top: 40px;
   color: #7a7474;
-  left: 120%;
   font-size: 20px;
   -webkit-animation-name: rotate-close;
           animation-name: rotate-close;
@@ -713,7 +713,7 @@ h2 {
 .owner-comments-section .owner-comments .owner-profile {
   position: relative;
   top: 5vh;
-  border: 2px solid #999590;
+  border: 0.1px solid #ff7300;
   border-left: none;
   border-radius: 20px;
   padding-left: 5%;
@@ -751,8 +751,7 @@ h2 {
 
 @media (min-width: 500px) {
   .carousel-section .carousel .mobile-menu .menu li {
-    padding-bottom: 15px;
-    padding-top: -20px;
+    padding-bottom: 5px;
   }
   .carousel-section .carousel .mobile-menu .menu .active {
     width: 193%;
