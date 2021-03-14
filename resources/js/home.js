@@ -51,19 +51,20 @@ function carouselNav(){
    const carBrand = document.querySelector('.Car-brand');
    const modelYear = document.querySelector('.model-year');
    const price = document.querySelector('.price');
-   circle1.addEventListener('click',()=>{
+   
+   circle1.addEventListener('click', ()=> {
+    carousel.style.animationName = 'appear'; 
+    carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.gif)';
+    modelYear.textContent = '2017';
+    carBrand.textContent = 'Demon Dodge';
+    price.textContent = '$35,000'; 
+ });
+
+   circle2.addEventListener('click',()=>{
        carousel.style.backgroundImage = 'url(resources/media/bmw3.gif)';
        carBrand.textContent = 'BMW M5 GRAND';
        modelYear.textContent = '2017';
        price.textContent = '$64,000'; 
-   });
-
-   circle2.addEventListener('click', ()=> {
-      carousel.style.animationName = 'appear'; 
-      carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.gif)';
-      modelYear.textContent = '1968';
-      carBrand.textContent = 'Dodge chardger';
-      price.textContent = '$35,000'; 
    });
    
    circle3.addEventListener('click',()=>{
@@ -79,7 +80,7 @@ function navButtons(){
     let index = 0;
     const leftButton = document.querySelector('.button-left');
     const rightButton = document.querySelector('.button-right');
-    let urlList = ['url(resources/media/bmw3.gif)', 'url(resources/media/dodge-charger3.gif)', 'url(resources/media/bmw325_4.gif)'];
+    let urlList = ['url(resources/media/dodge-charger3.gif)', 'url(resources/media/bmw3.gif)' , 'url(resources/media/bmw325_4.gif)'];
 
     leftButton.onclick = ()=>{
         if(index <= -0){

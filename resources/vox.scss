@@ -9,6 +9,7 @@ $content-separate:40px;
     font-size:1.5em;
     border-radius:10px;
 }
+
 @mixin on-img-hover{
     filter:grayscale(70%);
     box-shadow: 7px 7px 7px gray;
@@ -16,10 +17,11 @@ $content-separate:40px;
     transition:width 0.3s;
     width:102%;
 }
-//### resets###
+//### RESETS###
 html{
     box-sizing:border-box;
 }
+
 *, *:before, *:after{
     box-sizing:inherit;
 } 
@@ -30,19 +32,24 @@ body{
     font-size:0.9em;
     overflow-x:hidden;   
 }
+
 a{
     text-decoration:none;
     color:inherit;
 }
+
 ul{
     list-style:none;
 }
+//###  END OF THE RESETS
 
 
-//**start of the nav secton***
+//**START OF THE NAV SECTION***
 nav{
     margin:15px;
     padding-top:0%;
+
+    //THE COMPANY CONTACTS AND REGISTER / SIGNIN
     .contacts-signin-desktop{
         margin-right:-50px;
         margin-left:-20px;
@@ -56,24 +63,39 @@ nav{
         padding-top:2%;
         font-size:1.5em;
     }
+    /* //THE COMPANY CONTACTS AND REGISTER / SIGNIN MOBILE
+    .contacts-signin{
+        //display:none;
+        ul{
+            position:relative;
+            bottom:0px;
+        }
+     }*/
+    
+    //MOBILE MENU BAR CUSTOM ICON
     div.burger{
         width:25px;
+
         div{
             background-color:$primary-icon-color;
-            width:35px;
+            width:40px;
             height:7px;
             margin:6px;
+            margin-left:-3px;
             border-radius:9px;
             position:relative;
+            bottom:2px;
         }
     }
-    
+    // LOGO STYLES
     .logo{
         width:109px;
         position:relative;
         left:65px;
         bottom:40px;
     }
+
+    //MOBILE MENU ICON STYLES
     .menu-icons{
         position:relative;
         top:5px;
@@ -81,10 +103,11 @@ nav{
         
     }
 
-    //Desktop Menu that displays on laptops and desktop
+    //DESKTOP SET TO NONE ON MOBILE
     .desktop-menu{
        display:none; 
     }
+    //THREE DOTS MENU CUSTOM ICON
     .dot-bar{
         position:relative;
         bottom:90px;
@@ -98,27 +121,20 @@ nav{
             border-radius:100%;
         }
     }
-    .contacts-signin{
-       display:absolute;
-       ul{
-           position:relative;
-           bottom:50px;
-       }
-    }
 }
-//### end of the nav section ##
+//### END OF THE NAV SECTION ##
 
 
-//***start of the carousel section###
+//***START OF THE CAROUSEL SECTION***
 .carousel-section{
     position:relative;
     bottom:85px;
     color:$secondary-color;
     font-weight:bold;
-    position:relative;
+
     .carousel{
         //margin-right:-1.9%;
-        background-image: url('media/bmw3.gif');
+        background-image: url('./media/dodge-charger3.gif');
         background-size:100% 80% ;
         background-repeat:no-repeat;
         padding:20%;
@@ -128,7 +144,7 @@ nav{
         animation-name:appear;
         animation-duration:2s;
         
-        //**start of the mobile menu container***
+        //MOBILE MENU LIST WHEN THE MENU BAR IS CLICKED
         .mobile-menu{
             list-style:none;
             top:0%;
@@ -147,32 +163,19 @@ nav{
             display:none;
             animation-name:slide-the-menu;
             animation-duration:0.6s;
+
+            //ANIMATION FOR SLIDING THE MENU FROM LEFT TO RIGHT
             @keyframes slide-the-menu{
                 from{right:90vw};
                 to{right:30vw}
             }
-
+            
+            // UL TAG CLASS NAME
             .menu{
-               // list-style:none;
                font-size:0.7em;
                position:relative;
-               
-               //***start of active ***
-               /*.active{
-                   background-color:$primary-color;
-                   padding:0.1px;
-                   //width:10rem;
-                   right:60px;
-                   margin-bottom:12px;
-                   padding-right:240%;
-                   
-                        a{
-                            color:$secondary-color;
-                            margin:10px;
-                            width:10px;
-                        }
-                }*/
-                //### end of active
+                
+               //MOBILE VERSION OF THE FILTER SEARCH
                 .menu-search{
                     a{
                         i{
@@ -181,21 +184,24 @@ nav{
                         }
                     }
                 }
+
                 li{    
                     padding-bottom:15px;
                     position:relative;
                     right:30px;
                     animation-name:smooth-in;
                     animation-duration:1.4s;
+
+                    //ANIMATION FOR THE INDIVIDUAL MENU LIST 
                     @keyframes smooth-in{
                         from{left:20px};
                         to{left:-30px}
                     }
 
-
                     a{
                     color:rgb(121, 119, 119);
                     display:block;
+
                         .mobile-menu-icons{
                            position:relative;
                            top:13px; 
@@ -205,6 +211,7 @@ nav{
                     
                 }
             }
+            //X ICON FOR CLOSING THE MOBILE MENU
             .close{
                 position:absolute;
                 left:90%;
@@ -213,19 +220,20 @@ nav{
                 font-size:20px;
                 animation-name:rotate-close;
                 animation-duration:1s;
+
                 @keyframes rotate-close{
                     from{transform:rotate(0deg)}
                     to{transform:rotate(360deg)}
                 }
             }
         }
-        //### end of the mobile menu container###
+        //### END OF THE MOBILE MENU CONTAINER ###
 
-        //***start of the contacts and signin container***
+        //***START OF THE CONTACTS AND SIGNIN CONTAINER ***
         .contacts-signin{
             background-color:rgb(241, 236, 236);
             position:absolute;
-            bottom:70%;
+            bottom:80%;
             z-index:1;
             left:43%;
             font-size:10px;
@@ -235,23 +243,26 @@ nav{
             display:none;
             animation-name:slide-in;
             animation-duration:1s;
+
             //animation for the slide in
             @keyframes slide-in{
                 from{left:50pc};
                 to{right:50pc}
             }
+            //CONTACTS MENU LIST
             ul{
                 li{
-                    padding-top:px;
                     padding:5px;
                     position:relative;
                     margin-right:15%;
                     animation-name:slick-slide;
                     animation-duration:1.6s;
+
                     @keyframes slick-slide{
                        from{right:90px;} 
                        to{right:0;}
                     }
+
                     a{
                         color:rgb(136, 133, 133);
                         text-decoration:underline;
@@ -260,11 +271,13 @@ nav{
             }
         }
     }
-    //###end of the contacts and signin container###
-    //**start of the carousel-buttons container***
+    //###END OF THE CONTACTS AND SIGININ CONTAINER###
+
+    //**START OF THE CAROUSEL-BUTTONS CONTAINER(ONLY VISIBLE ON LARGE DEVICES)***
         .carousel-buttons{
           display:none;
           overflow-x:hidden;
+
           .button-left{
               float:left;
               @include carousel-buttons-utils;
@@ -274,6 +287,7 @@ nav{
               right:95%;
               padding-left:20em;
             }
+
             .button-right{
               float:right;
               @include carousel-buttons-utils;
@@ -285,24 +299,28 @@ nav{
     }
     //### End of the carousel buttons container
 
-    //***start of the carousel text***
+    //***CAROUSEL TEXT CONTAINER***
     .carousel-text{
         position:relative;
         right:25%;
         bottom:40px;
         box-sizing:content-box;
+
         .dream-car{
             font-size:1.4rem;     
         }
+
         .Car-brand{
             font-size:2.5rem;
             padding-top:10px;
             padding-bottom:10px;
         }
+
         .model{
             font-size:1.4rem;
             padding-right:5%;
         }
+
         .price{
             padding-left:25px;
             color:$primary-color;
@@ -312,29 +330,35 @@ nav{
             padding-left:5%;
             margin-left:1%;
         }
+
         .see-details{
             background-color:$secondary-color;
-            width:150px;
+            width:110px;
             margin-top:35px;
-            padding-left:16px;
+            height:55px;
             max-height:44px;
 
-            // padding-left:2%;
             a{
                 color:$primary-color;
                 font-size:0.9em;
+                position:relative;
+                left:5px;
+                bottom:19px;
             }
 
-            .fa-angle-right{
+            .right-arrow{
+                position:relative;
+                bottom:0.9px;
+                left:20px;
                 background-color:$primary-color;
-                padding:10%;
-                padding-right:16px;
-                margin-left:48px;
+                padding:8px;
+                padding-bottom:14px;
                 transition:rotate(180deg);
             }
         }
 
     }
+    //DESKTOP VERSION OF THE FILTER SEARCH FORM
     .filtered-search-form{
         background-color:rgb(199, 199, 199);
         opacity:0.8;
@@ -344,6 +368,7 @@ nav{
         bottom:30vh;
         z-index:5;
         display:none;
+
         select{
             width:100%;
             background-color:lightgray;
@@ -351,64 +376,74 @@ nav{
                 width:10%;
             }
         }
+
         .filter-range{
             width:100%;
         }
+
         .filter-button{
             margin-left:30%;
             background-color:$primary-color;
             color:$secondary-color;
             border:none;
             padding:7px;
+            padding-bottom:15px;
+        }
+        .submit-icon{
+            position:relative;
+            top:7px;
+            left:15px;
         }
     }
-
-    //displays the filter search on desktop devices
-    /*.desktop-filter-search{
-        display:inline-block;
-    }*/
-    //###end of the carousel-text###
+    //###END OF THE CAROUSEL TEXT###
+    
+    //ROUND CAROUSEL NAVIGATORS
     .carousel-nav{
         position:relative;
         bottom:33px;
         left:55px;
         padding:10px;
         font-size:1.3em;
-        .carousel-active{
-            background-color:$primary-color;
-            border-radius:100%;
-            height:5spx;
-        }
     }
 }
-//### end of the carousel section ###
+//### END OF THE CAROUSEL SECTION ###
 
 
-//***start of the review section ***
+//***REVIEW SECTION ***
 .reviews{
     margin:12px;
     position:relative;
     bottom:80px;
+
+    //FIRST REVIEW BLOCK
     .review1{
+
         .review-img{
             width:100%;
             &:hover{
               @include on-img-hover;  
             }
         }
+
+        //NAME OF THE REVIEWER
         .reviewer{
             font-size:12px;
             color:rgb(116, 113, 113);
         }
+
+        //TEXT IN THE REVIEW
         p{
             color:rgb(116, 113, 113);
             font-size:14px;
         }
+
+        //READ MORE BUTTON
         .read-more{
             background-color:$primary-icon-color;
             color:$secondary-color;
             padding:10px;
             font-size:10px;
+
             .read-more-icon{
                 background-color:$primary-color;
                 padding:10px;
@@ -420,11 +455,12 @@ nav{
             }
         }
     }
+    //SECOND AND THIRD REVIEW BLOCKS
     .of-review2, .of-review3{
         padding-top:50px;
     }
 }
-//### end of the review section###
+//### END OF THE REVIEW SECTION###
 
 .poster{
     background-image: url('media/longroad.jpg');
@@ -433,20 +469,24 @@ nav{
     color:$secondary-color;
     text-align:center;
     padding:10px;
-    //margin-right:-1.9%;
+
     img{
         width:30%;
     }
+
     .poster-text{
         margin-right:17%;
         margin-left:17%;
+
         .welcome{
             font-size:10px;
         }
+
         .needs{
             font-size:2em;
             font-weight:bold;
         }
+
         p{
             font-size:0.9em;
         }
@@ -454,7 +494,7 @@ nav{
     }
    
 }
-//***start of the best offer section***
+//***START OF THE BEST OFFER SECTION***
 
 h2{
     text-align:center;
@@ -464,10 +504,11 @@ h2{
     padding-top:$content-separate;
 }
 
-//***start of the offers category ***
+//***START OF THE OFFER CATEGORY ***
 .offers-category{
     padding-top:$content-separate;
     text-align:center;
+
    div{
        cursor:pointer;
        &:hover{
@@ -480,33 +521,39 @@ h2{
     }
     
 }
-///### end of the offers category###
+///### END OF THE OFFER CATEGORY###
+
+//***MOST RESEARCHED LIST
 .list-offers{
    border-left:5px solid rgb(197, 196, 196);
    margin:9%;
    border-bottom:1px solid lightgray;
    color:rgb(109, 105, 105);
    font-weight:bold;
+
    li{
        padding:6%;
        border-top:1px solid rgb(196, 196, 196);
        position:relative;
        right:40px;
-    
-   }     
+    }     
 }
+
+//CAR PROMO LIST CONTAINER
 .latest-on-sale{
     margin:5%;
+
    .car-offer-img{
     width:90vw;   
     height:55vh;
-    &:hover{
-        @include on-img-hover;
-        
+
+        &:hover{
+            @include on-img-hover;    
+        }
     }
-    }
-    .car-offer1{
-        //max-width:30vw;
+    
+    //PROMO CAR BLOCK CONTAINER
+    .car-offer{
         h6{
             position:relative;
             bottom:20px;
@@ -514,24 +561,29 @@ h2{
             color:gray;
             font-style:italic;
         }
+
         h5{
             position:relative;
             bottom:2vh;
         }
+
         .car-offer-price{
             color:$primary-color;
             padding-left:5px;
             font-weight:bold;
         }
+        
         .fa-dollar-sign, .car-offer-price{
            position:relative;
            bottom:30px;
         }
+
         .fa-road, .km{
             position:relative;
             left:51%;
             bottom:7vh;
         }
+
         ul{
             display:flex;
             color:gray;
@@ -547,6 +599,7 @@ h2{
     }
 }
 
+//***SECOND BILLBOARD*** 
 .poster2{
     background-image: url('media/carShowRoom.jpg');
     background-size:100% 100%;
@@ -577,6 +630,9 @@ h2{
     }
     
 }
+//###END OF THE SECOND BILLBOARD CONTAINER###
+
+//CAR UTILITIES AND USED CAR BLOCK
 .inventory{
     text-align:center;
     div{
@@ -590,8 +646,11 @@ h2{
         color:rgb(54, 49, 49);
     }
 }
+
+//CAR OWNER TESTIMONIAL SECTION
 .owner-comments-section{
     width:100%;
+
     .owner-comments{
         background: url('media/whitebackground.jpg');
         background-size:100% 100%;
@@ -599,6 +658,7 @@ h2{
         //margin-right:-1.9%;
         margin-top:5%;
         padding-bottom:20%;
+
         .owner-profile{
             position:relative;
             top:5vh;
@@ -619,11 +679,13 @@ h2{
                 border-radius:50%;
 
             }
+
             .owner-info{
                 position:relative;
                 left:25%;
                 width:10pc;
                 font-size:0.7em;
+
                 span{
                     font-weight:bold;
                     font-size:1em;
@@ -631,6 +693,7 @@ h2{
                     color:rgb(0, 0, 0);
                 }  
             }
+
             .testimonial{
                 position:relative;
                 font-weight:lighter;
@@ -815,7 +878,11 @@ h2{
             .card{
                 .poster2-text{
                     display:grid;
-                    grid-template-columns:500px 400px;
+                    grid-template-columns:400px 300px;
+                   poster-para{
+                       margin-left:60px;
+                       color:red;
+                   }
                 }
             }
         }
@@ -859,16 +926,17 @@ h2{
 
     .sub-section{
         display:grid;
-        grid-template-columns:400px 870px;
+        grid-template-columns:450px 870px;
         grid-gap:auto;
         .latest-on-sale{
             display:grid;
             grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
             grid-auto-rows:minmax(100px, auto);
-            grid-gap:50px;
-            .car-offer1{
+            grid-gap:-40px;
+            .car-offer{
+                margin-right:60px;
                 .car-offer-img{
-                    width:100%;
+                    width:115%;
                     height:45vh;
                 }
             }
@@ -876,7 +944,7 @@ h2{
         .car-offer1{
             font-size:1em;
             .fa-road, .km{
-                left:35%;
+                left:20%;
                 font-size:0.7em;
             }
         }

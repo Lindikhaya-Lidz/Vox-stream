@@ -12,6 +12,7 @@
    <title>Document</title> 
 </head>
 <body>
+    <!--The orange section when viewed on a large tablet or a laptop-->
     <section class='nav-section'>
         <nav>
             <div class='contacts-signin-desktop'>
@@ -30,6 +31,7 @@
             </div>
             
             <img src='resources/media/logo4.png' alt='logo' class='logo'>
+            <!--mobile menu setup-->
             <ul class='desktop-menu'>
                 <li><a href='#'><img src='resources/media/icons/home_black_24dp.svg' alt='home' class='menu-icons'>Home</a></li>
                 <li><img src='resources/media/icons/pages_black_24dp.svg' alt='pages-icon' class='menu-icons'><a href='#'>Pages</a></li>
@@ -45,20 +47,27 @@
             </div>
             
         </nav>
+        <!--End of our nav section-->
     </section>
+
+    <!--start of the carousel section that gif display-->
     <section class='carousel-section'>
         <div class='carousel'>
+
+            <!--when the menu bar is clicked this list is displayed-->
             <div class='mobile-menu '>
                 <ul class='menu'>
                     <li class='active'><a href='#' class=''><img src='resources/media/icons/home_black_24dp.svg' alt='home' class='mobile-menu-icons'>Home</a></li>
                     <li><a href='#' class=''><img src='resources/media/icons/pages_black_24dp.svg' alt='pages-icon' class='mobile-menu-icons'>Pages</a></li>
-                    <li><a href='#' class=''><img src='resources/media/icons/grade_black_24dp.svg' alt='Best-offers-icon' class='mobile-menu-icons'>Best offers</a></li>
+                    <li><a href='#' class=''><img src='resources/media/icons/star_black_24dp.svg' alt='Best-offers-icon' class='mobile-menu-icons'>Best offers</a></li>
                     <li><a href='#reviews' class=''><img src='resources/media/icons/message_black_24dp.svg' alt='Testimonials-icon' class='mobile-menu-icons'>Testimonials</a></li>
                     <li class='menu-search'><a href='#' class=''><img src='resources/media/icons/search_black_24dp.svg' alt='filtered-search-icon' class='mobile-menu-icons'>Filter Search</i></a></li>
                     <li><a href='#' class=''><img src='resources/media/icons/contacts_black_24dp.svg' alt='contacts-search-icon' class='mobile-menu-icons'>Contacts</a></li>
                 </ul>
+                <!--x icon for closing the menu list-->
                 <i class="fas fa-times close"></i> 
             </div>
+            <!--company contacts and register / signin ...on mobile and small tablets its displayed when clicked on the three dot icon-->
             <div class='contacts-signin'>
                 <ul>
                     <li class=''><a href=''><i class="fas fa-phone-alt"></i>1-800-1234-5671</a></li>
@@ -71,12 +80,14 @@
              <div class='carousel-buttons'>
                  <span class='button-left'><i class="fas fa-angle-left"></i></span><span class='button-right'><i class="fas fa-angle-right"></i></span>
              </div> 
+             <!--The text displayed on the carousel that gives info about the cars displayed in the carousel-->
             <div class='carousel-text'>
                 <span class='dream-car'>FIND YOUR DREAM CAR</span>
-                <div class='Car-brand'>BMW M5 GRAND</div>
+                <div class='Car-brand'>Demon Dodge</div>
                 <span class='model'>MODEL</span><span class='model-year'>2017</span><span class='price'>$64, 000</span><br>
-                <div class='see-details'><a href='#' class=''>SEE DETAILS</a><i class="fas fa-angle-right"></i></div>
+                <div class='see-details'><a href='#' class=''>SEE DETAILS</a><img src='resources/media/icons/chevron_right_white_24dp.svg' class='right-arrow'></i></div>
             </div>
+            <!--Desktop version of the filter search form-->
             <form class='filtered-search-form desktop-filter-search'>
                 <select>
                     <datalist>
@@ -106,20 +117,26 @@
                     </datalist>
                 </select>
                 <input type='range' class='filter-range'>
-                <button class='filter-button'>Submit Filter</button>
+                <button class='filter-button'>Submit Filter <img src='resources/media/icons/send_white_24dp.svg' class='submit-icon'></button>
                 <!-- feature removed...probaby will be added when necessary
                     <a href='#' class='reset-filter'>Reset All Filters</a>
                 -->
             </form>
+            <!--Nav icons for the carousel on mobile and tablets-->
             <div class='carousel-nav'>
                 <i class="far fa-circle carousel-active circle1"></i>
                 <i class="far fa-circle circle2"></i>
                 <i class="far fa-circle circle3"></i>
             </div>
         </div>
+        <!--end of the carousel section-->
     </section>
+
+    <!--review section-->
     <section id='reviews'>
+        <!--reviews container-->
         <div class='reviews'>
+            <!--first review block-->
             <div class='review1'>
               <img src='resources/media/2010-mustang.jpg' alt ='2020-mustag' class='review-img'>
               <span class='reviewer'>First Driver Review</span>
@@ -131,6 +148,7 @@
               </p>
               <a href='#' class='read-more'>Read More <i class="fas fa-angle-right read-more-icon"></i></a>
             </div>
+            <!--second review block-->
             <div class='review1 of-review2'>
                 <img src='resources/media/1950-bugatti.jpg' alt='1950-bugatti' class='review-img'>
                 <span class='reviewer'>Instrument Test</span>
@@ -142,6 +160,7 @@
                 </p>
                 <a href='#' class='read-more'>Read More <i class="fas fa-angle-right read-more-icon"></i></a>
             </div>
+            <!--third review block-->
             <div class='review1 of-review3'>
                 <img src='resources/media/2013_mercedes_benz_c.jpg' alt='2013-mercedes' class='review-img'>
                 <span class='reviewer'>Buyers Info</span>
@@ -154,7 +173,9 @@
                 <a href='#' class='read-more'>Read More <i class="fas fa-angle-right read-more-icon"></i></a>
             </div>
         </div>
+        <!--end of the review section-->
     </section>
+    <!--The billboard poster section below the reviews-->
     <section>
         <div class='poster'>
             <img src='resources/media/logo4.png' alt='site-logo' class=''>
@@ -170,7 +191,10 @@
                 price and numerous other criteria.</p>
             </div>
         </div>
+        <!--end of the billboard section-->
     </section>
+
+    <!--automobile offer section-->
     <section id='offers'>
       <h2 class='best-offers'>BEST OFFERS FROM AUTOCLUB</h2> 
       <div class='offers-category'>
@@ -178,7 +202,7 @@
           <hr>
           <div class='latest'>LATEST VEHICLE ON SALE</div>
       </div>
-
+      <!--list of the most researched brands-->
       <div class='sub-section'>
         <ul class='list-offers'>
             <li>ALL MANUFACTURERS</li>
@@ -192,8 +216,10 @@
             <li>SUZUKI</li>
             <li>TOYOTA</li>
         </ul>
+
+        <!--latest cars on sale promo container-->
         <div class='latest-on-sale'>
-            <div class='car-offer1'>
+            <div class='car-offer'>
                <img src='resources/media/BMW-M6-Gran-Coupe-side.jpg' alt='BMW-M6-Grand' class='car-offer-img'>
                <h6>Registered 2015</h6>
                <h5>BMW M6 Sport Hybrid</h5>
@@ -209,8 +235,8 @@
                    </ul>
                </div>
             </div>
-            <!--offer1 ends here-->
-            <div class='car-offer1'>
+
+            <div class='car-offer'>
                 <img src='resources/media/2016-lexus-gs-hybrid-side.jpg' alt='2016-lexus' class='car-offer-img'>
                 <h6>Registered 2017</h6>
                 <h5>2016 Lexus c</h5>
@@ -225,9 +251,9 @@
                         <li>Petrol</li>
                     </ul>
                 </div>
-             </div>
-             <!--offer2-->
-             <div class='car-offer1'>
+            </div>
+
+            <div class='car-offer'>
                 <img src='resources/media/2016-bugatti-chiron.jpg' alt='2016-bugatti' class='car-offer-img'>
                 <h6>Registered 2016</h6>
                 <h5>Bugatti Chiron </h5>
@@ -242,9 +268,9 @@
                         <li>Petrol</li>
                     </ul>
                 </div>
-             </div>
-             <!--offer3 ends here-->
-             <div class='car-offer1'>
+            </div>
+
+            <div class='car-offer'>
                 <img src='resources/media/mercedes-amg.jpg' alt='mercedes' class='car-offer-img'>
                 <h6>Registered 2018</h6>
                 <h5>Mercedes Benz amg</h5>
@@ -259,9 +285,9 @@
                         <li>Petrol</li>
                     </ul>
                 </div>
-             </div>
-             <!--offer4 ends here-->
-             <div class='car-offer1'>
+            </div>
+             
+            <div class='car-offer'>
                 <img src='resources/media/g-class-amg-line.jpg' alt='mercedes-g-class-amg' class='car-offer-img'>
                 <h6>Registered 2020</h6>
                 <h5>Mercedes Benz G-class</h5>
@@ -276,9 +302,9 @@
                         <li>Petrol</li>
                     </ul>
                 </div>
-             </div>
-             <!--offer5 ends here-->
-             <div class='car-offer1'>
+            </div>
+             
+            <div class='car-offer'>
                 <img src='resources/media/2021-bmw-x6.jpg' alt='bmw-x6' class='car-offer-img'>
                 <h6>Registered 2021</h6>
                 <h5>BMW X6</h5>
@@ -293,11 +319,14 @@
                         <li>Petrol</li>
                     </ul>
                 </div>
-             </div>
+            </div>
         </div>
-    </div> 
+        <!--end of the latest offer section--> 
     </section>
+
+    <!--second billboard section-->
     <section>
+        <!--second billboard poster container-->
         <div class='poster2'>
             <div class='ring-border'>
                 <div class='card'>
@@ -305,11 +334,11 @@
                     <hr>
                     <h1>WHY PEOPLE CHOOSE US</h1>
                     <div class='poster2-text'>
-                        <p>As a local, family-owned dealership, we understand the needs of our customers,
+                        <p class='poster-para'>As a local, family-owned dealership, we understand the needs of our customers,
                            and we give back to our local community. We also offer great benefits to all our customers,
                            both new & returning. Feel free to check more reasons for becoming our client and having a hassle-free buying experience.
                         </p>
-                        <ul>
+                        <ul class='poster-list'>
                             <li><a href='#' class=''><i class="fas fa-check"></i>A wide range of affordable vehicles</a></li>
                             <li><i class="fas fa-check"></i><a href='#' class=''>Certified vehicle of various types and sizes</a></li>
                             <li><i class="fas fa-check"></i>Lots of additional products and accessories</li>
@@ -319,6 +348,7 @@
                 </div>
             </div>
         </div>
+        <!---->
         <div class='inventory'>
             <div><i class="fas fa-car"></i> NEW CARS IN STOCK</div>
             <hr>
@@ -328,7 +358,10 @@
             <hr>
             <div class=''><i class="fas fa-car-battery"></i>Spares</div>
         </div>
+        <!--end of the second billboard section-->
     </section>
+
+    <!--owner testimonial section-->
     <section class='owner-comments-section'>
         <div class='owner-comments'>
             <div class='owner-profile'>
@@ -342,6 +375,7 @@
                 </p>
             </div>
         </div>
+        <!--end of the owner testimonial section-->
     </section>
     <script src='resources/js/home.js'></script>
 </body>
