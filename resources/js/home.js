@@ -87,7 +87,6 @@ function navButtons(){
 
         }else{
             index--;
-            carousel.style.animationName = 'appear';
           carousel.style.backgroundImage = urlList[index]
             
         }
@@ -97,25 +96,9 @@ function navButtons(){
         if(index >= urlList.length-1){
 
         }else{
-            index++
-            carousel.style.animationName = 'appear';
+            index++;
             carousel.style.backgroundImage = urlList[index];
         }
     }
 }
-
-/*function resizeAndCach(){
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    console.log(width)
-    if(width >= 1204){
-        console.log('display the filter search field');
-        filterSearchForm.classList.remove('filtered-search-form');
-        console.log(filterSearchForm)
-    }else if(width < 1204){
-        filterSearchForm.classList.add('filtered-search-form');
-        console.log(filterSearchForm)
-    }
-}
-//window.addEventListener('resize', resizeAndCach)*/
 navButtons();

@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Pavanam', sans-serif;
   font-size: 0.9em;
   overflow-x: hidden;
 }
@@ -22,6 +22,14 @@ a {
 
 ul {
   list-style: none;
+}
+
+.horizontal-line {
+  background-color: #6b6464;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  margin-top: 23px;
 }
 
 nav {
@@ -67,10 +75,10 @@ nav div.burger div {
 }
 
 nav .logo {
-  width: 109px;
+  width: 140px;
   position: relative;
   left: 65px;
-  bottom: 40px;
+  bottom: 50px;
 }
 
 nav .menu-icons {
@@ -85,7 +93,7 @@ nav .desktop-menu {
 
 nav .dot-bar {
   position: relative;
-  bottom: 90px;
+  bottom: 100px;
   width: 10px;
   left: 96%;
 }
@@ -377,26 +385,25 @@ nav .dot-bar div {
 .carousel-section .carousel-text .see-details {
   background-color: #faf4f4;
   width: 110px;
-  margin-top: 35px;
+  margin-top: 30px;
   height: 55px;
-  max-height: 44px;
+  max-height: 40px;
+  padding-left: 5px;
 }
 
 .carousel-section .carousel-text .see-details a {
   color: #ff7300;
   font-size: 0.9em;
   position: relative;
-  left: 5px;
-  bottom: 19px;
+  left: 0px;
+  bottom: 17px;
 }
 
 .carousel-section .carousel-text .see-details .right-arrow {
   position: relative;
-  bottom: 0.9px;
-  left: 20px;
+  left: 10px;
   background-color: #ff7300;
-  padding: 8px;
-  padding-bottom: 14px;
+  padding: 8px 10px 9px 0px;
   -webkit-transition: rotate(180deg);
   transition: rotate(180deg);
 }
@@ -431,13 +438,14 @@ nav .dot-bar div {
   color: #faf4f4;
   border: none;
   padding: 7px;
+  padding-right: 25px;
   padding-bottom: 15px;
 }
 
 .carousel-section .filtered-search-form .submit-icon {
   position: relative;
   top: 7px;
-  left: 15px;
+  left: 10px;
 }
 
 .carousel-section .carousel-nav {
@@ -488,12 +496,11 @@ nav .dot-bar div {
 
 .reviews .review1 .read-more .read-more-icon {
   background-color: #ff7300;
-  padding: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 11.4px;
+  padding-bottom: 12.4px;
   position: relative;
   left: 12px;
-  top: 1px;
+  top: 0.4px;
 }
 
 .reviews .of-review2, .reviews .of-review3 {
@@ -618,7 +625,7 @@ h2 {
 
 .latest-on-sale .car-offer .fa-road, .latest-on-sale .car-offer .km {
   position: relative;
-  left: 51%;
+  left: 43%;
   bottom: 7vh;
 }
 
@@ -631,13 +638,13 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  right: 40px;
+  right: 27px;
   font-size: 0.7em;
   bottom: 35px;
 }
 
 .latest-on-sale .car-offer ul li {
-  padding-right: 25px;
+  padding-right: 23px;
 }
 
 .poster2 {
@@ -659,6 +666,8 @@ h2 {
   opacity: 0.8;
   text-align: center;
   padding: 20px;
+  position: relative;
+  bottom: 2em;
 }
 
 .poster2 .ring-border .card hr {
@@ -688,6 +697,7 @@ h2 {
 
 .owner-comments-section {
   width: 100%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .owner-comments-section .owner-comments {
@@ -701,7 +711,6 @@ h2 {
 .owner-comments-section .owner-comments .owner-profile {
   position: relative;
   top: 5vh;
-  border: 0.1px solid #ff7300;
   border-left: none;
   border-radius: 20px;
   padding-left: 5%;
@@ -712,15 +721,14 @@ h2 {
 }
 
 .owner-comments-section .owner-comments .owner-profile .owner-img {
-  margin-left: 30%;
+  margin-left: 25%;
   height: 15vh;
-  width: 100px;
+  width: 95px;
   border-radius: 50%;
 }
 
 .owner-comments-section .owner-comments .owner-profile .owner-info {
-  position: relative;
-  left: 25%;
+  margin: auto;
   width: 10pc;
   font-size: 0.7em;
 }
@@ -735,6 +743,78 @@ h2 {
 .owner-comments-section .owner-comments .owner-profile .testimonial {
   position: relative;
   font-weight: lighter;
+}
+
+.newsAndGallery {
+  background-color: #312e2e;
+  color: gray;
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.newsAndGallery h3, .newsAndGallery a, .newsAndGallery h5 {
+  color: white;
+}
+
+.newsAndGallery a {
+  font-size: 0.8em;
+}
+
+.newsAndGallery .contact-socials {
+  padding-top: 3pc;
+}
+
+.newsAndGallery .contact-socials li {
+  margin-bottom: 14px;
+}
+
+.newsAndGallery .gallery {
+  margin-right: 25%;
+}
+
+.newsAndGallery .gallery .gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (130%)[2];
+      grid-template-columns: repeat(2, 130%);
+  width: 50%;
+}
+
+.newsAndGallery .gallery .gallery-grid .gallery-img {
+  width: 100%;
+}
+
+footer {
+  background-color: #050404;
+  color: gray;
+  padding-left: 10%;
+}
+
+footer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (11%)[6];
+      grid-template-columns: repeat(6, 11%);
+  gap: 13%;
+  position: relative;
+  right: 20%;
+}
+
+footer i {
+  padding-left: 8%;
+  padding-top: 5%;
+}
+
+footer .footer-logo {
+  width: 40%;
+  margin-left: 20%;
+  padding-top: 8%;
+}
+
+footer .copy-right {
+  padding-top: 20%;
+  margin-left: 15%;
+  padding-bottom: 10%;
 }
 
 @media (min-width: 500px) {
@@ -767,21 +847,20 @@ h2 {
   .reviews .of-review3 .read-more {
     margin-bottom: 10px;
   }
-  .owner-comments-section .owner-comments .owner-profile .owner-img {
-    margin-left: 36%;
+  .owner-comments-section .owner-comments .owner-profile {
+    /*.owner-info{
+                    position:relative;
+                    left:34%; 
+                }*/
   }
-  .owner-comments-section .owner-comments .owner-profile .owner-info {
-    position: relative;
-    left: 34%;
+  .owner-comments-section .owner-comments .owner-profile .owner-img {
+    margin-left: 40%;
   }
 }
 
 @media (min-width: 1042px) {
   div.burger {
     display: none;
-  }
-  nav .desktop-menu {
-    left: 32pc;
   }
   .carousel-section .carousel .mobile-menu {
     display: none;
@@ -823,27 +902,29 @@ h2 {
   }
   nav {
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 0.8em;
+  }
+  nav .second-nav-container {
+    height: 80px;
   }
   nav .desktop-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    bottom: 8vh;
+    bottom: 5em;
     font-size: 1.2rem;
     left: 27vw;
     color: gray;
   }
   nav .desktop-menu li {
     padding-right: 5%;
-    margin-bottom: -70px;
     position: relative;
     bottom: 15px;
   }
   nav .desktop-menu li a {
-    padding-left: 5px;
+    margin-right: 15px;
   }
   nav .dot-bar {
     display: none;
@@ -892,6 +973,17 @@ h2 {
   .inventory hr {
     display: none;
   }
+  .inventory .newsAndGallery {
+    display: -ms-grid;
+    display: grid;
+    color: red;
+    -ms-grid-columns: (33%)[3];
+        grid-template-columns: repeat(3, 33%);
+    padding-left: 4%;
+  }
+  .inventory .newsAndGallery .contact-socials {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1042px) and (min-width: 1208px) {
@@ -920,7 +1012,7 @@ h2 {
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: minmax(100px, auto);
-    grid-gap: -40px;
+    grid-gap: 5px;
   }
   .sub-section .latest-on-sale .car-offer {
     margin-right: 60px;
@@ -929,12 +1021,13 @@ h2 {
     width: 115%;
     height: 45vh;
   }
-  .sub-section .car-offer1 {
+  .sub-section .car-offer {
     font-size: 1em;
   }
-  .sub-section .car-offer1 .fa-road, .sub-section .car-offer1 .km {
-    left: 20%;
+  .sub-section .car-offer .fa-road, .sub-section .car-offer .km {
+    left: 50%;
     font-size: 0.7em;
+    position: relative;
   }
   .inventory {
     -ms-grid-columns: (1fr)[4];
