@@ -228,13 +228,6 @@ nav{
                 top:40px;
                 color:rgb(122, 116, 116);
                 font-size:20px;
-                animation-name:rotate-close;
-                animation-duration:1s;
-
-                @keyframes rotate-close{
-                    from{transform:rotate(0deg)}
-                    to{transform:rotate(360deg)}
-                }
             }
         }
         //### END OF THE MOBILE MENU CONTAINER ###
@@ -424,10 +417,16 @@ nav{
     margin:12px;
     position:relative;
     bottom:80px;
+    background-color:black;
+    .review-stars{
+
+        i{
+            color:$main-color;
+        }
+    }
 
     //FIRST REVIEW BLOCK
     .review1{
-
         .review-img{
             width:100%;
             &:hover{
@@ -746,16 +745,15 @@ h2{
 
 }
 footer{
-    background-color:rgb(5, 4, 4);
+    background-color:rgb(26, 21, 21);
     color:gray;
     padding-left:10%;
-
     ul{
         display:grid;
         grid-template-columns:repeat(6,11%);
         gap:13%;
         position:relative;
-        right:20%;
+        right:18%;
         li{
             
         }

@@ -785,7 +785,7 @@ h2 {
 }
 
 footer {
-  background-color: #050404;
+  background-color: #1a1515;
   color: gray;
   padding-left: 10%;
 }
@@ -797,7 +797,7 @@ footer ul {
       grid-template-columns: repeat(6, 11%);
   gap: 13%;
   position: relative;
-  right: 20%;
+  right: 18%;
 }
 
 footer i {
