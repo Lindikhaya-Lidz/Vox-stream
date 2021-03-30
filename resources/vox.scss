@@ -1,7 +1,9 @@
 $primary-icon-color:rgb(75, 71, 71);
-$primary-color:rgb(255, 115, 0);
+$primary-color:rgba(255, 81, 0, 0.952);
 $secondary-color:rgb(250, 244, 244);
 $content-separate:40px;
+
+
 @mixin carousel-buttons-utils{
     background-color:black;
     padding:3%;
@@ -54,6 +56,26 @@ ul{
 }
 //###  END OF THE RESETS
 
+.bug-warning{
+    overflow-x:hidden;
+    padding:1.5%;
+    font-size:1.3em;
+    color:rgb(73, 64, 64);
+    background-color:lightgray;
+    .close, .continue{
+        border:none;
+        padding:2%;
+        border-radius:5px;
+        color:white;
+    }
+    .close{
+        margin-right:1%;
+        background-color:$primary-icon-color;
+    }
+    .continue{
+        background-color:$primary-color;
+    }
+}
 
 //**START OF THE NAV SECTION***
 nav{
@@ -417,11 +439,10 @@ nav{
     margin:12px;
     position:relative;
     bottom:80px;
-    background-color:black;
     .review-stars{
 
         i{
-            color:$main-color;
+            color:$primary-color;
         }
     }
 
