@@ -144,6 +144,7 @@ nav .dot-bar div {
   padding: 20%;
   position: relative;
   top: 20px;
+  overflow: hidden;
   max-height: 700px;
   -webkit-animation-name: appear;
           animation-name: appear;
@@ -256,7 +257,7 @@ nav .dot-bar div {
   font-size: 10px;
   width: 70%;
   height: 30%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: none;
   -webkit-animation-name: slide-in;
           animation-name: slide-in;
@@ -323,26 +324,26 @@ nav .dot-bar div {
 .carousel-section .carousel-buttons .button-left {
   float: left;
   background-color: black;
-  padding: 3%;
+  padding: 2%;
   opacity: 0.8;
   font-size: 1.5em;
-  border-radius: 10px;
+  border-radius: 3px;
   position: absolute;
   z-index: 3;
   top: 30%;
-  right: 95%;
+  right: 94.5%;
   padding-left: 20em;
 }
 
 .carousel-section .carousel-buttons .button-right {
   float: right;
   background-color: black;
-  padding: 3%;
+  padding: 2%;
   opacity: 0.8;
   font-size: 1.5em;
-  border-radius: 10px;
+  border-radius: 3px;
   position: absolute;
-  left: 94%;
+  left: 93%;
   top: 29%;
   padding: 3%;
 }
@@ -809,13 +810,13 @@ footer i {
 
 footer .footer-logo {
   width: 40%;
-  margin-left: 20%;
+  margin-left: 15%;
   padding-top: 8%;
 }
 
 footer .copy-right {
   padding-top: 20%;
-  margin-left: 15%;
+  text-align: center;
   padding-bottom: 10%;
 }
 

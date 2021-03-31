@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel='icon' href='resources/favicon.ico'>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-   <title>Document</title> 
+   <title>UDOIT auto</title> 
 </head>
 <body>
     <!--bug warning-->
     <div class='bug-warning'>
         <p>This site is very buggy, But the issues will dealt with</p>
-        <button class='close'>Close</button><button class='continue'>Continue</button>
+        <button id='warningClose' class='close'>Close</button>
     </div>    
     <!--The orange section when viewed on a large tablet or a laptop-->
     <section class='nav-section'>
@@ -61,7 +62,7 @@
     <section class='carousel-section'>
         <div class='carousel'>
 
-            <!--when the menu bar is clicked this list is displayed-->
+            <!-- when the menu bar is clicked this list is displayed -->
             <div class='mobile-menu '>
                 <ul class='menu'>
                     <li class='active'><a href='#' class=''><img src='resources/media/icons/home_black_24dp.svg' alt='home' class='mobile-menu-icons'>Home</a></li>
@@ -71,8 +72,8 @@
                     <li class='menu-search'><a href='#' class=''><img src='resources/media/icons/search_black_24dp.svg' alt='filtered-search-icon' class='mobile-menu-icons'>Filter Search</i></a></li>
                     <li><a href='#' class=''><img src='resources/media/icons/contacts_black_24dp.svg' alt='contacts-search-icon' class='mobile-menu-icons'>Contacts</a></li>
                 </ul>
-                <!--x icon for closing the menu list-->
-                <i class="fas fa-times close"></i> 
+                <!-- x icon for closing the menu list-->
+                <i id='close' class="close fas fa-times"></i> 
             </div>
             <!--company contacts and register / signin ...on mobile and small tablets its displayed when clicked on the three dot icon-->
             <div class='contacts-signin'>

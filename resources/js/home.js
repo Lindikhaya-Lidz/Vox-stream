@@ -1,5 +1,5 @@
 const burger = document.querySelector('.burger');
-const CloseMenu = document.querySelector('.close');
+const CloseMenu = document.querySelector('i.close');
 const mobileMenu = document.querySelector('.mobile-menu');
 const carouselText = document.querySelector('.carousel-text');
 const dotMenuBar = document.querySelector('.dot-bar');
@@ -7,6 +7,7 @@ const menuSearch = document.querySelector('.menu-search');
 const filteredSearch = document.querySelector('.filtered-search-form');
 const carousel =  document.querySelector('.carousel');
 const filterSearchForm = document.querySelector('.filtered-search-form');
+const warningClose = document.querySelector('#warningClose');
 
 dotMenuBar.addEventListener('click',()=> {
     let contactsAndSignin = document.querySelector('.contacts-signin');
@@ -102,3 +103,13 @@ function navButtons(){
     }
 }
 navButtons();
+
+function bugWarning(){
+    warningClose.addEventListener('click', ()=>{
+        console.log('I was clicked')
+        const bugWarning = document.querySelector('.bug-warning');
+        bugWarning.style.display = 'none'; 
+    })
+}
+
+bugWarning();
