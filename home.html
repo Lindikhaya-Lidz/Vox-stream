@@ -40,7 +40,7 @@
                 <img src='resources/media/logo4.png' alt='logo' class='logo'>
                 <!--mobile menu setup-->
                 <ul class='desktop-menu'>
-                    <li><a href='#'>Home</a></li>
+                    <li id='active'><a href='#' id='active'>Home</a></li>
                     <li><a href='#'>Pages</a></li>
                     <li><a href='#offers'>Best offers</a></li>
                     <li><a href='#reviews'>Testimonials</a></li>
@@ -53,7 +53,16 @@
                     <div></div>
                 </div>
             </div>
-            
+             <!--company contacts and register / signin ...on mobile and small tablets its displayed when clicked on the three dot icon-->
+             <div class='contacts-signin'>
+                <ul>
+                    <li class=''><a href=''><i class="fas fa-phone-alt"></i>1-800-1234-5671</a></li>
+                    <li class=''><a href=''><i class="fas fa-map-marker-alt"></i>2130 Fulton street San Diego, CA 94117-1080 USA</a></li>
+                    <li class=''><a href=''><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class=''><a href=''>Sign</a></li>
+                    <li class=''><a href=''>Register</a></li>
+                </ul>
+             </div>
         </nav>
         <!--End of our nav section-->
     </section>
@@ -75,16 +84,6 @@
                 <!-- x icon for closing the menu list-->
                 <i id='close' class="close fas fa-times"></i> 
             </div>
-            <!--company contacts and register / signin ...on mobile and small tablets its displayed when clicked on the three dot icon-->
-            <div class='contacts-signin'>
-                <ul>
-                    <li class=''><a href=''><i class="fas fa-phone-alt"></i>1-800-1234-5671</a></li>
-                    <li class=''><a href=''><i class="fas fa-map-marker-alt"></i>2130 Fulton street San Diego, CA 94117-1080 USA</a></li>
-                    <li class=''><a href=''><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-google-plus-g"></i></a></li>
-                    <li class=''><a href=''>Sign</a></li>
-                    <li class=''><a href=''>Register</a></li>
-                </ul>
-             </div>
              <div class='carousel-buttons'>
                  <span class='button-left'><i class="fas fa-angle-left"></i></span><span class='button-right'><i class="fas fa-angle-right"></i></span>
              </div> 
@@ -419,8 +418,8 @@
             <a href=''>read more</a>
         </div>
         <div class='contact-socials'>
-            <h3>Contacts</h3>
             <ul>
+                <h3>Contacts</h3>
                 <li><i class="fas fa-map-marker-alt"></i>2130 Fulton street San Diego, CA 94117-1080 USA</li>
                 <li><i class="fas fa-phone-alt"></i>1-800-1234-5671</li>
                 <li><i class="far fa-envelope"></i>Email:<a href='#'>Info@UDoItAuto.com</a></li>
@@ -462,5 +461,14 @@
         </div>
     </footer>    
     <script src='resources/js/home.js'></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.3.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.3.2/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 </body>
 </html>

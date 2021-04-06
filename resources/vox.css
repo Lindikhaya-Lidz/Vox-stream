@@ -53,7 +53,7 @@ ul {
 }
 
 .bug-warning .continue {
-  background-color: rgba(255, 81, 0, 0.952);
+  background-color: rgba(255, 81, 0, 0.863);
 }
 
 nav {
@@ -73,7 +73,7 @@ nav .contacts-signin-desktop {
   margin-right: -50px;
   margin-left: -20px;
   display: none;
-  background-color: rgba(255, 81, 0, 0.952);
+  background-color: rgba(255, 81, 0, 0.863);
   color: #faf4f4;
   position: relative;
   bottom: 65px;
@@ -89,11 +89,12 @@ nav div.burger {
 
 nav div.burger div {
   background-color: #4b4747;
-  width: 40px;
+  width: 43px;
   height: 7px;
   margin: 6px;
   margin-left: -3px;
-  border-radius: 9px;
+  border-top-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   position: relative;
   bottom: 2px;
 }
@@ -109,6 +110,75 @@ nav .menu-icons {
   position: relative;
   top: 5px;
   padding-right: 3px;
+}
+
+nav .contacts-signin {
+  background-color: #f1ecec;
+  position: absolute;
+  bottom: 17pc;
+  z-index: 2;
+  left: 43%;
+  font-size: 10px;
+  width: 70%;
+  height: 30%;
+  padding-bottom: 25%;
+  display: none;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    left: 50pc;
+  }
+  to {
+    right: 50pc;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 50pc;
+  }
+  to {
+    right: 50pc;
+  }
+}
+
+nav .contacts-signin ul li {
+  padding: 2px;
+  padding-top: 10px;
+  position: relative;
+  margin-right: 18%;
+  -webkit-animation-name: slick-slide;
+          animation-name: slick-slide;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes slick-slide {
+  from {
+    right: 90px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slick-slide {
+  from {
+    right: 90px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+nav .contacts-signin ul li a {
+  color: #888585;
+  text-decoration: underline;
 }
 
 nav .desktop-menu {
@@ -170,8 +240,8 @@ nav .dot-bar div {
   display: none;
   -webkit-animation-name: slide-the-menu;
           animation-name: slide-the-menu;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 @-webkit-keyframes slide-the-menu {
@@ -248,74 +318,6 @@ nav .dot-bar div {
   font-size: 20px;
 }
 
-.carousel-section .carousel .contacts-signin {
-  background-color: #f1ecec;
-  position: absolute;
-  bottom: 80%;
-  z-index: 1;
-  left: 43%;
-  font-size: 10px;
-  width: 70%;
-  height: 30%;
-  padding-bottom: 50px;
-  display: none;
-  -webkit-animation-name: slide-in;
-          animation-name: slide-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-@-webkit-keyframes slide-in {
-  from {
-    left: 50pc;
-  }
-  to {
-    right: 50pc;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    left: 50pc;
-  }
-  to {
-    right: 50pc;
-  }
-}
-
-.carousel-section .carousel .contacts-signin ul li {
-  padding: 5px;
-  position: relative;
-  margin-right: 15%;
-  -webkit-animation-name: slick-slide;
-          animation-name: slick-slide;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
-}
-
-@-webkit-keyframes slick-slide {
-  from {
-    right: 90px;
-  }
-  to {
-    right: 0;
-  }
-}
-
-@keyframes slick-slide {
-  from {
-    right: 90px;
-  }
-  to {
-    right: 0;
-  }
-}
-
-.carousel-section .carousel .contacts-signin ul li a {
-  color: #888585;
-  text-decoration: underline;
-}
-
 .carousel-section .carousel-buttons {
   display: none;
   overflow-x: hidden;
@@ -373,7 +375,7 @@ nav .dot-bar div {
 
 .carousel-section .carousel-text .price {
   padding-left: 25px;
-  color: rgba(255, 81, 0, 0.952);
+  color: rgba(255, 81, 0, 0.863);
   background-color: #faf4f4;
   padding: 6px;
   padding-right: 5%;
@@ -391,7 +393,7 @@ nav .dot-bar div {
 }
 
 .carousel-section .carousel-text .see-details a {
-  color: rgba(255, 81, 0, 0.952);
+  color: rgba(255, 81, 0, 0.863);
   font-size: 0.9em;
   position: relative;
   left: 0px;
@@ -401,7 +403,7 @@ nav .dot-bar div {
 .carousel-section .carousel-text .see-details .right-arrow {
   position: relative;
   left: 10px;
-  background-color: rgba(255, 81, 0, 0.952);
+  background-color: rgba(255, 81, 0, 0.863);
   padding: 8px 10px 9px 0px;
   -webkit-transition: rotate(180deg);
   transition: rotate(180deg);
@@ -433,7 +435,7 @@ nav .dot-bar div {
 
 .carousel-section .filtered-search-form .filter-button {
   margin-left: 30%;
-  background-color: rgba(255, 81, 0, 0.952);
+  background-color: rgba(255, 81, 0, 0.863);
   color: #faf4f4;
   border: none;
   padding: 7px;
@@ -462,7 +464,7 @@ nav .dot-bar div {
 }
 
 .reviews .review-stars i {
-  color: rgba(255, 81, 0, 0.952);
+  color: rgba(255, 81, 0, 0.863);
 }
 
 .reviews .review1 .review-img {
@@ -498,7 +500,7 @@ nav .dot-bar div {
 }
 
 .reviews .review1 .read-more .read-more-icon {
-  background-color: rgba(255, 81, 0, 0.952);
+  background-color: rgba(255, 81, 0, 0.863);
   padding: 11.4px;
   padding-bottom: 12.4px;
   position: relative;
@@ -616,7 +618,7 @@ h2 {
 }
 
 .latest-on-sale .car-offer .car-offer-price {
-  color: rgba(255, 81, 0, 0.952);
+  color: rgba(255, 81, 0, 0.863);
   padding-left: 5px;
   font-weight: bold;
 }
@@ -767,7 +769,12 @@ h2 {
   padding-top: 3pc;
 }
 
-.newsAndGallery .contact-socials li {
+.newsAndGallery .contact-socials ul h3 {
+  position: relative;
+  right: 40px;
+}
+
+.newsAndGallery .contact-socials ul li {
   margin-bottom: 14px;
 }
 
@@ -798,14 +805,23 @@ footer ul {
   display: grid;
   -ms-grid-columns: (11%)[6];
       grid-template-columns: repeat(6, 11%);
-  gap: 13%;
+  gap: 26px;
   position: relative;
-  right: 18%;
+  right: 5pc;
+}
+
+footer ul li {
+  text-align: center;
 }
 
 footer i {
   padding-left: 8%;
   padding-top: 5%;
+  font-size: 5vw;
+}
+
+footer i:hover {
+  color: rgba(255, 81, 0, 0.863);
 }
 
 footer .footer-logo {
@@ -835,6 +851,9 @@ footer .copy-right {
   }
   .carousel-section .carousel-buttons {
     display: inline;
+  }
+  nav .contacts-signin {
+    bottom: -2px;
   }
   .reviews {
     display: -ms-grid;
@@ -926,8 +945,14 @@ footer .copy-right {
     position: relative;
     bottom: 15px;
   }
+  nav .desktop-menu li #active {
+    border-bottom: 2px solid rgba(255, 81, 0, 0.863);
+  }
   nav .desktop-menu li a {
     margin-right: 15px;
+  }
+  nav .desktop-menu li a:hover {
+    color: rgba(255, 81, 0, 0.863);
   }
   nav .dot-bar {
     display: none;
@@ -962,6 +987,13 @@ footer .copy-right {
     margin-left: 60px;
     color: red;
   }
+  .newsAndGallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (35%)[3];
+        grid-template-columns: repeat(3, 35%);
+    padding-left: 4%;
+  }
   .inventory {
     display: -ms-grid;
     display: grid;
@@ -976,20 +1008,25 @@ footer .copy-right {
   .inventory hr {
     display: none;
   }
-  .inventory .newsAndGallery {
+  .newsAndGallery {
     display: -ms-grid;
     display: grid;
-    color: red;
     -ms-grid-columns: (33%)[3];
         grid-template-columns: repeat(3, 33%);
     padding-left: 4%;
   }
-  .inventory .newsAndGallery .contact-socials {
+  .newsAndGallery .contact-socials {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .newsAndGallery .contact-socials ul h3 {
+    right: -3px;
   }
 }
 
-@media (min-width: 1042px) and (min-width: 1208px) {
+@media (min-width: 1208px) {
   .carousel-section .desktop-filter-search .reset-filter {
     right: 45%;
   }
@@ -1038,7 +1075,7 @@ footer .copy-right {
   }
 }
 
-@media (min-width: 1042px) and (min-width: 1378px) {
+@media (min-width: 1378px) {
   .carousel-section .desktop-filter-search {
     position: absolute;
     bottom: 55pc;
@@ -1055,7 +1092,7 @@ footer .copy-right {
   }
 }
 
-@media (min-width: 1042px) and (min-width: 1666px) {
+@media (min-width: 1666px) {
   .carousel-section .carousel .desktop-filter-search {
     padding-bottom: 30%;
     width: 30%;

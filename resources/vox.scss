@@ -1,5 +1,5 @@
 $primary-icon-color:rgb(75, 71, 71);
-$primary-color:rgba(255, 81, 0, 0.952);
+$primary-color:rgba(255, 81, 0, 0.863);
 $secondary-color:rgb(250, 244, 244);
 $content-separate:40px;
 
@@ -84,7 +84,6 @@ ul{
 nav{
     margin:15px;
     padding-top:0%;
-
     //THE COMPANY CONTACTS AND REGISTER / SIGNIN
     .contacts-signin-desktop{
         margin-right:-50px;
@@ -114,11 +113,12 @@ nav{
 
         div{
             background-color:$primary-icon-color;
-            width:40px;
+            width:43px;
             height:7px;
             margin:6px;
             margin-left:-3px;
-            border-radius:9px;
+            border-top-left-radius:9px;
+            border-bottom-right-radius:9px;
             position:relative;
             bottom:2px;
         }
@@ -137,6 +137,47 @@ nav{
         top:5px;
         padding-right:3px;
         
+    }
+    .contacts-signin{
+        background-color:rgb(241, 236, 236);
+        position:absolute;
+        bottom:17pc;
+        z-index:2;
+        left:43%;
+        font-size:10px;
+        width:70%;
+        height:30%;
+        padding-bottom:25%;
+        display:none;
+        animation-name:slide-in;
+        animation-duration:0.4s;
+
+        //animation for the slide in
+        @keyframes slide-in{
+            from{left:50pc};
+            to{right:50pc}
+        }
+        //CONTACTS MENU LIST
+        ul{
+            li{
+                padding:2px;
+                padding-top:10px;
+                position:relative;
+                margin-right:18%;
+                animation-name:slick-slide;
+                animation-duration:1s;
+
+                @keyframes slick-slide{
+                   from{right:90px;} 
+                   to{right:0;}
+                }
+
+                a{
+                    color:rgb(136, 133, 133);
+                    text-decoration:underline;
+                }
+            }
+        }
     }
 
     .desktop-menu{
@@ -198,7 +239,7 @@ nav{
             padding-left:20%;
             display:none;
             animation-name:slide-the-menu;
-            animation-duration:0.6s;
+            animation-duration:0.3s;
 
             //ANIMATION FOR SLIDING THE MENU FROM LEFT TO RIGHT
             @keyframes slide-the-menu{
@@ -259,46 +300,7 @@ nav{
         //### END OF THE MOBILE MENU CONTAINER ###
 
         //***START OF THE CONTACTS AND SIGNIN CONTAINER ***
-        .contacts-signin{
-            background-color:rgb(241, 236, 236);
-            position:absolute;
-            bottom:80%;
-            z-index:1;
-            left:43%;
-            font-size:10px;
-            width:70%;
-            height:30%;
-            padding-bottom:50px;
-            display:none;
-            animation-name:slide-in;
-            animation-duration:1s;
-
-            //animation for the slide in
-            @keyframes slide-in{
-                from{left:50pc};
-                to{right:50pc}
-            }
-            //CONTACTS MENU LIST
-            ul{
-                li{
-                    padding:5px;
-                    position:relative;
-                    margin-right:15%;
-                    animation-name:slick-slide;
-                    animation-duration:1.6s;
-
-                    @keyframes slick-slide{
-                       from{right:90px;} 
-                       to{right:0;}
-                    }
-
-                    a{
-                        color:rgb(136, 133, 133);
-                        text-decoration:underline;
-                    }
-                }
-            }
-        }
+        
     }
     //###END OF THE CONTACTS AND SIGININ CONTAINER###
 
@@ -400,6 +402,7 @@ nav{
         select{
             width:100%;
             background-color:lightgray;
+
             option{
                 width:10%;
             }
@@ -752,8 +755,14 @@ h2{
 
     .contact-socials{
         padding-top:3pc;
-        li{
-            margin-bottom:14px;
+        ul{
+            h3{
+                position:relative;
+                right:40px;
+            }
+            li{
+                margin-bottom:14px;
+            }
         } 
     }
     .gallery{
@@ -776,13 +785,23 @@ footer{
     ul{
         display:grid;
         grid-template-columns:repeat(6,11%);
-        gap:13%;
+        gap:26px;
         position:relative;
-        right:18%;
+        right:5pc;
+        li{
+            text-align:center;
+            a{
+               
+            }
+        }
     }
     i{
        padding-left:8%;
-       padding-top:5%; 
+       padding-top:5%;
+       font-size:5vw;
+       &:hover{
+           color:$primary-color;
+       } 
     }
     .footer-logo{
         width:40%;
@@ -826,7 +845,12 @@ footer{
         }
     }
     //###end of the carousel section ###
-
+    
+    nav{
+        .contacts-signin{
+            bottom:-2px;
+        }
+    }
     //***start of the reviews ***
     .reviews{
         display:grid;
@@ -915,6 +939,7 @@ footer{
             }
         }
     }
+
     nav{
       padding-top:40px;
       padding-bottom:10px;
@@ -933,8 +958,16 @@ footer{
             padding-right:5%;
             position:relative;
             bottom:15px;
+
+            #active{
+                border-bottom:2px solid $primary-color;
+            }
+
             a{
                 margin-right:15px;
+                &:hover{
+                    color:$primary-color;
+                }
             }
         } 
       } 
@@ -960,6 +993,7 @@ footer{
         }
         //###end of the contacts-signin-desktop### 
     }
+
     .poster2{
         .ring-border{
             top:25%;
@@ -978,6 +1012,13 @@ footer{
             }
         }
     }
+
+    .newsAndGallery{
+        display:grid;
+        grid-template-columns:repeat(3,35%);
+        padding-left:4%;
+        
+    }
     .inventory{
         display:grid;
         grid-template-columns:repeat(2,1fr);
@@ -987,14 +1028,22 @@ footer{
         }
         hr{
             display:none;
+        }
     }
+
     .newsAndGallery{
         display:grid;
-        color:red;
         grid-template-columns:repeat(3,33%);
         padding-left:4%;
+
         .contact-socials{
-          padding:0;  
+          padding:0; 
+          display:flex;
+          ul{
+              h3{
+                  right:-3px;
+              }
+          } 
         }
         .gallery{
             .gallery-grid{
@@ -1004,7 +1053,6 @@ footer{
             }
         }
     }
-    
     
 }
 
@@ -1030,7 +1078,8 @@ footer{
         }
     }
     //### end of the offers category
-
+     
+    //**start of the sub section***
     .sub-section{
         display:grid;
         grid-template-columns:450px 870px;
@@ -1064,7 +1113,8 @@ footer{
 
 }
 
-@media(min-width: 1378px) {
+@media(min-width: 1378px){
+
     .carousel-section{    
         .desktop-filter-search{
            position:absolute;
@@ -1074,16 +1124,19 @@ footer{
            padding-bottom:32%;
            margin-top:-12px;
            box-sizing:border-box;
+
            .reset-filter{
                position:relative;
                right:40%;
            } 
         }
     } 
+
 }
 
 @media(min-width:1666px){
     .carousel-section{
+
         .carousel{
             .desktop-filter-search{
                 padding-bottom:30%;
@@ -1091,5 +1144,4 @@ footer{
             }
         }
     }
-}
 }
