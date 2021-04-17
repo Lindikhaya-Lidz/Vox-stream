@@ -34,7 +34,7 @@ ul {
 
 .bug-warning {
   overflow-x: hidden;
-  padding: 0.5pc;
+  padding: 2.2pc;
   font-size: 1.3em;
   color: #494040;
   background-color: lightgray;
@@ -79,8 +79,8 @@ nav .contacts-signin-desktop {
   background-color: rgba(255, 105, 36, 0.863);
   color: #faf4f4;
   position: relative;
-  bottom: 3.5em;
-  padding: 1%;
+  bottom: 3.8em;
+  padding: 0.3%;
   padding-left: 10%;
   padding-top: 2%;
   font-size: 1.5em;
@@ -971,12 +971,14 @@ footer .copy-right {
     width: 65%;
   }
   nav {
-    padding-top: 40px;
-    padding-bottom: 10px;
+    width: 100%;
+    margin: 0;
     font-size: 0.8em;
+    position: relative;
+    background-color: #534e4e;
   }
   nav .second-nav-container {
-    height: 80px;
+    height: 130px;
   }
   nav .desktop-menu {
     display: -webkit-box;
