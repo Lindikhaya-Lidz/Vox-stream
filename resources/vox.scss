@@ -56,31 +56,6 @@ ul{
 }
 //###  END OF THE RESETS
 
-.bug-warning{
-    overflow-x:hidden;
-    padding:2.2pc;
-    font-size:1.3em;
-    color:rgb(73, 64, 64);
-    background-color:lightgray;
-
-    .close, .continue{
-        float:right;
-        border:none;
-        padding:0.4pc;
-        border-radius:3px;
-        color:white;
-    }
-
-    .close{
-        margin-right:1%;
-        background-color:$primary-icon-color;
-    }
-    
-    .continue{
-        background-color:$primary-color;
-    }
-}
-
 //**START OF THE NAV SECTION***
 nav{
     margin:15px;
@@ -144,7 +119,7 @@ nav{
     .contacts-signin{
         background-color:rgb(241, 236, 236);
         position:absolute;
-        bottom:15pc;
+        bottom:26pc;
         z-index:2;
         left:38%;
         font-size:10px;
@@ -213,7 +188,7 @@ nav{
 
     .carousel{
         //margin-right:-1.9%;
-        background-image: url('./media/dodge-charger3.gif');
+        background-image: url('./media/bmw3.gif');
         background-size:100% 80% ;
         background-repeat:no-repeat;
         padding:20%;
@@ -336,7 +311,8 @@ nav{
               position:absolute;
               left:93%;
               top:29%;
-              padding:3%;             
+              padding:2.3%;
+              padding-right:25%;             
             }
     }
     //### End of the carousel buttons container
@@ -376,7 +352,7 @@ nav{
 
         .see-details{
             background-color:$secondary-color;
-            width:110px;
+            width:112px;
             margin-top:30px;
             height:55px;
             max-height:40px;
@@ -504,16 +480,15 @@ nav{
             color:$secondary-color;
             padding:10px;
             font-size:10px;
-            border-radius:3px;
+            border-radius:2px;
 
             .read-more-icon{
                 background-color:$primary-color;
-                padding:11.4px;
+                padding:11px;
                 padding-bottom:12.4px;
                 position:relative;
-                left:12px;
-                top:0.4px;
-                border-radius:3px;
+                left:11.5px;
+                border-radius:2px;
             }
         }
     }
@@ -815,13 +790,15 @@ footer{
     ul{
         display:grid;
         grid-template-columns:repeat(6,11%);
-        gap:26px;
+        gap:30px;
         position:relative;
         right:3.5pc;
+        margin:0 0 0 15%;
+        padding-left:10%;
         li{
-            text-align:center;
+            
             a{
-               
+              
             }
         }
     }
@@ -923,6 +900,33 @@ footer{
 //###landscape mobile devices an small tablets###
 
 @media(min-width:1042px){
+
+    .bug-warning{
+        overflow-x:hidden;
+        padding:2.2pc;
+        font-size:1.3em;
+        color:rgb(73, 64, 64);
+        background-color:lightgray;
+    
+        .close, .continue{
+            float:right;
+            border:none;
+            padding:0.4pc;
+            border-radius:3px;
+            color:white;
+        }
+    
+        .close{
+            margin-right:1%;
+            background-color:$primary-icon-color;
+        }
+        
+        .continue{
+            background-color:$primary-color;
+        }
+    }
+    
+
     div.burger{
         display:none;
     }

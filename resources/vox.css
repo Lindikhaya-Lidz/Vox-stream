@@ -32,31 +32,6 @@ ul {
   margin-top: 23px;
 }
 
-.bug-warning {
-  overflow-x: hidden;
-  padding: 2.2pc;
-  font-size: 1.3em;
-  color: #494040;
-  background-color: lightgray;
-}
-
-.bug-warning .close, .bug-warning .continue {
-  float: right;
-  border: none;
-  padding: 0.4pc;
-  border-radius: 3px;
-  color: white;
-}
-
-.bug-warning .close {
-  margin-right: 1%;
-  background-color: #4b4747;
-}
-
-.bug-warning .continue {
-  background-color: rgba(255, 105, 36, 0.863);
-}
-
 nav {
   margin: 15px;
   padding-top: 0%;
@@ -118,7 +93,7 @@ nav .menu-icons {
 nav .contacts-signin {
   background-color: #f1ecec;
   position: absolute;
-  bottom: 15pc;
+  bottom: 26pc;
   z-index: 2;
   left: 38%;
   font-size: 10px;
@@ -211,7 +186,7 @@ nav .dot-bar div {
 }
 
 .carousel-section .carousel {
-  background-image: url("./media/dodge-charger3.gif");
+  background-image: url("./media/bmw3.gif");
   background-size: 100% 80%;
   background-repeat: no-repeat;
   padding: 20%;
@@ -373,7 +348,8 @@ nav .dot-bar div {
   position: absolute;
   left: 93%;
   top: 29%;
-  padding: 3%;
+  padding: 2.3%;
+  padding-right: 25%;
 }
 
 .carousel-section .carousel-text {
@@ -412,7 +388,7 @@ nav .dot-bar div {
 
 .carousel-section .carousel-text .see-details {
   background-color: #faf4f4;
-  width: 110px;
+  width: 112px;
   margin-top: 30px;
   height: 55px;
   max-height: 40px;
@@ -537,17 +513,16 @@ nav .dot-bar div {
   color: #faf4f4;
   padding: 10px;
   font-size: 10px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .reviews .review1 .read-more .read-more-icon {
   background-color: rgba(255, 105, 36, 0.863);
-  padding: 11.4px;
+  padding: 11px;
   padding-bottom: 12.4px;
   position: relative;
-  left: 12px;
-  top: 0.4px;
-  border-radius: 3px;
+  left: 11.5px;
+  border-radius: 2px;
 }
 
 .reviews .of-review2, .reviews .of-review3 {
@@ -851,13 +826,11 @@ footer ul {
   display: grid;
   -ms-grid-columns: (11%)[6];
       grid-template-columns: repeat(6, 11%);
-  gap: 26px;
+  gap: 30px;
   position: relative;
   right: 3.5pc;
-}
-
-footer ul li {
-  text-align: center;
+  margin: 0 0 0 15%;
+  padding-left: 10%;
 }
 
 footer i {
@@ -929,6 +902,27 @@ footer .copy-right {
 }
 
 @media (min-width: 1042px) {
+  .bug-warning {
+    overflow-x: hidden;
+    padding: 2.2pc;
+    font-size: 1.3em;
+    color: #494040;
+    background-color: lightgray;
+  }
+  .bug-warning .close, .bug-warning .continue {
+    float: right;
+    border: none;
+    padding: 0.4pc;
+    border-radius: 3px;
+    color: white;
+  }
+  .bug-warning .close {
+    margin-right: 1%;
+    background-color: #4b4747;
+  }
+  .bug-warning .continue {
+    background-color: rgba(255, 105, 36, 0.863);
+  }
   div.burger {
     display: none;
   }

@@ -54,18 +54,19 @@ function carouselNav(){
    const price = document.querySelector('.price');
    
    circle1.addEventListener('click', ()=> {
-    carousel.style.animationName = 'appear'; 
-    carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.gif)';
+    carousel.style.backgroundImage = 'url(resources/media/bmw3.gif)';
+    carBrand.textContent = 'BMW M5 GRAND';
     modelYear.textContent = '2017';
-    carBrand.textContent = 'Demon Dodge';
-    price.textContent = '$35,000'; 
+    price.textContent = '$64,000';
+    
  });
 
    circle2.addEventListener('click',()=>{
-       carousel.style.backgroundImage = 'url(resources/media/bmw3.gif)';
-       carBrand.textContent = 'BMW M5 GRAND';
-       modelYear.textContent = '2017';
-       price.textContent = '$64,000'; 
+        carousel.style.animationName = 'appear'; 
+        carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.gif)';
+        modelYear.textContent = '2017';
+        carBrand.textContent = 'Demon Dodge';
+        price.textContent = '$35,000'; 
    });
    
    circle3.addEventListener('click',()=>{
