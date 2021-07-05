@@ -14,26 +14,27 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
    <title>UDOIT auto</title> 
 </head>
 <body>
-    <!--bug warning-->
+    <!--bug warning
     <div class='bug-warning'>
-        <!--<p>This site is very buggy, But the issues will dealt with</p>
-        <button id='warningClose' class='close'>Close</button>-->
-    </div>    
+        <p>This site is very buggy, But the issues will dealt with</p>
+        <button id='warningClose' class='close'>Close</button>
+    </div>-->    
     <!--The orange section when viewed on a large tablet or a laptop-->
     <section class='nav-section'>
         <nav>
-        <!--<div class='contacts-signin-desktop'>
-                <a href=''><i class="fas fa-phone-alt"></i>1-800-1234-5671</a>
-                <a href=''><i class="fas fa-map-marker-alt"></i>2130 Fulton street San Diego, CA 94117-1080 USA</a>
-                <a href=''><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-google-plus-g"></i></a>
+            <div class='contacts-signin-desktop'>
+                <a href=''><i class="fas fa-phone-alt"></i>1-800-1234-5671</a><span>|</span>
+                <a href=''><i class="fas fa-map-marker-alt"></i>2130 Fulton street San Diego, CA 94117-1080 USA</a><span>|</span>
+                <span class='social-media'><a href =''><i class="bi bi-facebook"></i></a><a  href=''><i class="bi bi-twitter"></i></a><a href=''><i class="bi bi-twitch"></i></a></span>
                 <div class='SignRegister'>
                     <a href=''>Sign</a>
                     <a href=''>Register</a>
                 </div>
-            </div>-->
+            </div>
             <div class='burger'>
                 <div></div>
                 <div></div>
@@ -126,7 +127,8 @@
                         <option value='bentley'>Type 4</option>
                     </datalist>
                 </select>
-                <input type='range' class='filter-range'>
+                <input type='range' min ='1' max='100' value='20' class='filter-range'>
+                <p class='price-range'>price-range</p>
                 <button class='filter-button'>Submit Filter <i class="bi bi-box-arrow-right"></i></button>
                 <!-- feature removed...probaby will be added when necessary
                     <a href='#' class='reset-filter'>Reset All Filters</a>

@@ -7,8 +7,15 @@ const menuSearch = document.querySelector('.menu-search');
 const filteredSearch = document.querySelector('.filtered-search-form');
 const carousel =  document.querySelector('.carousel');
 const filterSearchForm = document.querySelector('.filtered-search-form');
-const warningClose = document.querySelector('#warningClose');
+const priceRange = document.querySelector('.price-range');
+const rangeSlider = document.querySelector('.filter-range').value;
+const rangeInput = document.querySelector('.filter-range');
 
+priceRange.textContent = '$'+rangeSlider
+rangeInput.addEventListener('change',()=>{
+    priceRange.textContent = '$'+rangeSlider;
+    console.log(rangeSlider)
+})
 dotMenuBar.addEventListener('click',()=> {
     let contactsAndSignin = document.querySelector('.contacts-signin');
     if(contactsAndSignin.style.display ==='none'){
@@ -105,12 +112,11 @@ function navButtons(){
 }
 navButtons();
 
+/*
 function bugWarning(){
     warningClose.addEventListener('click', ()=>{
         console.log('I was clicked')
         const bugWarning = document.querySelector('.bug-warning');
         bugWarning.style.display = 'none'; 
     })
-}
-
-bugWarning();
+}*/

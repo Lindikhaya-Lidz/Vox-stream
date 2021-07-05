@@ -34,7 +34,6 @@ ul {
 
 nav {
   margin: 15px;
-  padding-top: 0%;
   /* //THE COMPANY CONTACTS AND REGISTER / SIGNIN MOBILE
     .contacts-signin{
         //display:none;
@@ -51,14 +50,20 @@ nav .contacts-signin-desktop {
   margin-left: -20px;
   color: #cec2c2;
   display: none;
-  background-color: rgba(255, 105, 36, 0.863);
+  background-color: #ff6224;
   color: #faf4f4;
   position: relative;
-  bottom: 3.8em;
-  padding: 0.3%;
-  padding-left: 10%;
-  padding-top: 2%;
-  font-size: 1.5em;
+  bottom: 1em;
+  height: 25px;
+  padding: 3%;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: -10pc;
+  font-size: 1.3em;
+}
+
+nav .contacts-signin-desktop .social-media {
+  padding-left: 5%;
 }
 
 nav div.burger {
@@ -66,7 +71,6 @@ nav div.burger {
 }
 
 nav div.burger div {
-  background-color: #4b4747;
   width: 43px;
   height: 7px;
   margin: 6px;
@@ -91,7 +95,7 @@ nav .menu-icons {
 }
 
 nav .contacts-signin {
-  background-color: #f1ecec;
+  background-color: #ebe2e2;
   position: absolute;
   bottom: 26pc;
   z-index: 2;
@@ -161,6 +165,15 @@ nav .contacts-signin ul li a {
 
 nav .desktop-menu {
   display: none;
+  position: relative;
+  bottom: 6em;
+  font-size: 1.2rem;
+  left: 27vw;
+  width: 70%;
+  padding-top: 25px;
+  color: #797979;
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 5pc;
 }
 
 nav .dot-bar {
@@ -193,7 +206,7 @@ nav .dot-bar div {
   position: relative;
   top: 20px;
   overflow: hidden;
-  max-height: 700px;
+  max-height: 600px;
   -webkit-animation-name: slide;
           animation-name: slide;
   -webkit-animation-duration: 1s;
@@ -301,7 +314,7 @@ nav .dot-bar div {
 }
 
 .carousel-section .carousel .mobile-menu .menu li a:hover {
-  color: rgba(255, 105, 36, 0.863);
+  color: #ff6224;
 }
 
 .carousel-section .carousel .mobile-menu .menu li a .mobile-menu-icons {
@@ -378,7 +391,7 @@ nav .dot-bar div {
 .carousel-section .carousel-text .price {
   border-radius: 3px;
   padding-left: 25px;
-  color: rgba(255, 105, 36, 0.863);
+  color: #ff6224;
   background-color: #faf4f4;
   padding: 6px;
   padding-right: 5%;
@@ -397,7 +410,7 @@ nav .dot-bar div {
 }
 
 .carousel-section .carousel-text .see-details a {
-  color: rgba(255, 105, 36, 0.863);
+  color: #ff6224;
   font-size: 0.9em;
   position: relative;
   left: 0px;
@@ -408,7 +421,7 @@ nav .dot-bar div {
   border-radius: 3px;
   position: relative;
   left: 10px;
-  background-color: rgba(255, 105, 36, 0.863);
+  background-color: #ff6224;
   padding: 8px 10px 9px 0px;
   -webkit-transition: rotate(180deg);
   transition: rotate(180deg);
@@ -443,7 +456,7 @@ nav .dot-bar div {
 .carousel-section .filtered-search-form .filter-button {
   border-radius: 3px;
   margin-left: 30%;
-  background-color: rgba(255, 105, 36, 0.863);
+  background-color: #ff6224;
   color: #faf4f4;
   border: none;
   padding: 7px;
@@ -479,7 +492,7 @@ nav .dot-bar div {
 }
 
 .reviews .review-stars i {
-  color: rgba(255, 105, 36, 0.863);
+  color: #ff6224;
 }
 
 .reviews .review1 .review-img {
@@ -490,12 +503,6 @@ nav .dot-bar div {
 .reviews .review1 .review-img:hover {
   -webkit-filter: grayscale(70%);
           filter: grayscale(70%);
-  -webkit-box-shadow: 7px 7px 7px gray;
-          box-shadow: 7px 7px 7px gray;
-  border-radius: 5px;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-  width: 102%;
 }
 
 .reviews .review1 .reviewer {
@@ -517,7 +524,7 @@ nav .dot-bar div {
 }
 
 .reviews .review1 .read-more .read-more-icon {
-  background-color: rgba(255, 105, 36, 0.863);
+  background-color: #ff6224;
   padding: 11px;
   padding-bottom: 12.4px;
   position: relative;
@@ -614,12 +621,6 @@ h2 {
 .latest-on-sale .car-offer-img:hover {
   -webkit-filter: grayscale(70%);
           filter: grayscale(70%);
-  -webkit-box-shadow: 7px 7px 7px gray;
-          box-shadow: 7px 7px 7px gray;
-  border-radius: 5px;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-  width: 102%;
 }
 
 .latest-on-sale .car-offer h6 {
@@ -636,7 +637,7 @@ h2 {
 }
 
 .latest-on-sale .car-offer .car-offer-price {
-  color: rgba(255, 105, 36, 0.863);
+  color: #ff6224;
   padding-left: 5px;
   font-weight: bold;
 }
@@ -840,7 +841,7 @@ footer i {
 }
 
 footer i:hover {
-  color: rgba(255, 105, 36, 0.863);
+  color: #ff6224;
 }
 
 footer .footer-logo {
@@ -902,27 +903,6 @@ footer .copy-right {
 }
 
 @media (min-width: 1042px) {
-  .bug-warning {
-    overflow-x: hidden;
-    padding: 2.2pc;
-    font-size: 1.3em;
-    color: #494040;
-    background-color: lightgray;
-  }
-  .bug-warning .close, .bug-warning .continue {
-    float: right;
-    border: none;
-    padding: 0.4pc;
-    border-radius: 3px;
-    color: white;
-  }
-  .bug-warning .close {
-    margin-right: 1%;
-    background-color: #4b4747;
-  }
-  .bug-warning .continue {
-    background-color: rgba(255, 105, 36, 0.863);
-  }
   div.burger {
     display: none;
   }
@@ -935,7 +915,7 @@ footer .copy-right {
     top: 2%;
     padding: 1%;
     padding-top: 30px;
-    padding-bottom: 38%;
+    padding-bottom: 34%;
     bottom: 19.5pc;
     left: 36pc;
     width: 40%;
@@ -946,10 +926,35 @@ footer .copy-right {
     width: 90%;
   }
   .carousel-section .desktop-filter-search .filter-range {
+    height: 20px;
     width: 80%;
     position: relative;
+    color: #ff6224;
     left: 14%;
     display: block;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  .carousel-section .desktop-filter-search .filter-range:hover {
+    opacity: 1;
+  }
+  .carousel-section .desktop-filter-search .filter-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background-color: #ff6224;
+    cursor: pointer;
+  }
+  .carousel-section .desktop-filter-search .filter-range::-moz-range-thumb {
+    width: 10px;
+    height: 20px;
+    background-color: #ff6224;
   }
   .carousel-section .desktop-filter-search .reset-filter {
     text-decoration: underline;
@@ -958,38 +963,35 @@ footer .copy-right {
     color: black;
     font-size: 0.5em;
   }
+  .carousel-section .desktop-filter-search .price-range {
+    position: relative;
+    left: 15%;
+    color: #353434;
+  }
   .carousel-section .desktop-filter-search .filter-button {
     position: relative;
     right: 10%;
-    top: 3vh;
+    top: 1vh;
     width: 65%;
+    background-color: #ff8800;
+  }
+  .carousel-section .desktop-filter-search .filter-button:hover {
+    background-color: #ff6224;
   }
   nav {
     width: 100%;
     margin: 0;
     font-size: 0.8em;
     position: relative;
-    background-color: #534e4e;
   }
   nav .second-nav-container {
-    height: 130px;
+    height: 110px;
+    margin-top: 3%;
   }
   nav .desktop-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    bottom: 6em;
-    font-size: 1.2rem;
-    left: 27vw;
-    width: 70%;
-    padding-top: 25px;
-    color: #e9dfdf;
-    background-color: #534e4e;
-    border: 1.5px solid rgba(255, 105, 36, 0.863);
-    border-top-left-radius: 40pc;
-    font-family: 'PT Sans', sans-serif;
-    border-radius: 5pc;
   }
   nav .desktop-menu li {
     padding-right: 5%;
@@ -997,13 +999,13 @@ footer .copy-right {
     bottom: 15px;
   }
   nav .desktop-menu li #active {
-    border-bottom: 2px solid rgba(255, 105, 36, 0.863);
+    border-bottom: 2px solid #ff6224;
   }
   nav .desktop-menu li a {
     margin-right: 15px;
   }
   nav .desktop-menu li a:hover {
-    color: rgba(255, 105, 36, 0.863);
+    color: #ff6224;
   }
   nav .dot-bar {
     display: none;

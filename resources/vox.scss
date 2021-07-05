@@ -1,5 +1,5 @@
 $primary-icon-color:rgb(75, 71, 71);
-$primary-color:rgba(255, 105, 36, 0.863);
+$primary-color:rgb(255, 98, 36);
 $secondary-color:rgb(250, 244, 244);
 $content-separate:40px;
 
@@ -21,10 +21,7 @@ $content-separate:40px;
 
 @mixin on-img-hover{
     filter:grayscale(70%);
-    box-shadow: 7px 7px 7px gray;
-    border-radius:5px;
-    transition:width 0.3s;
-    width:102%;
+    
 }
 //### RESETS###
 html{
@@ -59,7 +56,6 @@ ul{
 //**START OF THE NAV SECTION***
 nav{
     margin:15px;
-    padding-top:0%;
     //THE COMPANY CONTACTS AND REGISTER / SIGNIN
     .contacts-signin-desktop{
         font-family: 'ABeeZee', sans-serif;
@@ -70,11 +66,16 @@ nav{
         background-color:$primary-color;
         color:$secondary-color;
         position:relative;
-        bottom:3.8em;
-        padding:0.3%;
-        padding-left:10%;
-        padding-top:2%;
-        font-size:1.5em;
+        bottom:1em;
+        height:25px;
+        padding:3%;
+        padding-left:5%;
+        padding-top:3%;
+        padding-bottom:-10pc;
+        font-size:1.3em;
+        .social-media{
+            padding-left:5%;
+        }
     }
     /* //THE COMPANY CONTACTS AND REGISTER / SIGNIN MOBILE
     .contacts-signin{
@@ -90,7 +91,7 @@ nav{
         width:25px;
 
         div{
-            background-color:$primary-icon-color;
+            //background-color:$primary-icon-color;
             width:43px;
             height:7px;
             margin:6px;
@@ -159,7 +160,16 @@ nav{
     }
 
     .desktop-menu{
-       display:none; 
+       display:none;
+       position:relative;
+       bottom:6em;
+       font-size:1.2rem;
+       left:27vw;
+       width:70%;
+       padding-top:25px;
+       color:rgb(121, 121, 121);
+       font-family: 'PT Sans', sans-serif;
+       border-radius:5pc; 
     }
     //THREE DOT CUSTOM ICON(APPEARS ON MOBILE)
     .dot-bar{
@@ -195,7 +205,7 @@ nav{
         position:relative;
         top:20px;
         overflow:hidden;
-        max-height:700px;
+        max-height:600px;
         animation-name:slide;
         animation-duration:1s;
         @keyframes slide{
@@ -389,6 +399,7 @@ nav{
         bottom:30vh;
         z-index:5;
         display:none;
+
 
         select{
             border-radius:3px;
@@ -900,33 +911,6 @@ footer{
 //###landscape mobile devices an small tablets###
 
 @media(min-width:1042px){
-
-    .bug-warning{
-        overflow-x:hidden;
-        padding:2.2pc;
-        font-size:1.3em;
-        color:rgb(73, 64, 64);
-        background-color:lightgray;
-    
-        .close, .continue{
-            float:right;
-            border:none;
-            padding:0.4pc;
-            border-radius:3px;
-            color:white;
-        }
-    
-        .close{
-            margin-right:1%;
-            background-color:$primary-icon-color;
-        }
-        
-        .continue{
-            background-color:$primary-color;
-        }
-    }
-    
-
     div.burger{
         display:none;
     }
@@ -944,20 +928,44 @@ footer{
             top:2%;
             padding:1%;
             padding-top:30px;
-            padding-bottom:38%;            
+            padding-bottom:34%;            
             bottom:19.5pc;
             left:36pc;
             width:40%;
+
             select{
                 padding:2%;
                 margin:7%;
                 width:90%;
             }
             .filter-range{
+                height:20px;
                 width:80%;
                 position:relative;
+                color:$primary-color;
                 left:14%;
                 display:block;
+                appearance:none;
+                outline:none;
+                opacity:0.7;
+                transition:opacity .2s;
+                &:hover{
+                    opacity:1;
+                }
+                &::-webkit-slider-thumb{
+                   -webkit-appearance:none;
+                   appearance:none;
+                   width:10px;
+                   height:20px;
+                   background-color:$primary-color;
+                   cursor:pointer;
+                }
+                &::-moz-range-thumb{
+                    width:10px;
+                    height:20px;
+                    background-color:$primary-color;
+                }
+            
             }
             .reset-filter{
                 text-decoration:underline;
@@ -967,11 +975,20 @@ footer{
                 color:black;
                 font-size:0.5em;
             }
+            .price-range{
+                position:relative;
+                left:15%;
+                color:rgb(53, 52, 52);
+            }
             .filter-button{
                 position:relative;
                 right:10%;
-                top:3vh;
+                top:1vh;
                 width:65%;
+                background-color:rgb(255, 136, 0);
+                &:hover{
+                    background-color:$primary-color;
+                }
             }
         }
     }
@@ -981,24 +998,12 @@ footer{
       margin:0;
       font-size:0.8em;
       position:relative;
-      background-color:rgb(83, 78, 78);
       .second-nav-container{
-        height:130px;
+        height:110px;
+        margin-top:3%;
       }
       .desktop-menu{
         display:flex;
-        position:relative;
-        bottom:6em;
-        font-size:1.2rem;
-        left:27vw;
-        width:70%;
-        padding-top:25px;
-        color:rgb(233, 223, 223);
-        background-color:rgb(83, 78, 78);
-        border:1.5px solid $primary-color;
-        border-top-left-radius: 40pc;
-        font-family: 'PT Sans', sans-serif;
-        border-radius:5pc;
         li{
             padding-right:5%;
             position:relative;
