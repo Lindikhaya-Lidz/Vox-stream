@@ -10,8 +10,20 @@ const filterSearchForm = document.querySelector('.filtered-search-form');
 const priceRange = document.querySelector('.price-range');
 const rangeSlider = document.querySelector('.filter-range').value;
 const rangeInput = document.querySelector('.filter-range');
+const pages = document.querySelector('.pages');
+const pageListings = document.querySelector('.page-list');
+
+
+pages.addEventListener('mouseover',()=>{
+    pageListings.style.display = 'inline-block';
+})
+pages.addEventListener('mouseout',()=>{
+    pageListings.style.display = 'none';
+})
 
 priceRange.textContent = '$'+rangeSlider
+const newInput = new Input();
+console.log(newInput);
 rangeInput.addEventListener('change',()=>{
     priceRange.textContent = '$'+rangeSlider;
     console.log(rangeSlider)

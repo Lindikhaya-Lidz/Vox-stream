@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
    <title>UDOIT auto</title> 
 </head>
 <body>
@@ -45,7 +46,14 @@
                 <!--mobile menu setup-->
                 <ul class='desktop-menu'>
                     <li id='active'><a href='#' id='active'>Home</a></li>
-                    <li><a href='#'>Pages</a></li>
+                    <li class='pages'><a href='#'>Pages</a> <i class="bi bi-chevron-down">
+                        <ul class='page-list'>
+                            <li><a href=''>CAR LISTING</a></li>
+                            <li><a href=''>Car Listing</a></li>
+                            <li><a href=''>CAR LISTING</a></li>
+                            <li><a href=''>CAR LISTING</a></li>
+                        </ul>
+                    </i></li>
                     <li><a href='#offers'>Best offers</a></li>
                     <li><a href='#reviews'>Testimonials</a></li>
                     <li><a href='#' >Contacts</a></li>
@@ -127,7 +135,7 @@
                         <option value='bentley'>Type 4</option>
                     </datalist>
                 </select>
-                <input type='range' min ='1' max='100' value='20' class='filter-range'>
+                <input type='range' min ='000' max='100000' class='filter-range'>
                 <p class='price-range'>price-range</p>
                 <button class='filter-button'>Submit Filter <i class="bi bi-box-arrow-right"></i></button>
                 <!-- feature removed...probaby will be added when necessary
@@ -443,14 +451,14 @@
         </div>
     </section>
     <footer>
-        <div>
+        <div id='footer-socials'>
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-twitter-square"></i>
             <i class="fab fa-pinterest-square"></i>
             <i class="fab fa-google-plus-square"></i>
             <i class="fab fa-youtube-square"></i>
             <i class="fab fa-skype"></i>
-        <div>
+        </div>
         <div>
             <ul class='footer-menu'>
                 <li><a href='#'>Home</a></li>
@@ -460,9 +468,11 @@
                 <li><a href='#'>Contact</a></li>
             </ul>
         </div>
-        <img src='resources/media/logo4.png' alt='UDOIT-Auto-logo' class='footer-logo'>
-        <div class='copy-right'>
-            © 2020 UDOITauto.com
+        <div>
+            <img src='resources/media/logo4.png' alt='UDOIT-Auto-logo' class='footer-logo'>
+            <div class='copy-right'>
+                © 2020 UDOITauto.com
+            </div>
         </div>
     </footer>    
     <script src='resources/js/home.js'></script>

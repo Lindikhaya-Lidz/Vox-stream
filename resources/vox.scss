@@ -163,13 +163,47 @@ nav{
        display:none;
        position:relative;
        bottom:6em;
-       font-size:1.2rem;
+       font-size:1rem;
        left:27vw;
        width:70%;
        padding-top:25px;
+       padding-left:23%;
        color:rgb(121, 121, 121);
-       font-family: 'PT Sans', sans-serif;
+       font-family: 'Varela Round', sans-serif;
        border-radius:5pc; 
+        .pages{
+
+            .bi-chevron-down{
+                cursor:pointer;
+              }
+
+            ul{
+                position:absolute;
+                top:4vh;
+                display:none;
+                background-color:rgb(245, 245, 245);
+                z-index:3;
+                padding: 15px;
+                margin-left:0%;
+                font-size:0.75em;
+                padding-right:10pc;
+
+                li{
+                  position:relative;
+                  right:10%;
+                  top:.1vh;
+                  margin-right:100%;
+                  margin-top:5%;
+                  &:hover{
+                      background-color:$primary-color;
+                  }
+                  a{
+                    display:inline;
+                    margin-top:10%;
+                  }
+                }
+            }  
+        }
     }
     //THREE DOT CUSTOM ICON(APPEARS ON MOBILE)
     .dot-bar{
@@ -397,7 +431,7 @@ nav{
         position:relative;
         left:33%;
         bottom:30vh;
-        z-index:5;
+        z-index:2;
         display:none;
 
 
@@ -798,14 +832,16 @@ footer{
     background-color:rgb(26, 21, 21);
     color:gray;
     padding-left:10%;
+    
     ul{
         display:grid;
-        grid-template-columns:repeat(6,11%);
-        gap:30px;
+        grid-template-columns:repeat(6,7%);
         position:relative;
         right:3.5pc;
-        margin:0 0 0 15%;
-        padding-left:10%;
+        position:relative;
+        left:55%;
+        margin:1% 0 0 5%;
+        padding-left:2%;
         li{
             
             a{
@@ -813,21 +849,28 @@ footer{
             }
         }
     }
-    i{
-       padding-left:8%;
-       padding-top:5%;
-       font-size:5vw;
-       &:hover{
-           color:$primary-color;
-       } 
+    #footer-socials{
+        position:relative;
+        left:60%;
+        top:15vh;
+        i{
+            font-size:2em;
+            padding-left:3%;
+        }
     }
+    .footer-logo, .copy-right{
+        position:relative;
+        right:5%;
+     }
+    
     .footer-logo{
-        width:40%;
-        margin-left:27%;
-        padding-top:8%;
+        width:20%;
+        position:relative;
+        bottom:5vh;
+        /*margin-left:27%;
+        padding-top:8%;*/
     }
     .copy-right{
-       padding-top:8%;
        margin-left:35%;
        margin-right:30%;
        padding-bottom:10%;
