@@ -21,9 +21,10 @@ pages.addEventListener('mouseout',()=>{
     pageListings.style.display = 'none';
 })
 
+
+
+
 priceRange.textContent = '$'+rangeSlider
-const newInput = new Input();
-console.log(newInput);
 rangeInput.addEventListener('change',()=>{
     priceRange.textContent = '$'+rangeSlider;
     console.log(rangeSlider)
