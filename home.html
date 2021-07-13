@@ -46,7 +46,7 @@
                 <!--mobile menu setup-->
                 <ul class='desktop-menu'>
                     <li id='active'><a href='#' id='active'>Home</a></li>
-                    <li class='pages'><a href='#'>Pages</a> <i class="bi bi-chevron-down">
+                    <li class='pages'><a href='#'>Pages</a> <i class="bi bi-chevron-down"><!--<i class="bi bi-chevron-up">--></i>
                         <ul class='page-list'>
                             <li><a href=''>CAR LISTING</a></li>
                             <li><a href=''>Car Listing</a></li>
@@ -108,6 +108,7 @@
             </div>
             <!--Desktop version of the filter search form-->
             <form id = 'filter-search' class='filtered-search-form desktop-filter-search'>
+                <h5 class='search-heading'>SELECT A MANUFACTURER</h5>
                 <select>
                     <datalist>
                         <option value='any make'>Any Make</option>
@@ -117,6 +118,7 @@
                         <option value='bentley'>Bentley</option>
                     </datalist>
                 </select><br>
+                <h5 class='search-heading'>SELECT A MODEL</h5>
                 <select>
                     <datalist>
                         <option value='any model'>Any Model</option>
@@ -126,6 +128,7 @@
                         <option value='bentley'>Model 4</option>
                     </datalist>
                 </select><br>
+                <h5 class='search-heading'>SELECT A TYPE</h5>
                 <select>
                     <datalist>
                         <option value='any type'>Any Type</option>
@@ -135,9 +138,10 @@
                         <option value='bentley'>Type 4</option>
                     </datalist>
                 </select>
+                <!--<h5 class='price-heading'>PRICE RANGE</h5>-->
                 <input type='range' min ='000' max='100000' class='filter-range'>
                 <p class='price-range'>price-range</p>
-                <button class='filter-button'>Submit Filter <i class="bi bi-box-arrow-right"></i></button>
+                <button class='filter-button'>Submit Filter <i class="bi bi-arrow-right submit-icon"></i></button>
                 <!-- feature removed...probaby will be added when necessary
                     <a href='#' class='reset-filter'>Reset All Filters</a>
                 -->
@@ -406,14 +410,40 @@
     <section class='owner-comments-section'>
         <div class='owner-comments'>
             <div class='owner-profile'>
-                <img src='resources/media/owner1.jpg' class='owner-img'>
-                <div class='owner-info'><span>GEORGE SMITH</span>Customer, RANGE ROVER Owner</div>
-                <p class='testimonial'>
-                UDoItAuto has nice cars, great prices, and good service. 
-                I brought my old Citroen C4 with which I had no problems after one month of high mileage use. 
-                High price given to me for my car and low price accepted for the car I was buying was a huge surprise to me.
-                I recommend this car dealer to everyone!
-                </p>
+                <div class='slide'>
+                    <img src='/resources/media/owner1.jpg' class='owner-img'>
+                    <div class='owner-info'><span>GEORGE SMITH</span>Customer, RANGE ROVER Owner</div>
+                    <p class='testimonial'>
+                    UDoItAuto has nice cars, great prices, and good service. 
+                    I brought my old Citroen C4 with which I had no problems after one month of high mileage use. 
+                    High price given to me for my car and low price accepted for the car I was buying was a huge surprise to me.
+                    I recommend this car dealer to everyone!
+                    </p>
+                </div>
+                <div class='slide'>
+                    <img src='/resources/media/owner3.jpg' class='owner-img'>
+                    <div class='owner-info'><span>kethy lee</span>Customer, RANGE ROVER Owner</div>
+                    <p class='testimonial'>
+                    UDoItAuto has nice cars, great prices, and good service. 
+                    I brought my old Citroen C4 with which I had no problems after one month of high mileage use. 
+                    High price given to me for my car and low price accepted for the car I was buying was a huge surprise to me.
+                    I recommend this car dealer to everyone!
+                    </p>
+                </div>
+                <div class='slide active-slide'>
+                    <img src='/resources/media/owner2.jpg' class='owner-img'>
+                    <div class='owner-info'><span>hakeem johnson</span>Customer, Bmw X6</div>
+                    <p class='testimonial'>
+                    UDoItAuto has nice cars, great prices, and good service. 
+                    I brought my old Citroen C4 with which I had no problems after one month of high mileage use. 
+                    High price given to me for my car and low price accepted for the car I was buying was a huge surprise to me.
+                    I recommend this car dealer to everyone!
+                    </p>
+                </div>
+                <div class='owner-comments-slide-buttons'>
+                    <i class="bi bi-arrow-left-square"></i>
+                    <i class="bi bi-arrow-right-square move"></i>
+                </div>
             </div>
         </div>
         <!--end of the owner testimonial section-->
@@ -440,6 +470,7 @@
         </div>
         <div class='gallery'>
             <h3>Gallery</h3>
+            <!--<div class='horizontal-hover-line'></div>-->
             <div class='gallery-grid'>
                 <img src='resources/media/mercedes_benz_gls.jpg'class='gallery-img'>
                 <img src='resources/media/2021-bmw-m4-r-redesign.jpg'class='gallery-img'>

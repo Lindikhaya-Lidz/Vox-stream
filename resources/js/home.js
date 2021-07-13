@@ -12,10 +12,22 @@ const rangeSlider = document.querySelector('.filter-range').value;
 const rangeInput = document.querySelector('.filter-range');
 const pages = document.querySelector('.pages');
 const pageListings = document.querySelector('.page-list');
+const ownerSlide = document.querySelectorAll('.slide');
+
+function OwnerCommentSlide(){
+    let i = 0
+    for(i in ownerSlide[i].classList){
+        //console.log(i);
+    }
+}
+
+OwnerCommentSlide();
+
 
 
 pages.addEventListener('mouseover',()=>{
     pageListings.style.display = 'inline-block';
+    //pages.classList.add('active');
 })
 pages.addEventListener('mouseout',()=>{
     pageListings.style.display = 'none';

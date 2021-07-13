@@ -74,6 +74,7 @@ nav{
         font-family: 'ABeeZee', sans-serif;
         margin-right:-50px;
         margin-left:-20px;
+        //margin-bottom:5pc;
         color:rgb(206, 194, 194);
         display:none;
         background-color:$primary-color;
@@ -84,10 +85,13 @@ nav{
         padding:3%;
         padding-left:5%;
         padding-top:3%;
-        padding-bottom:-10pc;
+        padding-bottom:2.5pc;
         font-size:1.3em;
         .social-media{
             padding-left:5%;
+        }
+        .SignRegister{
+            
         }
     }
     /* //THE COMPANY CONTACTS AND REGISTER / SIGNIN MOBILE
@@ -130,42 +134,36 @@ nav{
         padding-right:3px;
         
     }
+
+    //MOBILE CONTACT SIGNIN
     .contacts-signin{
-        background-color:rgb(235, 226, 226);
+        background-color:rgb(228, 226, 225);
         position:absolute;
-        bottom:26pc;
+        top:12vh;
         z-index:2;
-        left:38%;
+        left:36%;
         font-size:10px;
         width:70%;
         height:25%;
         padding-bottom:28%;
         display:none;
-        animation-name:slide-in;
+        animation-name:slide-down;
         animation-duration:0.4s;
-
-        //animation for the slide in
-        @keyframes slide-in{
-            from{left:50pc};
-            to{right:50pc}
+        @keyframes slide-down{
+            from{top:10vh};
+            to{top:12vh};
         }
+
         //CONTACTS MENU LIST
         ul{
             li{
                 padding:2px;
                 padding-top:10px;
                 position:relative;
-                margin-right:18%;
-                animation-name:slick-slide;
-                animation-duration:1s;
-
-                @keyframes slick-slide{
-                   from{right:90px;} 
-                   to{right:0;}
-                }
+                margin-right:20%;
 
                 a{
-                    color:rgb(136, 133, 133);
+                    color:rgb(95, 95, 95);
                     text-decoration:underline;
                 }
             }
@@ -187,14 +185,20 @@ nav{
         .pages{
 
             .bi-chevron-down{
+                position:relative;
+                right:20%;
                 cursor:pointer;
+                &:hover{
+                  
+                }
               }
 
             ul{
                 position:absolute;
-                top:4vh;
+                left:1%;
+                top:3vh;
                 display:none;
-                background-color:rgb(245, 245, 245);
+                background-color:rgb(247, 247, 247);
                 z-index:3;
                 padding: 15px;
                 margin-left:0%;
@@ -205,7 +209,7 @@ nav{
                   position:relative;
                   right:10%;
                   top:.1vh;
-                  margin-right:100%;
+                  margin-right:130%;
                   margin-top:5%;
                   &:hover{
                       background-color:$primary-color;
@@ -265,15 +269,14 @@ nav{
         .mobile-menu{
             list-style:none;
             top:0%;
-            background-color:rgb(252, 248, 248);
-            color:rgb(235, 223, 223);
-            opacity:0.9;
+            background-color:rgb(83, 83, 83);
+            color:rgb(248, 248, 248);
             z-index:5;
             position:fixed;
             width:70%;
             height:160%;
             bottom:195em;
-            right:30vw;
+            right:28vw;
             margin-right:15%;
             padding:14%;
             padding-left:20%;
@@ -291,7 +294,12 @@ nav{
             .menu{
                font-size:0.7em;
                position:relative;
-                
+               right:3px;
+               .active{
+                   background-color:$primary-color;
+                   width:56vw;
+                   height:6vh;
+               }
                //MOBILE VERSION OF THE FILTER SEARCH
                 .menu-search{
                     a{
@@ -305,21 +313,21 @@ nav{
                 li{    
                     padding-bottom:20px;
                     position:relative;
-                    right:30px;
-                    animation-name:smooth-in;
+                    right:60px;
+                    /*animation-name:smooth-in;
                     animation-duration:1.4s;
                     //ANIMATION FOR THE INDIVIDUAL MENU LIST 
                     @keyframes smooth-in{
                         from{left:20px};
                         to{left:-30px}
-                    }
+                    }*/
 
                     a{
-                    color:rgb(121, 119, 119);
-                    display:block;
-                    &:hover{
+                        color:white;
+                        display:block;
+                        &:hover{
                         color:$primary-color;
-                    }
+                        }
 
                         .mobile-menu-icons{
                             font-size:1.6em;
@@ -335,8 +343,8 @@ nav{
             .close{
                 position:absolute;
                 left:90%;
-                top:40px;
-                color:rgb(122, 116, 116);
+                top:30px;
+                color:white;
                 font-size:20px;
             }
         }
@@ -369,7 +377,7 @@ nav{
               left:93%;
               top:29%;
               padding:2.3%;
-              padding-right:25%;             
+              padding-right:25%;            
             }
     }
     //### End of the carousel buttons container
@@ -377,7 +385,7 @@ nav{
     //***CAROUSEL TEXT CONTAINER***
     .carousel-text{
         position:relative;
-        right:25%;
+        right:23%;
         bottom:40px;
         box-sizing:content-box;
 
@@ -439,16 +447,21 @@ nav{
     //DESKTOP VERSION OF THE FILTER SEARCH FORM
     .filtered-search-form{
         border-radius:3px;
-        background-color:rgb(199, 199, 199);
+        background-color:rgb(240, 240, 240);
         opacity:0.8;
         padding:12px;
         position:relative;
         left:33%;
-        bottom:30vh;
+        bottom:49vh;
         z-index:2;
+        padding-bottom:15vh;
         display:none;
 
-
+        .search-heading{
+            color:rgb(61, 61, 61);
+            position:absolute;
+            left:9.5%;
+        }
         select{
             border-radius:3px;
             width:100%;
@@ -459,8 +472,17 @@ nav{
             }
         }
 
+        .price-heading{
+            position:absolute;
+            bottom:11vh;
+            left:9.5%;
+            color:rgb(131, 131, 131);
+        }
+
         .filter-range{
-            width:100%;
+            width:150%;
+            border-radius:4px;
+            position:absolute;
         }
 
         .filter-button{
@@ -471,7 +493,7 @@ nav{
             border:none;
             padding:7px;
             padding-right:25px;
-            padding-bottom:15px;
+            padding-bottom:5px;
             i{
                 font: size 1.7em;
                 position:relative;
@@ -483,6 +505,7 @@ nav{
             position:relative;
             top:7px;
             left:10px;
+            font-size:1.3em;
         }
     }
     //###END OF THE CAROUSEL TEXT###
@@ -712,14 +735,14 @@ h2{
     .ring-border{
         padding:12px;
         position:relative;
-        top:10%;
+        top:10vh;
         .card{
             background-color:black;
             opacity:0.8;
             text-align:center;
             padding:20px;
             position:relative;
-            bottom:2em;
+            bottom:0vh;
             hr{
                 width:5%;
             }
@@ -756,10 +779,13 @@ h2{
 
 //CAR OWNER TESTIMONIAL SECTION
 .owner-comments-section{
+    position:relative;
+    top:2vh;
     width:100%;
     font-family: 'Quicksand', sans-serif;
+    color:rgb(49, 49, 49);
     .owner-comments{
-        background: url('media/whitebackground.jpg');
+        background: url('media/OwnerProfileBackground.jpeg');
         background-size:100% 100%;
         background-repeat:no-repeat;
         //margin-right:-1.9%;
@@ -776,8 +802,13 @@ h2{
             padding-top:5%;
             margin-left:6%;
             margin-right:6%;
-
-
+            
+            .slide{
+                display:none;
+            }
+            .active-slide{
+                display:inline-block;
+            }
             .owner-img{
                 margin-left:25%;
                 height:15vh;
@@ -787,7 +818,8 @@ h2{
             }
 
             .owner-info{
-                margin:auto;
+                margin-left:15%;
+                text-align:center;
                 width:10pc;
                 font-size:0.7em;
 
@@ -795,14 +827,23 @@ h2{
                     font-weight:bold;
                     font-size:1em;
                     padding-right:2%;
-                    color:rgb(0, 0, 0);
                 }  
             }
 
             .testimonial{
                 position:relative;
                 font-weight:lighter;
-            }  
+            }
+            
+            .owner-comments-slide-buttons{
+                float:right;
+                margin-top:2vh;
+                font-size:1.4em;
+                color:rgb(97, 97, 97);
+            }
+            .move{
+                color:$primary-color;
+            }
        }
     }
 }
@@ -832,14 +873,24 @@ h2{
             }
         } 
     }
+    
     .gallery{
-        margin-right:25%;
+        margin-right:25%;    
+        div.horizontal-hover-line{
+            position:absolute;
+            padding:5%;
+            margin-top:13vh;
+            width:51%;
+            transform:rotate(225deg);
+            background-color:white;
+        } 
         .gallery-grid{
             display:grid;
             grid-template-columns:repeat(2,130%);
             width:50%;
             .gallery-img{
-                width:100%;    
+                width:100%;
+                background-color:white;   
             }
        }
     }
@@ -855,32 +906,34 @@ footer{
         grid-template-columns:repeat(6,11%);
         gap:5%;
         position:relative;
-        right:3.5pc;
-        position:relative;
-        left:20%;
+        right:0pc;
         margin:1% 0 0 5%;
         padding-right:10%;
         li{
             padding-right:40%;
             a{
-              
+              font-size:.6em;
             }
         }
     }
     #footer-socials{
         position:relative;
-        left:40%;
+        left:-5%;
+        padding-top:3vh;
+        margin-bottom:3vh;
         i{
-            font-size:1em;
-            padding-left:3%;
+            font-size:1.2em;
+            padding-left:10%;
         }
     }
 
     .footer-logo{
         width:40%;
         position:relative;
+        margin-bottom:3vh;
+        margin-top:6vh;
         bottom:2vh;
-        right:10%;
+        left:26%;
         /*margin-left:27%;
         padding-top:8%;*/
     }
@@ -906,7 +959,7 @@ footer{
                         padding-bottom:5px;
                     }    
                     .active{
-                        width:193%;
+                        width:53.2vw;
                     }
                 }
                 .close{
@@ -954,10 +1007,9 @@ footer{
                 .owner-img{
                     margin-left:40%;  
                 }
-                /*.owner-info{
-                    position:relative;
-                    left:34%; 
-                }*/  
+                .owner-info{
+                    margin-left:37%; 
+                }  
            }
         }
     }
@@ -982,12 +1034,12 @@ footer{
         .desktop-filter-search{
             display:inline-block;
             position:absolute;
-            top:2%;
+            top:0%;
             padding:1%;
             padding-top:30px;
-            padding-bottom:34%;            
-            bottom:19.5pc;
-            left:36pc;
+            padding-bottom:70vh;            
+            bottom:28pc;
+            left:34pc;
             width:40%;
 
             select{
@@ -998,6 +1050,7 @@ footer{
             .filter-range{
                 height:20px;
                 width:80%;
+                background-color:rgb(99, 99, 99);
                 position:relative;
                 color:$primary-color;
                 left:14%;
@@ -1131,6 +1184,17 @@ footer{
         }
         hr{
             display:none;
+        }
+    }
+
+    .owner-comments-section{
+        .owner-comments{
+            .owner-profile{
+                .owner-comments-slide-buttons{
+                    position:relative;
+                    top:15vh;
+                }
+            }
         }
     }
 
