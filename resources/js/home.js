@@ -108,6 +108,7 @@ function carouselNav(){
        price.textContent = '$55,000';      
    });
 }
+
 carouselNav();
 
 function navButtons(){
@@ -136,6 +137,12 @@ function navButtons(){
     }
 }
 navButtons();
+
+function ShowreadMore(){
+    const text = document.querySelectorAll(".readMoreText");
+    const button = document.querySelector() 
+    
+}
 
 /*
 function bugWarning(){
