@@ -245,11 +245,10 @@ nav{
     bottom:85px;
     color:$secondary-color;
     font-weight:bold;
-
     .carousel{
         //margin-right:-1.9%;
-        background-image: url('./media/bmw3.gif');
-        background-size:100% 80% ;
+        background-image: url('media/carouse1.jpg');
+        background-size:100% 100% ;
         background-repeat:no-repeat;
         padding:20%;
         position:relative;
@@ -385,7 +384,7 @@ nav{
     .carousel-text{
         position:relative;
         right:23%;
-        bottom:40px;
+        bottom:20px;
         box-sizing:content-box;
 
         .dream-car{
@@ -525,6 +524,7 @@ nav{
 //***REVIEW SECTION ***
 .reviews{
     margin:12px;
+    margin-top:13%;
     position:relative;
     bottom:80px;
     .review-stars{

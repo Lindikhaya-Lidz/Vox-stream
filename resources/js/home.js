@@ -86,7 +86,7 @@ function carouselNav(){
    const price = document.querySelector('.price');
    
    circle1.addEventListener('click', ()=> {
-    carousel.style.backgroundImage = 'url(resources/media/bmw3.gif)';
+    carousel.style.backgroundImage = 'url(resources/media/carouse1.jpg)';
     carBrand.textContent = 'BMW M5 GRAND';
     modelYear.textContent = '2017';
     price.textContent = '$64,000';
@@ -95,14 +95,14 @@ function carouselNav(){
 
    circle2.addEventListener('click',()=>{
         carousel.style.animationName = 'appear'; 
-        carousel.style.backgroundImage = 'url(resources/media/dodge-charger3.gif)';
+        carousel.style.backgroundImage = 'url(resources/media/carousel2.jpeg)';
         modelYear.textContent = '2017';
         carBrand.textContent = 'Demon Dodge';
         price.textContent = '$35,000'; 
    });
    
    circle3.addEventListener('click',()=>{
-       carousel.style.backgroundImage = 'url(resources/media/bmw325_4.gif)';
+       carousel.style.backgroundImage = 'url(resources/media/carousel3.jpg)';
        carBrand.textContent = 'BMW ZAR 7 325is'
        modelYear.textContent = '1986';
        price.textContent = '$55,000';      
@@ -115,7 +115,7 @@ function navButtons(){
     let index = 0;
     const leftButton = document.querySelector('.button-left');
     const rightButton = document.querySelector('.button-right');
-    let urlList = ['url(resources/media/dodge-charger3.gif)', 'url(resources/media/bmw3.gif)' , 'url(resources/media/bmw325_4.gif)'];
+    let urlList = ['url(resources/media/carouse1.jpg)', 'url(resources/media/carousel2.jpeg)' , 'url(resources/media/carousel3.jpg)'];
 
     leftButton.onclick = ()=>{
         if(index <= -0){
@@ -138,11 +138,19 @@ function navButtons(){
 }
 navButtons();
 
-function ShowreadMore(){
+function ShowReadMore(){
     const text = document.querySelectorAll(".readMoreText");
-    const button = document.querySelector() 
+    const button = document.querySelector('.read-more');
+
+    button.addEventListener('click',()=>{
+        text.forEach(()=>{
+           document.querySelector('readMoreText').style.display = block;
+        })
+    }) 
     
 }
+
+ShowReadMore();
 
 /*
 function bugWarning(){

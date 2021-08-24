@@ -308,8 +308,8 @@ nav .dot-bar div {
 }
 
 .carousel-section .carousel {
-  background-image: url("./media/bmw3.gif");
-  background-size: 100% 80%;
+  background-image: url("media/carouse1.jpg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 20%;
   position: relative;
@@ -468,7 +468,7 @@ nav .dot-bar div {
 .carousel-section .carousel-text {
   position: relative;
   right: 23%;
-  bottom: 40px;
+  bottom: 20px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
@@ -605,6 +605,7 @@ nav .dot-bar div {
 
 .reviews {
   margin: 12px;
+  margin-top: 13%;
   position: relative;
   bottom: 80px;
 }
