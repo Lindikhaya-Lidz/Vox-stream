@@ -14,14 +14,13 @@ const pages = document.querySelector('.pages');
 const pageListings = document.querySelector('.page-list');
 const ownerSlide = document.querySelectorAll('.slide');
 
+/*
 function OwnerCommentSlide(){
     let i = 0
     for(i in ownerSlide[i].classList){
         //console.log(i);
     }
-}
-
-OwnerCommentSlide();
+}*/
 
 
 
@@ -53,20 +52,22 @@ dotMenuBar.addEventListener('click',()=> {
     }
 })
 
-burger.addEventListener('click',()=> {
-    //burger.style.display = 'none';
-    //carouselText.style.display = "none";
-    mobileMenu.style.display = "inline-block";
+function displayOrCloseMenu(){
+    burger.addEventListener('click',()=> {
+        //burger.style.display = 'none';
+        //carouselText.style.display = "none";
+        mobileMenu.style.display = "inline-block";
 
-});
+    });
 
 
-CloseMenu.addEventListener('click',()=>{
-    mobileMenu.style.display = 'none';
-    burger.style.display = 'block';
-    filteredSearch.style.display = 'none';
+    CloseMenu.addEventListener('click',()=>{
+        mobileMenu.style.display = 'none';
+        burger.style.display = 'block';
+        filteredSearch.style.display = 'none';
 
-});
+    });
+}
 
 menuSearch.addEventListener('click', ()=>{
     if(filteredSearch.style.display ==='none'){
@@ -76,6 +77,8 @@ menuSearch.addEventListener('click', ()=>{
     }
 })
 
+
+//mobile carousel navigation
 function carouselNav(){
    const carouselNav = document.querySelector('.carousel-nav');
    const circle1 = document.querySelector('.circle1');
@@ -95,7 +98,7 @@ function carouselNav(){
 
    circle2.addEventListener('click',()=>{
         carousel.style.animationName = 'appear'; 
-        carousel.style.backgroundImage = 'url(resources/media/carousel2.jpeg)';
+        carousel.style.backgroundImage = 'url(resources/media/carousel2.jpg)';
         modelYear.textContent = '2017';
         carBrand.textContent = 'Demon Dodge';
         price.textContent = '$35,000'; 
@@ -109,13 +112,13 @@ function carouselNav(){
    });
 }
 
-carouselNav();
 
+//Desktop carousel navigation
 function navButtons(){
     let index = 0;
     const leftButton = document.querySelector('.button-left');
     const rightButton = document.querySelector('.button-right');
-    let urlList = ['url(resources/media/carouse1.jpg)', 'url(resources/media/carousel2.jpeg)' , 'url(resources/media/carousel3.jpg)'];
+    let urlList = ['url(resources/media/carouse1.jpg)', 'url(resources/media/carousel2.jpg)' , 'url(resources/media/carousel3.jpg)'];
 
     leftButton.onclick = ()=>{
         if(index <= -0){
@@ -136,8 +139,9 @@ function navButtons(){
         }
     }
 }
-navButtons();
 
+
+//display the reviews readmore section
 function ShowReadMore(){
     const text = document.querySelectorAll(".readMoreText");
     const button = document.querySelector('.read-more');
@@ -150,7 +154,12 @@ function ShowReadMore(){
     
 }
 
+displayOrCloseMenu();
+carouselNav();
+navButtons();
 ShowReadMore();
+OwnerCommentSlide();
+
 
 /*
 function bugWarning(){

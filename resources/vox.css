@@ -309,7 +309,7 @@ nav .dot-bar div {
 
 .carousel-section .carousel {
   background-image: url("media/carouse1.jpg");
-  background-size: 100% 100%;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   padding: 20%;
   position: relative;
